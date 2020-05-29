@@ -14,11 +14,11 @@ The problem we are trying to solve is we want to be able to curate all of the be
     - [Action: Fetch runs from Weights & Biases](https://github.com/marketplace/actions/get-runs-from-weights-biases) - W&B is an experiment tracking and logging system for machine learning, and is free for open source projects.
     - [Action: To compile, deploy and run Kubeflow pipeline](https://github.com/marketplace/actions/kubeflow-compile-deploy-and-run). This action allows you to instantiate [Kubeflow pipelines](https://www.kubeflow.org/docs/pipelines/overview/pipelines-overview/) from GitHub directly.
     - [Action: Dockerize GitHub repositories automatically as a Jupyter Server](https://github.com/machine-learning-apps/repo2docker-action)
-    -  [aml-workspace](https://github.com/marketplace/actions/azure-machine-learning-workspace)
-     - [aml-compute](https://github.com/marketplace/actions/azure-machine-learning-compute-action)
-     - [aml-run](https://github.com/marketplace/actions/azure-machine-learning-run-action)
-     - [aml-registermodel](https://github.com/marketplace/actions/azure-machine-learning-register-model-action)
-     - [aml-deploy](https://github.com/marketplace/actions/azure-machine-learning-deploy-action)
+    -  [aml-workspace](https://github.com/marketplace/actions/azure-machine-learning-workspace) - creates an Azure Machine Learning workspace.
+     - [aml-compute](https://github.com/marketplace/actions/azure-machine-learning-compute-action) - Manage Azure Compute Resources.
+     - [aml-run](https://github.com/marketplace/actions/azure-machine-learning-run-action) - Run a training job, experiment or pipeline on Azure.
+     - [aml-registermodel](https://github.com/marketplace/actions/azure-machine-learning-register-model-action) - Register a model on Azure Machine Learning.
+     - [aml-deploy](https://github.com/marketplace/actions/azure-machine-learning-deploy-action) - Deploy a model to AKS or ACI.
 
 3. Repository Templates
     - [fastpages](https://github.com/fastai/fastpages)
