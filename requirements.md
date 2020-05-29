@@ -1,4 +1,4 @@
-The problem we are trying to solve is we want to be able to curate all of the below assets we are creating in a central place that is easy for people to browse and improve discoverbility.  
+The problem we are trying to solve is we want to be able to curate all of the below assets in a central place that is easy for people to browse and discover.  We want to host this on GitHub Pages (we can figure out how to deploy it if you are not familiar with GitHub Pages)  
 
 
 # Categories of Assets We have created (a seperate page for each)
@@ -51,6 +51,7 @@ The problem we are trying to solve is we want to be able to curate all of the be
     
     
 # Requirements
+  - Preferred platform is either Jekyll or Gatsby
   - We want to make it such that we can update the content any of the pages that have a list of resources with CSV or JSON files  ourselves.  This will make it easy for us to maintain. You can make this happen for example with [Jekyll Datafiles](https://jekyllrb.com/docs/datafiles/).  For anything that is a list, we want an image thumbnail that we can add a reference to in the csv or json and that will get rendered for us automatically to make things look nice.
   - For other pages we want to be able to update those with markdown.
   - **All work on this project must be done in this GitHub repo**
