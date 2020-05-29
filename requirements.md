@@ -51,7 +51,8 @@ The problem we are trying to solve is we want to be able to curate all of the be
     
     
 # Requirements
-  - Preferred static site generator is either Jekyll or Gatsby
+  - Preferred static site generator is either [Jekyll](https://jekyllrb.com/), [Gatsby](https://www.gatsbyjs.org/), or [Eleventy](https://github.com/11ty/eleventy)
   - We want to make it such that we can update the content any of the pages that have a list of resources with CSV or JSON files  ourselves.  This will make it easy for us to maintain. You can make this happen for example with [Jekyll Datafiles](https://jekyllrb.com/docs/datafiles/).  For anything that is a list, we want an image thumbnail that we can add a reference to in the csv or json and that will get rendered for us automatically to make things look nice.
+  - All youtube videos we supply via a csv/json list for the "Live Demos / Tutorials" page should appear as embedded in the site. 
   - For other pages we want to be able to update those with markdown.
   - **All work on this project must be done in this GitHub repo**
