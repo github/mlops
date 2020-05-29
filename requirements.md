@@ -22,12 +22,12 @@ The problem we are trying to solve is we want to be able to curate all of the be
 
 3. Repository Templates
     - [fastpages](https://github.com/fastai/fastpages)
-     [Azure ML + Actions](https://github.com/Azure/aml-template)
+    - [Azure ML + Actions](https://github.com/machine-learning-apps/ml-template-azure)
 
 4. Live Demos / Tutorials
    - [GitHub Universe Talk - MLOps](https://www.youtube.com/watch?v=Ll50l3fsoYs)
    - [Live Demo Actions & ML Workflows](https://www.youtube.com/watch?v=S-kn4mmlxFU)
-    - [Azure ML + Actions Webinar - Recording Available Soon](https://go.iguazio.com/mlopslive/webinar3/1)
+    - [Azure ML + Actions Webinar](https://www.youtube.com/watch?v=V8MRYtNeqUc)
 
 5. Documentation
    TBD we have not made this yet, but we want to create documentation as well, and want the documentation theme to be coherent with the rest of the website. 
