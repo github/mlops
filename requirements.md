@@ -5,8 +5,8 @@ The problem we are trying to solve is we want to be able to curate all of the be
 
 1. Blog Posts
     - [Providing Data Scientists With New Superpowers](https://fastpages.fast.ai/actions/markdown/2020/03/06/fastpages-actions.html)
-    - [Pending - Microsoft Official Blog Post](https://docs.google.com/document/d/1UdUrwbyMXAkWMC7v9gH2nBly4ZvAUlY_hKlsBDbwTnw/edit)
-    - [Pending - GitHub Official Blog Post](https://docs.google.com/document/d/1R2BZTx5d9ojnkeTF7UBJ3OZFaQlTM5HnwDr2D0BWfLo/edit?usp=sharing)
+    - [Microsoft Official Blog Post](https://techcommunity.microsoft.com/t5/azure-ai/using-github-actions-amp-azure-machine-learning-for-mlops/ba-p/1419027)
+    - Pending - GitHub Official Blog Post - TBD
 
 2. GitHub Actions
     - [Action: Submit Argo Workflows on GKE](https://github.com/marketplace/actions/submit-argo-workflows-to-gke) - leverages the gcloud cli to authenticate to your GKE cluster and submit argo workflows.
@@ -18,7 +18,7 @@ The problem we are trying to solve is we want to be able to curate all of the be
      - [aml-compute](https://github.com/marketplace/actions/azure-machine-learning-compute-action)
      - [aml-run](https://github.com/marketplace/actions/azure-machine-learning-run-action)
      - [aml-registermodel](https://github.com/marketplace/actions/azure-machine-learning-register-model-action)
-      - [aml-deploy](https://github.com/marketplace/actions/azure-machine-learning-deploy-action)
+     - [aml-deploy](https://github.com/marketplace/actions/azure-machine-learning-deploy-action)
 
 3. Repository Templates
     - [fastpages](https://github.com/fastai/fastpages)
