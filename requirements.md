@@ -36,9 +36,9 @@ The problem we are trying to solve is we want to be able to curate all of the be
 6. Team Page
     We want to list all the members of our team like [this page](https://primer.style/about/#team/)
     You can use our GitHub profiles to get this started, the team is:
-    - [@awmatheson](www.github.com/awmatheson)
-    - [@hamelsmu](www.github.com/hamelsmu)
-    - [@inc0](www.github.com/inc0)
+    - [@awmatheson](https://github.com/awmatheson)
+    - [@hamelsmu](https://github.com/hamelsmu)
+    - [@inc0](https://github.com/inc0)
 
 # Asthetics / Creative Inspiration
 
