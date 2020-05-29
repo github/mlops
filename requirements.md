@@ -1,7 +1,7 @@
 The problem we are trying to solve is we want to be able to curate all of the below assets we are creating in a central place that is easy for people to browse and improve discoverbility.  
 
 
-# Categories of Assets We have created ( perhaps a seperate page for each)
+# Categories of Assets We have created (a seperate page for each)
 
 1. Blog Posts
     - [Providing Data Scientists With New Superpowers](https://fastpages.fast.ai/actions/markdown/2020/03/06/fastpages-actions.html)
