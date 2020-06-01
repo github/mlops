@@ -1,0 +1,10 @@
+<aside class="navigation left_sidebar">
+  <h2>Navigation</h2>
+  <ul>
+    {%- for item in site.data.navigation -%}
+      <li>
+        <a href="{{item.link}}">{{item.title}}</a>
+      </li>
+    {%- endfor -%}
+  </ul>
+</aside>

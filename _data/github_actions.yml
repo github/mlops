@@ -1,0 +1,16 @@
+- title: "Submit Argo Workflows on GKE "
+  link : "https://github.com/marketplace/actions/submit-argo-workflows-to-gke"
+- title: "Submit Argo Workflows on K8s (Cloud agnostic)"
+  link : "https://github.com/marketplace/actions/submit-argo-workflows-from-github"
+- title: "Fetch runs from Weights & Biases"
+  link : "https://github.com/marketplace/actions/get-runs-from-weights-biases"
+- title: "To compile, deploy and run Kubeflow pipeline"
+  link : "https://github.com/marketplace/actions/kubeflow-compile-deploy-and-run"
+- title: "Dockerize GitHub repositories automatically as a Jupyter Server"
+  link : "https://github.com/machine-learning-apps/repo2docker-action"
+#- title: [aml-workspace]
+#(https://github.com/marketplace/actions/azure-machine-learning-workspace) - creates an Azure Machine Learning workspace.
+     #- [aml-compute](https://github.com/marketplace/actions/azure-machine-learning-compute-action) - Manage Azure Compute Resources.
+     #- [aml-run](https://github.com/marketplace/actions/azure-machine-learning-run-action) - Run a training job, experiment or pipeline on Azure.
+     #- [aml-registermodel](https://github.com/marketplace/actions/azure-machine-learning-register-model-action) - Register a model on Azure Machine Learning.
+     #- [aml-deploy](https://github.com/marketplace/actions/azure-machine-learning-deploy-action) #- Deploy a model to AKS or ACI.

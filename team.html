@@ -1,0 +1,15 @@
+---
+layout: page
+title: Our Team
+---
+<div class="content_grid">
+  {% for author in site.team %}
+  <div class="content_item">
+    <a href="{{ author.url }}">
+    <h2>{{ author.title }}</h2>
+      <img class="author_image" src="{{ author.image }}" alt="{{ author.title }}">
+      <p>{{author.excerpt}}</p>
+    </a>
+  </div>
+  {% endfor %}
+</div>

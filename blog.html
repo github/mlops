@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<section class="blog">
+  <header>
+    <img src="https://ghicons.github.com/assets/images/blue/svg/issue.svg" alt="blog">
+  <h2>Blog Posts</h2>
+</header>
+  <div class="content_grid">
+    {%- for item in site.data.blog -%}
+          <div class="blog content_item>
+            <a href="{{item.link}}">
+            <h2>{{item.title}}</h2>
+            <img src="{{item.image}}" alt="post image">
+            </a>
+          </div>
+    {%- endfor -%}
+</section>

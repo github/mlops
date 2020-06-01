@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<section class="actions">
+  <img src="https://ghicons.github.com/assets/images/blue/svg/Actions.svg" alt="actions">
+  <h2>GitHub Actions</h2>
+  <div class="actions_grid">
+    {%- for item in site.data.github_actions -%}
+    <div class="action_card">
+      <a href="{{item.link}}">
+        <h2>{{item.title}}</h2>
+        <img src="{{item.image}}" alt="">
+        <p>{{item.info}}</p>
+      </a>
+    </div>
+    {%- endfor -%}
+  </div>
+</section>

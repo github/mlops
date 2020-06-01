@@ -1,0 +1,8 @@
+- title: Providing Data Scientists With New Superpowers
+  link : "https://fastpages.fast.ai/actions/markdown/2020/03/06/fastpages-actions.html"
+  image: '/assets/images/blog-1.png'
+- title: Microsoft Official Blog Post
+  link : "https://techcommunity.microsoft.com/t5/azure-ai/using-github-actions-amp-azure-machine-learning-for-mlops/ba-p/1419027"
+  image: '/assets/images/blog-2.png'
+- title: Pending - GitHub Official Blog Post - TBD
+  link : "#"
