@@ -3,6 +3,10 @@ body {
   display: grid;
   grid-template-rows: 80px 1fr auto;
 }
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
 h2 {
   font-size: 2rem;
 }
@@ -10,14 +14,56 @@ h2 {
   z-index: 1000;
   position: sticky;
   top: 0;
-  background: darken($background-color, 10%);
+  background: $background-color;
   border-top: none;
-  border-bottom: 2px solid lighten($background-color, 10%);
   .navbar {
-    padding: 5px 2%;
+    padding: 15px 2%;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    justify-content: space-around;
+    .logo {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      color: $brand-color;
+      font-size: 1.4em;
+      img {
+        height: 50px;
+      }
+    }
+    .navigation {
+      align-items: center;
+      justify-content: flex-end;
+      display: flex;
+      a {
+        padding: 10px;
+        color: $text-color-s;
+      }
+    }
   }
 }
-
+.intro {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  align-items: center;
+  .text_box {
+    h1 {
+      font-size: 48px;
+      font-weight: 600;
+      color: $brand-color;
+    }
+    h2 {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+    p {
+      line-height: 1.5;
+      color: $text-color-s;
+    }
+  }
+}
 .left_sidebar {
   position: fixed;
   left: 0;
@@ -49,7 +95,7 @@ h2 {
     gap: 1rem;
     .content_item {
       position: relative;
-      padding: 10px 10px 60px;
+      padding: 10px;
       border: 1px solid $grey-color-dark;
       border-radius: 5px;
       -webkit-border-radius: 5px;
@@ -58,6 +104,12 @@ h2 {
       -o-border-radius: 5px;
       a {
         color: $text-color;
+      }
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
       }
       .card_bg {
         position: absolute;
@@ -68,8 +120,10 @@ h2 {
         opacity: 0.3;
       }
       .card_icon {
+        display: block;
         width: 50%;
         padding-bottom: 10px;
+        margin: 15px auto;
       }
       &:hover {
         background: #000;
@@ -80,4 +134,3 @@ h2 {
     }
   }
 }
-
