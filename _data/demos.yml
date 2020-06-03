@@ -1,12 +1,14 @@
 - title: GitHub Universe Talk - MLOps
   subtitle: Machine learning operations with GitHub Actions and Kubernetes - GitHub Universe 2019
-  descr: 'From automating mundane tasks to reducing inefficiencies in developers’ workflows, machine learning has the potential to scale your team’s results like never before. However, the practice of deploying machine learning for enterprises is relatively new. In this talk, Hamel and Jeremy will demonstrate how GitHub Actions and Kubernetes can be used to orchestrate machine learning workflows in new ways that increase transparency and reliability of these applications. By borrowing best practices and technologies from DevOps, they’ll help you learn how to deploy machine learning solutions with confidence.'
+  info: 'From automating mundane tasks to reducing inefficiencies in developers’ workflows, machine learning has the potential to scale your team’s results like never before. However, the practice of deploying machine learning for enterprises is relatively new. In this talk, Hamel and Jeremy will demonstrate how GitHub Actions and Kubernetes can be used to orchestrate machine learning workflows in new ways that increase transparency and reliability of these applications. By borrowing best practices and technologies from DevOps, they’ll help you learn how to deploy machine learning solutions with confidence.'
   video_id: Ll50l3fsoYs
+
 - title: Live Demo Actions & ML Workflows
   video_id: S-kn4mmlxFU
   subtitle: GitHub Actions & Machine Learning Workflows with Hamel Husain
-  descr: "Successful machine learning projects often involve employing techniques and practices from software engineering. GitHub Actions provide a new way to incorporate some of these practices in a way that is tailored to data science. In this talk, Hamel will provide a brief tutorial on GitHub Actions, and will show you how you can use this new tool to automate and bring new innovations to your machine learning workflow."
+  info: "Successful machine learning projects often involve employing techniques and practices from software engineering. GitHub Actions provide a new way to incorporate some of these practices in a way that is tailored to data science. In this talk, Hamel will provide a brief tutorial on GitHub Actions, and will show you how you can use this new tool to automate and bring new innovations to your machine learning workflow."
+
 - title: Azure ML + Actions Webinar
-  subtitle: 'The MLOps Live Webinar Series #3- Git-Base d CI CD for Machine Learning & MLOps'
-  descr:
+  subtitle: 'The MLOps Live Webinar Series #3'
+  info: Git-Base d CI CD for Machine Learning & MLOps
   video_id: V8MRYtNeqUc

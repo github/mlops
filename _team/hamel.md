@@ -1,30 +1,19 @@
 ---
 layout: author
 title: Hamel Husain
-link : "https://github.com/hamelsmu"
+nick : "hamelsmu"
 image: "/assets/images/hamel.jpg"
 card_bg: "/assets/images/pngfuel.com (8).png"
 ---
 
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis modi vero placeat, voluptatem tempore temporibus nulla quos provident architecto saepe quasi voluptates nesciunt impedit ipsum veritatis delectus nostrum rem. Quos, possimus autem. Facere, nihil magni accusamus rerum, recusandae provident ducimus <!--more-->praesentium saepe facilis a incidunt deserunt pariatur eligendi laboriosam, eaque enim qui? Ullam error nemo sunt minima enim placeat. Assumenda ab dolore quasi quibusdam cupiditate delectus voluptates. Dolor, perspiciatis? 
+### What drew you into design systems?
 
-## Lorem ipsum dolor
+Over the decades, my primary expertise has slowly migrated from back-end development to front-end. I've always had an interest in design, and working on design systems allows me to explore that interest while continuing to leverage my expertise in front-end engineering.
 
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis modi vero placeat, voluptatem tempore temporibus nulla quos provident architecto saepe quasi voluptates nesciunt impedit ipsum veritatis delectus nostrum rem. Quos, possimus autem. Facere, nihil magni accusamus rerum, recusandae provident ducimus 
+### Who have you learned from or been inspired by?
 
-* Lorem ipsum dolor sit
-* Omnis modi vero placeat
-* Quos, possimus autem.
+The constant shifts in front-end programming over the years and an intrinsic desire to learn have always been a driving factor in my own exploration of computer programming. I'm fortuante to work with a huge number of talented engineers and designers at GitHub, which is very inspiring and very rewarding.
 
-Reprehenderit quos voluptatibus eos, officiis mollitia, perferendis maiores facilis sed doloribus inventore ipsam, odio impedit autem magni! Accusantium, ullam reiciendis. Nostrum quo veniam voluptates blanditiis aliquam reiciendis, aperiam voluptas iure in!
+### Favorite tools
 
-```
-.page-content {
-  display: grid;
-  grid-template-columns: 15% 1fr 15%;
-  grid-template-areas: ". c .";
-  gap: 1rem;
-}
-```
-
-Reprehenderit quos voluptatibus eos, officiis mollitia, perferendis maiores facilis sed doloribus inventore ipsam, odio impedit autem magni! Accusantium, ullam reiciendis. Nostrum quo veniam voluptates blanditiis aliquam reiciendis, aperiam voluptas iure in!
+Vim, Photoshop, Blender, and a good, old-fashioned shell prompt.

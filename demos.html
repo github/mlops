@@ -1,13 +1,31 @@
 ---
-layout: default
+layout : default
 title : "Live Demos / Tutorials"
+description : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore cum vel nesciunt distinctio nobis,
+pariatur, temporibus vitae dolorem, voluptas quam tenetur? Voluptatibus eaque veritatis dolorum corrupti dignissimos,
+saepe porro, molestiae consequatur quas obcaecati necessitatibus velit inventore aspernatur! Modi id a quisquam eaque
+suscipit praesentium quibusdam odio consequuntur eveniet tempora. Quos?"
 ---
-<h1>page.title</h1>
-{%- for item in site.data.demos -%}
-  <h2>{{item.title}}</h2>
-  <h3>{{item.subtitle}}</h3>
-  <p>{{item.descr}}</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/{{item.video_id}}" frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-{%- endfor -%}
+<section class="intro blog_intro">
+  <div class="text_box">
+    <h1>{{page.title}}</h1>
+    <p>{{page.description}}</p>
+    <div class="posts_list">
+      {%- for item in site.data.demos -%}
+      <div class="blog content_item">
+        <a href="{{item.link}}">
+          <h2>{{item.title}}</h2>
+        </a>
+        <h3>{{item.subtitle}}</h3>
+        <p>{{item.info}}</p>
+        <iframe class="y_video" width="600" height="400" src="https://www.youtube.com/embed/{{item.video_id}}" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+  <div class="image_box">
+    <img src="https://ghicons.github.com/assets/images/blue/svg/Enterprise%20Observability.svg"  alt="demos">
+  </div>
+</section>

@@ -2,27 +2,13 @@ body {
   box-sizing: border-box;
   display: grid;
   grid-template-rows: 80px 1fr auto;
-  font-family: "Roboto", sans-serif;
 }
 h1 {
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
-  color: $brand-color;
-  line-height: 1;
 }
 h2 {
   font-size: 24px;
-  font-weight: 700;
-  line-height: 1.25;
-}
-p {
-  font-size: 16px;
-  line-height: 1.5;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 .site-header {
   z-index: 1000;
@@ -30,22 +16,10 @@ p {
   top: 0;
   background: $background-color;
   border-top: none;
-  .trigger {
-    padding-right: 10px;
-    justify-self: end;
-    align-self: center;
-    cursor: pointer;
-    svg {
-      fill: #fff;
-      &:hover {
-        fill: $brand-color;
-      }
-    }
-  }
   .navbar {
     padding: 15px 2%;
     display: grid;
-    grid-template-columns: 260px 1fr;
+    grid-template-columns: 320px 1fr;
     justify-content: space-around;
     .logo {
       display: flex;
@@ -55,9 +29,9 @@ p {
       font-size: 1.1em;
     }
     .navigation {
-      display: none;
       align-items: center;
       justify-content: flex-end;
+      display: flex;
       a {
         padding: 10px;
         color: $text-color-s;
@@ -65,27 +39,31 @@ p {
     }
   }
 }
-.grid {
+.intro {
+  height: 70vh;
+  margin-top: 200px;
   display: grid;
-}
-.home_intro {
-  margin-top: 30px;
-  display: grid;
+  grid-template-columns: 2fr 1fr;
   gap: 2em;
   align-items: start;
   .text_box {
+    h1 {
+      font-size: 48px;
+      font-weight: 600;
+      color: $brand-color;
+    }
+    h2 {
+      font-size: 40px;
+      line-height: 1.2;
+    }
     p {
-      font-size: 16px;
       line-height: 1.5;
       color: $text-color-s;
     }
   }
 }
 .image_box img {
-  display: block;
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 .left_sidebar {
   position: fixed;
@@ -105,15 +83,16 @@ p {
   }
 }
 .page-content {
-  width: 100vw;
   display: grid;
-  grid-template-columns: 10% 1fr 10%;
+  grid-template-columns: 15% 1fr 15%;
   grid-template-areas: ". c .";
+  gap: 1rem;
 }
 .content {
   grid-area: c;
   .content_grid {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     .content_item {
       position: relative;
@@ -129,7 +108,6 @@ p {
       }
       h2 {
         text-align: center;
-        color: $brand-color;
       }
       p {
         text-align: justify;
@@ -195,7 +173,7 @@ p {
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       -o-border-radius: 50%;
-    }
+}
     &:nth-child(even) {
       direction: rtl;
     }
@@ -252,50 +230,5 @@ p {
   }
   .content_item {
     margin-top: 50px;
-  }
-}
-/* media queries */
-@media screen and (min-width: 768px) {
-  .site-header .navbar {
-    grid-template-columns: 320px 1fr;
-  }
-  .content_grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .intro {
-    margin-bottom: 30px;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: "a b";
-    .image_box {
-      grid-area: b;
-      img {
-        width: 100%;
-      }
-    }
-    .text_box {
-      grid-area: a;
-    }
-  }
-}
-@media screen and (min-width: 1440px) {
-  .site-header .navbar .navigation {
-    display: flex;
-  }
-  .trigger {
-    display: none;
-  }
-  .content_grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .page-content {
-    grid-template-columns: 1fr 1000px 1fr;
-  }
-}
-@media screen and (max-width: 767px) {
-  .y_video {
-    width: calc(100vw * 0.8) ;
-    height: calc(100vw * 0.6);
   }
 }

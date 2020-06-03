@@ -1,18 +1,27 @@
 ---
-layout: default
+layout : default
+title : GitHub Actions
+description : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit quo magnam blanditiis soluta
+est,
+molestias quaerat perferendis eligendi nobis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ratione
+totam odit optio. Impedit incidunt laboriosam doloremque. Molestias, consequatur aut."
 ---
-<section class="actions">
-  <img src="https://ghicons.github.com/assets/images/blue/svg/Actions.svg" alt="actions">
-  <h2>GitHub Actions</h2>
-  <div class="actions_grid">
-    {%- for item in site.data.github_actions -%}
-    <div class="action_card">
-      <a href="{{item.link}}">
-        <h2>{{item.title}}</h2>
-        <img src="{{item.image}}" alt="">
+<section class="intro blog_intro">
+  <div class="text_box">
+    <h1>{{page.title}}</h1>
+    <p>{{page.description}}</p>
+    <div class="posts_list">
+      {%- for item in site.data.github_actions -%}
+      <div class="blog content_item">
+        <a href="{{item.link}}">
+          <h2>{{item.title}}</h2>
+        </a>
         <p>{{item.info}}</p>
-      </a>
+      </div>
+      {%- endfor -%}
     </div>
-    {%- endfor -%}
   </div>
+    <div class="image_box">
+      <img src="https://ghicons.github.com/assets/images/blue/svg/Actions.svg" alt="actions">
+    </div>
 </section>
