@@ -21,7 +21,7 @@ jobs:
         rm -rf _site
         sudo chmod -R 777 .
     - name: Jekyll build
-      uses: docker://hamelsmu/fastpages-jekyll
+      uses: docker://hamelsmu/mlops-website
       with:
         args: bash -c "gem install bundler && jekyll build -V --strict_front_matter --trace"
       env:
