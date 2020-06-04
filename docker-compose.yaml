@@ -1,0 +1,14 @@
+
+version: "3"
+services:
+  jekyll:
+    working_dir: /data
+    image: hamelsmu/fastpages-jekyll
+    restart: unless-stopped
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/data/
+    command: >
+     bash -c "gem install bundler
+     && jekyll serve --trace --strict_front_matter"
