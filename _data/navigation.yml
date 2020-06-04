@@ -16,7 +16,7 @@
   icon : "https://ghicons.github.com/assets/images/blue/svg/Collection.svg"
   card_bg: "/assets/images/pngfuel.com (7).png"
 
-- title: Live Demos / Tutorials
+- title: Live Demos
   info : Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et quo mollitia molestiae dignissimos fuga, earum quas eveniet dolore sed?
   link : "/demos"
   icon : "https://ghicons.github.com/assets/images/blue/svg/Enterprise%20Observability.svg" 
