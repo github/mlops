@@ -7,13 +7,18 @@
         <span>{{site.title}}</span>
       </a>
     </div>
-    <nav class="navigation">
+    <nav class="navigation hidden" id="navigation">
       {%- for item in site.data.navigation -%}
       <a href="{{item.link}}">{{item.title}}</a>
       {%- endfor -%}
     </nav>  
-    <div class="trigger">
+    <!-- <div class="trigger">
       {%- include trigger.svg -%}
-    </div>
+    </div> -->
+      <button class="toggle_mnu" id="toggle_menu" onclick="toggle_menu()">
+        <img src="{{'/assets/images/sandwich_white.png' | relative_url}}" class="open toggle_icon" alt="menu open">
+        <img src="{{'/assets/images/times.png' | relative_url}}" class="close toggle_icon hidden"
+          alt="menu close">
+      </button>
   </div>
 </header>

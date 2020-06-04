@@ -24,13 +24,21 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
 .site-header {
   z-index: 1000;
   position: sticky;
   top: 0;
   background: $background-color;
-  border-top: none;
-  .trigger {
+  border-bottom: 2px solid lighten($background-color, 5%);
+  .toggle_mnu {
+    width: 30px;
+    justify-self: right;
+    background: transparent;
+    outline: none;
+    border: none;
+  }
+  .toggle_icon {
     padding-right: 10px;
     justify-self: end;
     align-self: center;
@@ -55,13 +63,23 @@ p {
       font-size: 1.1em;
     }
     .navigation {
-      display: none;
+      width: 100%;
+      top: 80px;
+      right: 0;
+      background: darken($background-color, 2%);
+      padding: 20px 30px;
+      text-align: right;
+      position: absolute;
+      display: grid;
       align-items: center;
       justify-content: flex-end;
       a {
         padding: 10px;
         color: $text-color-s;
       }
+    }
+    .hidden {
+      display: none;
     }
   }
 }
@@ -105,7 +123,7 @@ p {
   }
 }
 .page-content {
-  width: 100vw;
+  width: 100%;
   display: grid;
   grid-template-columns: 10% 1fr 10%;
   grid-template-areas: ". c .";
@@ -117,7 +135,7 @@ p {
     gap: 1rem;
     .content_item {
       position: relative;
-      padding: 10px;
+      padding: 0 20px;
       border: 1px solid $grey-color-dark;
       border-radius: 5px;
       -webkit-border-radius: 5px;
@@ -126,13 +144,11 @@ p {
       -o-border-radius: 5px;
       a {
         color: $text-color;
+        text-decoration: none;
       }
       h2 {
         text-align: center;
         color: $brand-color;
-      }
-      p {
-        text-align: justify;
       }
       .card_bg {
         position: absolute;
@@ -149,7 +165,7 @@ p {
         margin: 15px auto;
       }
       &:hover {
-        background: #000;
+        background: darken($background-color, 2%);
       }
       .author_image {
         width: 100%;
@@ -159,10 +175,10 @@ p {
 }
 
 /* Team page */
-.team_intro .text_box p,
+/* .team_intro .text_box p,
 .team_grid {
   color: $text-color-t;
-}
+} */
 .team_grid {
   display: grid;
   gap: 4rem;
@@ -173,8 +189,7 @@ p {
   }
   .team_item {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 4rem;
+    gap: 40px;
     a {
       display: block;
       position: relative;
@@ -188,7 +203,8 @@ p {
       transform: rotate(180deg);
     }
     img {
-      width: 100%;
+      display: block;
+      margin: auto;
       border: 3px solid $brand-color;
       border-radius: 50%;
       -webkit-border-radius: 50%;
@@ -204,7 +220,7 @@ p {
     }
   }
 }
-.author_img {
+.author_img_box {
   top: 15px;
   display: block;
   width: 100%;
@@ -217,32 +233,14 @@ p {
   left: 0;
   width: 100%;
 }
-.diamond {
-  z-index: 10;
-  width: 0;
-  height: 0;
-  border: 155px solid $background-color;
-  border-bottom-color: transparent;
-  position: relative;
-  top: -155px;
-
-  &:after {
-    content: "";
-    position: absolute;
-    left: -155px;
-    top: 155px;
-    width: 0;
-    height: 0;
-    border: 155px solid $brand-color;
-    border-top-color: transparent;
-  }
-}
 
 /* Blog page */
 .blog_intro {
-  margin-top: 100px;
   margin-bottom: 20px;
   height: max-content;
+  img {
+    margin-bottom: 30px;
+  }
 }
 .posts_list {
   margin-top: 30px;
@@ -254,18 +252,64 @@ p {
     margin-top: 50px;
   }
 }
+.hidden {
+  display: none;
+}
+.site-footer {
+  margin-top: 30px;
+}
+.footer_wrapper {
+  max-width: 1000px;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  .footer-heading{
+    padding: 15px;
+  }
+  p {
+    margin: 0;
+  }
+}
 /* media queries */
 @media screen and (min-width: 768px) {
+  .home_intro {
+    h1 {
+      font-size: 56px;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
   .site-header .navbar {
     grid-template-columns: 320px 1fr;
+    .navigation {
+      width: max-content;
+    }
   }
   .content_grid {
     grid-template-columns: 1fr 1fr;
   }
+    .author_image {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 1024px) {
+  .home_intro {
+    h1 {
+      font-size: 84px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+  }
   .intro {
+    margin-top: 5vw;
     margin-bottom: 30px;
+    display: grid;
+    gap: 40px;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "a b";
     .image_box {
@@ -278,12 +322,26 @@ p {
       grid-area: a;
     }
   }
+  .team_item {
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+  }
+    .author_image {
+    width: 80%;
+  }
 }
 @media screen and (min-width: 1440px) {
   .site-header .navbar .navigation {
     display: flex;
+    position: relative;
+    justify-self: right;
+    height: 100%;
+    padding: 0;
+    top: 0;
+    background: transparent;
+    letter-spacing: -0.5px;
   }
-  .trigger {
+  .toggle_icon {
     display: none;
   }
   .content_grid {
@@ -292,10 +350,14 @@ p {
   .page-content {
     grid-template-columns: 1fr 1000px 1fr;
   }
+  .home_intro {
+    min-height: 80vh;
+    padding-top: 10vh;
+  }
 }
 @media screen and (max-width: 767px) {
   .y_video {
-    width: calc(100vw * 0.8) ;
+    width: calc(100vw * 0.8);
     height: calc(100vw * 0.6);
   }
 }

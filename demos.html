@@ -7,6 +7,9 @@ saepe porro, molestiae consequatur quas obcaecati necessitatibus velit inventore
 suscipit praesentium quibusdam odio consequuntur eveniet tempora. Quos?"
 ---
 <section class="intro blog_intro">
+  <div class="image_box">
+    <img src="https://ghicons.github.com/assets/images/blue/svg/Enterprise%20Observability.svg" alt="demos">
+  </div>
   <div class="text_box">
     <h1>{{page.title}}</h1>
     <p>{{page.description}}</p>
@@ -18,14 +21,12 @@ suscipit praesentium quibusdam odio consequuntur eveniet tempora. Quos?"
         </a>
         <h3>{{item.subtitle}}</h3>
         <p>{{item.info}}</p>
-        <iframe class="y_video" width="600" height="400" src="https://www.youtube.com/embed/{{item.video_id}}" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        <iframe class="y_video" width="600" height="400" src="https://www.youtube.com/embed/{{item.video_id}}"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
         </iframe>
       </div>
       {%- endfor -%}
     </div>
-  </div>
-  <div class="image_box">
-    <img src="https://ghicons.github.com/assets/images/blue/svg/Enterprise%20Observability.svg"  alt="demos">
   </div>
 </section>
