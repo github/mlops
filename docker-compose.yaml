@@ -3,7 +3,7 @@ version: "3"
 services:
   jekyll:
     working_dir: /data
-    image: hamelsmu/fastpages-jekyll
+    image: hamelsmu/mlops-website
     restart: unless-stopped
     ports:
       - "4000:4000"
