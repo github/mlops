@@ -4,7 +4,7 @@ email: your-email@example.com
 description: >- 
   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis modi vero placeat, voluptatem tempore temporibus nulla quos provident architecto saepe quasi voluptates nesciunt impedit ipsum veritatis delectus nostrum rem. 
 logo: "/assets/images/Data-driven-recommendations.png"
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "website" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
