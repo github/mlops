@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{%- include head.html -%}
+
+<body class="doc_page">
+
+  {%- include header.html -%}
+
+  <main class="page-content docs" aria-label="Content">
+    {%- include sidebar.html -%}
+      {{ content }}
+  </main>
+
+  {%- include footer.html -%}
+
+  <script src="{{'/assets/js/common.js' | relative_url}}"></script>
+</body>
+
+</html>
