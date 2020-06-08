@@ -97,7 +97,7 @@ h2 {
     .content_item {
       position: relative;
       padding: 10px;
-      border: 1px solid $grey-color-dark;
+      border:  1px solid $grey-color-dark;
       border-radius: 5px;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
@@ -167,7 +167,7 @@ h2 {
     }
     img {
       width: 100%;
-      border: 3px solid $brand-color;
+      border:  3px solid $brand-color;
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -199,7 +199,7 @@ h2 {
   z-index: 10;
   width: 0;
   height: 0;
-  border: 155px solid $background-color;
+  border:  155px solid $background-color;
   border-bottom-color: transparent;
   position: relative;
   top: -155px;
@@ -211,7 +211,7 @@ h2 {
     top: 155px;
     width: 0;
     height: 0;
-    border: 155px solid $brand-color;
+    border:  155px solid $brand-color;
     border-top-color: transparent;
   }
 }

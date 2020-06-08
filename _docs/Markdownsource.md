@@ -6,8 +6,7 @@ titles:
 - Sources for markdown
 - Heading One
 tags: [markdown, source]
-tipue_search_active: true
-exclude_from_search: false
+order_n: 3
 ---
 
 https://www.markdownguide.org/cheat-sheet/

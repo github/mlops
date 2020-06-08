@@ -9,10 +9,8 @@ titles:
 - Mozilla Add-ons site
 - Things to know about converting/reverting a selection
 - Next Steps
-tipue_search_active: true
-exclude_from_search: false
 tags: [markdown, opera, github]
-type: important
+order_n:  2
 ---
 
 [**Visit the website.**](http://markdown-here.com)<br>

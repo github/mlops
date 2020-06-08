@@ -149,7 +149,7 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
+  border:  1px solid $grey-color-light;
   border-radius: 3px;
   background-color: #eef;
 }
@@ -163,7 +163,7 @@ pre {
   overflow-x: auto;
 
   > code {
-    border: 0;
+    border:  0;
     padding-right: 0;
     padding-left: 0;
   }
@@ -234,7 +234,7 @@ table {
   text-align: $table-text-align;
   color: lighten($text-color, 18%);
   border-collapse: collapse;
-  border: 1px solid $grey-color-light;
+  border:  1px solid $grey-color-light;
   tr {
     &:nth-child(even) {
       background-color: lighten($grey-color-light, 6%);
@@ -245,10 +245,10 @@ table {
   }
   th {
     background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
+    border:  1px solid darken($grey-color-light, 4%);
     border-bottom-color: darken($grey-color-light, 12%);
   }
   td {
-    border: 1px solid $grey-color-light;
+    border:  1px solid $grey-color-light;
   }
 }

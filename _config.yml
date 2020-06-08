@@ -22,6 +22,7 @@ collections:
     output: true
   docs:
     output: true
+    sort_by: order_n
 
 defaults:
   - scope:

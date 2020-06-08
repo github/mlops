@@ -49,7 +49,7 @@ li {
     justify-self: right;
     background: transparent;
     outline: none;
-    border: none;
+    border:  none;
   }
   .toggle_icon {
     padding-right: 10px;
@@ -132,7 +132,7 @@ li {
     .content_item {
       position: relative;
       padding: 0 20px;
-      border: 1px solid $grey-color-dark;
+      border:  1px solid $grey-color-dark;
       border-radius: 5px;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
@@ -196,7 +196,7 @@ li {
     img {
       display: block;
       margin: auto;
-      border: 3px solid $brand-color;
+      border:  3px solid $brand-color;
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -317,6 +317,10 @@ li {
       }
     }
   }
+}
+/* tags filters */
+.tags .active {
+  color: $brand-color;
 }
 /* media queries */
 @media screen and (min-width: 768px) {

@@ -12,7 +12,7 @@ titles:
 - Squared exponential kernel.
 
 tags: [spectral, python, network]
-type: important
+order_n:  5
 ---
 ## Spectral Inference Networks (SpIN)
 

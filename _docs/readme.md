@@ -7,8 +7,7 @@ titles:
 - What I want to achieve
 - Design
 - Advanced features of this site which are not needed
-tipue_search_active: true
-exclude_from_search: false
+order_n: 0
 tags: [jekyll]
 ---
 
