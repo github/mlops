@@ -20,6 +20,9 @@ collections:
     output: true
   pages:
     output: true
+  docs:
+    output: true
+    sort_by: order_n
 
 defaults:
   - scope:
@@ -35,7 +38,11 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: "default"
+      layout: "docs"
+  - scope:
+      path: ""
+    values:
+      layout: "document"
 
 
 # Exclude from processing.

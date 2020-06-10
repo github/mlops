@@ -2,34 +2,28 @@
   info : Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et quo mollitia molestiae dignissimos fuga, earum quas eveniet dolore sed?
   link : "/blog"
   icon : "https://ghicons.github.com/assets/images/blue/svg/issue.svg"
-  card_bg: "/assets/images/pngfuel.com (5).png"
 
 - title: GitHub Actions
   info : Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et quo mollitia molestiae dignissimos fuga, earum quas eveniet dolore sed?
   link : "/actions"
   icon : "https://ghicons.github.com/assets/images/blue/svg/Actions.svg"
-  card_bg: "/assets/images/pngfuel.com (3).png"
 
 - title: Repository Templates
   info : Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et quo mollitia molestiae dignissimos fuga, earum quas eveniet dolore sed?
-  link : "/"
+  link : "/templates"
   icon : "https://ghicons.github.com/assets/images/blue/svg/Collection.svg"
-  card_bg: "/assets/images/pngfuel.com (7).png"
 
 - title: Live Demos
   info : Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et quo mollitia molestiae dignissimos fuga, earum quas eveniet dolore sed?
   link : "/demos"
   icon : "https://ghicons.github.com/assets/images/blue/svg/Enterprise%20Observability.svg" 
-  card_bg: "/assets/images/pngfuel.com (4).png"
 
 - title: Documentation
   info : Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et quo mollitia molestiae dignissimos fuga, earum quas eveniet dolore sed?
-  link : "/documentation"
+  link : "/docs"
   icon : "https://ghicons.github.com/assets/images/blue/svg/Documentation.svg"
-  card_bg: "/assets/images/pngfuel.com (6).png"
 
 - title: Our Team
   info : Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae et quo mollitia molestiae dignissimos fuga, earum quas eveniet dolore sed?
   link : "/team"
   icon : "https://ghicons.github.com/assets/images/blue/svg/GitHub%20for%20teams.svg" 
-  card_bg: "/assets/images/pngfuel.com (9).png"
