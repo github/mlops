@@ -1,10 +1,12 @@
-<aside class="navigation left_sidebar">
-  <h2>Navigation</h2>
-  <ul>
-    {%- for item in site.data.navigation -%}
+<aside class="sidebar_left">
+  <nav>
+    <h2>Sections</h2>
+    <ul>
+      {%- for item in site.docs -%}
       <li>
-        <a href="{{item.link}}">{{item.title}}</a>
+        <a href="{{item.url}}">{{item.title}}</a>
       </li>
-    {%- endfor -%}
-  </ul>
+      {%- endfor -%}
+    </ul>
+  </nav>
 </aside>

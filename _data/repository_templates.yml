@@ -1,5 +1,9 @@
-- title: fastpages
+- title: Welcome To fastpages
+  info: An easy to use blogging platform, with support for Jupyter notebooks, Word docs, and Markdown.
   link: "https://github.com/fastai/fastpages"
-- title: Azure ML + Actions
+  tags: [fastpages]
+
+- title: ML Ops with GitHub Actions and Azure Machine Learning
   link: https://github.com/machine-learning-apps/ml-template-azure
-  subtitle: Providing Data Scientists With New Superpowers
+  info: This template can be used for easily setting up a data science or machine learning project with automated training and deployment using GitHub Actions and Azure Machine Learning
+  tags: [GitHub Actions, Azure]

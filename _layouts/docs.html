@@ -1,0 +1,26 @@
+---
+layout : default_docs
+permalink : /docs/
+---
+<div class="intro_wrapper">
+  <section class="intro">
+    <div class="image_box">
+      <img src="https://ghicons.github.com/assets/images/blue/svg/Documentation.svg" alt="docs">
+    </div>
+    <div class="text_box">
+      <h1>{{page.title}}</h1>
+      <p>{{page.description}}</p>
+    </div>
+  </section>
+</div>
+  <section class="docs_content">
+    {{ content }}
+    <ul>
+      {%- for item in site.docs -%}
+      <li>
+        <a href="{{item.url}}">{{item.title}}"</a>
+        <p>{{item.description}}</p>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </section>

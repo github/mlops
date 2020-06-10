@@ -1,25 +1,31 @@
 - title: "Submit Argo Workflows on GKE "
   info : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore cum vel nesciunt distinctio nobis"
   link : "https://github.com/marketplace/actions/submit-argo-workflows-to-gke"
+  tags : [MLOps, Machine Learning, Data Science]
 
 - title: "Submit Argo Workflows on K8s (Cloud agnostic)"
   info : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore cum vel nesciunt distinctio nobis
   link : "https://github.com/marketplace/actions/submit-argo-workflows-from-github"
+  tags : [Machine Learning, Data Science]
 
 - title: "Fetch runs from Weights & Biases"
   info : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore cum vel nesciunt distinctio nobis
   link : "https://github.com/marketplace/actions/get-runs-from-weights-biases"
+  tags: [actions]
 
 - title: "To compile, deploy and run Kubeflow pipeline"
   info : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore cum vel nesciunt distinctio nobis
   link : "https://github.com/marketplace/actions/kubeflow-compile-deploy-and-run"
-
+  tags: [kubeflow]
+  
 - title: "Dockerize GitHub repositories automatically as a Jupyter Server"
   info : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore cum vel nesciunt distinctio nobis
   link : "https://github.com/machine-learning-apps/repo2docker-action"
+  tags: [repo2docker]
 
 - title: aml-workspace
   link : https://github.com/marketplace/actions/azure-machine-learning-workspace) - creates an Azure Machine Learning workspace.
+  tags: [marketplace]
 
 - title:  aml-compute
   link : "https://github.com/marketplace/actions/azure-machine-learning-compute-action"

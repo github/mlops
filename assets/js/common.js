@@ -15,3 +15,15 @@ function toggle_menu() {
     nav.classList.remove('hidden');
   }
 }
+$(".tag_filter").click(function () {
+  const filter = '.' + $(this).attr('data-tag');
+  if (filter == '.all') {
+    $(".content_item").show();
+  }
+  else {
+  $(".content_item").hide();
+  $(filter).show();
+  };
+  $(".tag_filter").removeClass("active");
+  $(this).addClass('active');
+});
