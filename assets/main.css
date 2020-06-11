@@ -342,7 +342,7 @@ li { margin: 0; }
 
 .team_grid .team_item { display: grid; gap: 40px; }
 
-.team_grid .team_item a { display: block; position: relative; }
+.team_grid .team_item a { position: relative; color: #84b2ee; text-decoration: underline; }
 
 .team_grid .team_item svg { position: absolute; fill: #2188ff; width: 100%; top: 0; left: 0; transform: rotate(180deg); }
 
