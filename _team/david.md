@@ -2,7 +2,7 @@
 layout: author
 title: David Aronchick
 nick : "aronchick"
-image: "/assets/images/aronchick.png"
+image: "/assets/images/aronchick.jpeg"
 card_bg: "/assets/images/pngfuel.com (2).png"
 ---
 

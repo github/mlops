@@ -2,7 +2,7 @@
 layout: author
 title: Marvin Buss
 nick : "marvinbuss"
-image: "/assets/images/marvinbuss.png"
+image: "/assets/images/marvinbuss.jpeg"
 card_bg: "/assets/images/pngfuel.com (2).png"
 ---
 
