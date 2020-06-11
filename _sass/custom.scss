@@ -118,7 +118,12 @@ li {
     }
   }
 }
-
+.team_intro {
+  a {
+    color: lighten($brand-color, 20%);
+    text-decoration: underline;
+  }
+}
 .image_box img {
   display: block;
   margin-left: auto;
@@ -357,6 +362,7 @@ li {
     color: $brand-color;
   }
 }
+
 /* media queries */
 @media screen and (min-width: 768px) {
   .blog_intro {
@@ -459,10 +465,6 @@ li {
     }
     .text_box {
       grid-area: a;
-      a {
-        color: lighten($brand-color, 20%);
-        text-decoration: underline;
-      }
     }
   }
   .team_item {
