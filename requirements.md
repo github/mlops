@@ -69,7 +69,7 @@ The problem we are trying to solve is we want to be able to curate all of the be
         - As you search, keywords are highlighted
         - [lunr.js](https://lunrjs.com/) might be helpful.  I have used this project for [fastpages](https://github.com/fastai/fastpages/blob/master/_pages/search.html)
         
-  - Implement **ALL** the features of [Just The Docs navigation](https://pmarsceill.github.io/just-the-docs/docs/navigation-structure/)
+  - Implement the features of [Just The Docs Navigation Structure](https://pmarsceill.github.io/just-the-docs/docs/navigation-structure/)
     - Ordering pages
     - Exluding pages
     - Pages with children
@@ -78,3 +78,5 @@ The problem we are trying to solve is we want to be able to curate all of the be
         - children with children
     - Auxilary Navigation
     - In page navigation with Table of Contents
+
+Note: not asking you to implement all features of just-the-docs, just the features pertaining to the navigation strucutre outlined above, and search.
