@@ -6,14 +6,24 @@ image: "/assets/images/hamel.jpg"
 card_bg: "/assets/images/pngfuel.com (8).png"
 ---
 
-### What drew you into design systems?
+### What drew you into machine learning ops?
 
-Over the decades, my primary expertise has slowly migrated from back-end development to front-end. I've always had an interest in design, and working on design systems allows me to explore that interest while continuing to leverage my expertise in front-end engineering.
+Throughout my history as a data scientist, one of the things I have been most frustrated by is the lack of tools and infrastructure for machine learning.  While there are many devops and other automation tools that serve mainstream software development (i.e. deploying a website), many do not fit the use case of machine learning very well.  
+
+This led me to develop a keen interest in creating tools that can mimize toil for data scientists, and make the process of prototyping, developing, scaling, testing and measuring data products easier.
+
+I've worked on machine learning infrastructure at [DataRobot](https://www.datarobot.com/) [Airbnb](https://www.airbnb.com/), and [github](https://github.com/).
 
 ### Who have you learned from or been inspired by?
 
-The constant shifts in front-end programming over the years and an intrinsic desire to learn have always been a driving factor in my own exploration of computer programming. I'm fortuante to work with a huge number of talented engineers and designers at GitHub, which is very inspiring and very rewarding.
+I learned a great deal from past and former colleagues at [places that I have worked](https://www.linkedin.com/in/hamelhusain/).  I've also learned a great deal from the [fastai community](https://www.fast.ai/), both as a student and a contributor.
+
+### Other Projects
+
+You can find more information on my other projects and interests on [my website](http://hamel.io/)
 
 ### Favorite tools
 
-Vim, Photoshop, Blender, and a good, old-fashioned shell prompt.
+_In no particular order_:
+
+Bash Scripting, VSCode, Jupyter, [Keras](https://keras.io/), [Altair](https://altair-viz.github.io/), [fastai](https://github.com/fastai/fastai), [Docker](https://www.docker.com/), Python, [GitHub Actions](https://github.com/features/actions), [GitHub Pages](https://pages.github.com/).
