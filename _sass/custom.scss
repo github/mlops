@@ -190,8 +190,9 @@ li {
     display: grid;
     gap: 40px;
     a {
-      display: block;
       position: relative;
+      color: lighten($brand-color, 20%);
+      text-decoration: underline;
     }
     svg {
       position: absolute;
