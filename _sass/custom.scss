@@ -459,6 +459,10 @@ li {
     }
     .text_box {
       grid-area: a;
+      a {
+        color: lighten($brand-color, 20%);
+        text-decoration: underline;
+      }
     }
   }
   .team_item {
