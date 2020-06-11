@@ -24,6 +24,4 @@ You can find more information on my other projects and interests on [my website]
 
 ### Favorite tools
 
-_In no particular order_:
-
 Bash Scripting, VSCode, Jupyter, [Keras](https://keras.io/), [Altair](https://altair-viz.github.io/), [fastai](https://github.com/fastai/fastai), [Docker](https://www.docker.com/), Python, [GitHub Actions](https://github.com/features/actions), [GitHub Pages](https://pages.github.com/).
