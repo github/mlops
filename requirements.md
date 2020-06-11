@@ -56,3 +56,25 @@ The problem we are trying to solve is we want to be able to curate all of the be
   - All youtube videos we supply via a csv/json list for the "Live Demos / Tutorials" page should appear as embedded in the site. 
   - For other pages we want to be able to update those with markdown.
   - **All work on this project must be done in this GitHub repo**
+  
+  
+  ----
+  
+  # Phase Two Requirements
+  
+  **Please Read Carefully**
+  
+  - Enable Search on every page, similar to [Just the docs](https://github.com/pmarsceill/just-the-docs)
+        - The search is fast because it is happening on the client side (this is the only option you have anyways because of static site)
+        - As you search, keywords are highlighted
+        - [lunr.js](https://lunrjs.com/) might be helpful.  I have used this project for [fastpages](https://github.com/fastai/fastpages/blob/master/_pages/search.html)
+        
+  - Implement **ALL** the features of [Just The Docs navigation](https://pmarsceill.github.io/just-the-docs/docs/navigation-structure/)
+        - Ordering pages
+        - Exluding pages
+        - Pages with children
+            - child pages
+            - Auto generating Table of Contents
+            - children with children
+        - Auxilary Navigation
+        - In page navigation with Table of Contents
