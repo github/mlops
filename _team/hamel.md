@@ -12,7 +12,7 @@ Throughout my history as a data scientist, one of the things I have been most fr
 
 This led me to develop a keen interest in creating tools that can mimize toil for data scientists, and make the process of prototyping, developing, scaling, testing and measuring data products easier.
 
-I've worked on machine learning infrastructure at [DataRobot](https://www.datarobot.com/) [Airbnb](https://www.airbnb.com/), and [github](https://github.com/).
+I've worked on machine learning infrastructure at [DataRobot](https://www.datarobot.com/), [Airbnb](https://www.airbnb.com/), and [GitHub](https://github.com/).
 
 ### Who have you learned from or been inspired by?
 
