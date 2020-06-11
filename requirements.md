@@ -70,11 +70,11 @@ The problem we are trying to solve is we want to be able to curate all of the be
         - [lunr.js](https://lunrjs.com/) might be helpful.  I have used this project for [fastpages](https://github.com/fastai/fastpages/blob/master/_pages/search.html)
         
   - Implement **ALL** the features of [Just The Docs navigation](https://pmarsceill.github.io/just-the-docs/docs/navigation-structure/)
-        - Ordering pages
-        - Exluding pages
-        - Pages with children
-            - child pages
-            - Auto generating Table of Contents
-            - children with children
-        - Auxilary Navigation
-        - In page navigation with Table of Contents
+    - Ordering pages
+    - Exluding pages
+    - Pages with children
+        - child pages
+        - Auto generating Table of Contents
+        - children with children
+    - Auxilary Navigation
+    - In page navigation with Table of Contents
