@@ -1,9 +1,15 @@
 - title: fastai/fastpages
   info: An easy to use blogging platform, with support for Jupyter notebooks, Word docs, and Markdown.
   link: "https://github.com/fastai/fastpages"
-  tags: [fastpages]
+  tags: [fastpages, Templates]
 
 - title: ML Ops with GitHub Actions and Azure Machine Learning
   link: https://github.com/machine-learning-apps/ml-template-azure
   info: This template can be used for easily setting up a data science or machine learning project with automated training and deployment using GitHub Actions and Azure Machine Learning
-  tags: [GitHub Actions, Azure]
+  tags: [GitHub Actions, Azure, Templates]
+
+
+- title: Self Hosted GitHub Actions on Kubernetes With Only Three Commands
+  link: https://github.com/machine-learning-apps/self-hosted-k8s-runner
+  info: Host your own Actions runner on the infrastructure of your choice on Kubernetes.  This is useful for allowing GitHub Actions to interface with your on-premise or enterprise infrastructure.
+  tags: [Kubernetes, Self Hosted, Projects]
