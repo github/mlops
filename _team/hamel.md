@@ -14,10 +14,6 @@ This led me to develop a keen interest in creating tools that can mimize toil fo
 
 I've worked on machine learning infrastructure at [DataRobot](https://www.datarobot.com/), [Airbnb](https://www.airbnb.com/), and [GitHub](https://github.com/).
 
-### Who have you learned from or been inspired by?
-
-I learned a great deal from past and former colleagues at [places that I have worked](https://www.linkedin.com/in/hamelhusain/).  I've also learned a great deal from the [fastai community](https://www.fast.ai/), both as a student and a contributor.
-
 ### Other Projects
 
 You can find more information on my other projects and interests on [my page](http://hamel.io/)
