@@ -3,6 +3,7 @@ layout     : docs
 permalink  : /docs/
 title      : Documentation
 description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas voluptatum libero dignissimos reprehenderit doloribus, deserunt voluptatem nostrum repellat ab a cumque vitae reiciendis ut alias explicabo dolorem blanditiis, quisquam fuga. Dolores possimus aut perferendis enim unde architecto, debitis nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error at deleniti nulla voluptate eligendi iste modi, asperiores possimus architecto consectetur in dolore cum illum maxime neque molestias aspernatur culpa odio? "
+image     : "/assets/images/Documentation.png"
 ---
 
 ## Migrating
