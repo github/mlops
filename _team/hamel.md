@@ -20,8 +20,8 @@ I learned a great deal from past and former colleagues at [places that I have wo
 
 ### Other Projects
 
-You can find more information on my other projects and interests on [my website](http://hamel.io/)
+You can find more information on my other projects and interests on [my page](http://hamel.io/)
 
 ### Favorite tools
 
-Bash Scripting, VSCode, Jupyter, [Keras](https://keras.io/), [Altair](https://altair-viz.github.io/), [fastai](https://github.com/fastai/fastai), [Docker](https://www.docker.com/), Python, [GitHub Actions](https://github.com/features/actions), [GitHub Pages](https://pages.github.com/).
+Bash Scripting, VSCode, Jupyter, Keras, Altair, fastai, Docker, Python, GitHub Actions, GitHub Pages.
