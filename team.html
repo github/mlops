@@ -1,10 +1,10 @@
 ---
-layout     : default
-title      : Meet the team
-description: |
-  There is a growing team that maintains and builds the assets you find on this site.
-  Keep an eye on the <a href='https://github.com/about/careers'>GitHub Careers page</a> if you are interested in working with us.
-image      : "/assets/images/GitHub-for-teams.png"
+layout : default
+title : Meet the team
+description: "There is a growing team that maintains and builds the assets you find on this site.
+Keep an eye on the <a href='https://github.com/about/careers'>GitHub Careers page</a> if you are interested in working
+with us."
+image : "/assets/images/GitHub-for-teams.png"
 ---
 <section class="intro team_intro">
   <div class="image_box">
@@ -21,10 +21,12 @@ image      : "/assets/images/GitHub-for-teams.png"
   <div class="team_item">
     <a class="author_img_box" href="https://github.com/{{author.nick}}">
       <img class="author_image" src="{{author.image}}" alt="{{ author.title }}">
+      <p class="author_nick">
+        @{{author.nick}}
+      </p>
     </a>
     <div class="text_box">
       <h2>{{ author.title }}</h2>
-      <a href="https://github.com/{{author.nick}}">@{{author.nick}}</a>
       {{author.content}}
     </div>
   </div>

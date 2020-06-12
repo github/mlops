@@ -176,9 +176,6 @@ li {
       &:hover {
         background: darken($background-color, 2%);
       }
-      .author_image {
-        width: 100%;
-      }
     }
   }
 }
@@ -207,16 +204,6 @@ li {
       left: 0;
       transform: rotate(180deg);
     }
-    img {
-      display: block;
-      margin: auto;
-      border: 3px solid $brand-color;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-    }
     &:nth-child(even) {
       direction: rtl;
     }
@@ -232,6 +219,27 @@ li {
   width: 100%;
   height: fit-content;
   position: relative;
+  .author_image {
+    display: block;
+    margin: auto;
+    border: 3px solid $brand-color;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .author_nick {
+    margin: 0 auto;
+    padding: 10px 0 10px 30px;
+    width: max-content;
+    background-image: url("/assets/images/favicon-32.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 24px auto;
+    font-size: 20px;
+    direction: ltr;
+  }
 }
 
 .shape {
@@ -274,6 +282,12 @@ li {
   }
   p {
     margin: 0;
+  }
+}
+.social-media-list {
+  svg {
+    fill: $text-color-s;
+    vertical-align: middle;
   }
 }
 /* Document style */
