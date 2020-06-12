@@ -16,7 +16,7 @@ Throughout my history as a data scientist, I have been most frustrated by the la
 
 This led me to develop a keen interest in creating tools that can mimize toil for data scientists, and make the process of prototyping, developing, scaling, testing and measuring data products easier.
 
-You can find more information on my other projects and interests on [my page](http://hamel.io/)
+You can find more information on my other projects and interests on [my page](http://hamel.io/).
 
 ### Favorite tools
 
