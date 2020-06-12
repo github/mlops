@@ -13,9 +13,9 @@
   link : "/examples"
   icon : "https://ghicons.github.com/assets/images/blue/svg/Collection.svg"
 
-- title: Tutorials
+- title: Talks
   info : Recorded talks, demos and tutorials.
-  link : "/tutorials"
+  link : "/talks"
   icon : "https://ghicons.github.com/assets/images/blue/svg/Enterprise%20Observability.svg" 
 
 - title: Docs
