@@ -1,8 +1,8 @@
 title: Machine Learning Ops
 subtitle: Use GitHub to facilitate automation, collaboration and reproducibility in your machine learning workflows.
-email: support@github.com
+email: ""
 description: >- 
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis modi vero placeat, voluptatem tempore temporibus nulla quos provident architecto saepe quasi voluptates nesciunt impedit ipsum veritatis delectus nostrum rem. 
+ A collection of resources on how to facilitate Machine Learning Ops with GitHub.
 logo: "/assets/images/Data-driven-recommendations.png"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mlops-github.com" # the base hostname & protocol for your site, e.g. http://example.com

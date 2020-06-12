@@ -4,7 +4,7 @@
   icon : "https://ghicons.github.com/assets/images/blue/svg/issue.svg"
 
 - title: GitHub Actions
-  info : A collection of Open Source GitHub Actions that facilitate ML Ops.
+  info : A collection of open source GitHub Actions that facilitate ML Ops.
   link : "/actions"
   icon : "https://ghicons.github.com/assets/images/blue/svg/Actions.svg"
 
@@ -14,7 +14,7 @@
   icon : "https://ghicons.github.com/assets/images/blue/svg/Collection.svg"
 
 - title: Tutorials
-  info : Recorded demos and tutorials.
+  info : Recorded talks, demos and tutorials.
   link : "/tutorials"
   icon : "https://ghicons.github.com/assets/images/blue/svg/Enterprise%20Observability.svg" 
 
@@ -24,6 +24,6 @@
   icon : "https://ghicons.github.com/assets/images/blue/svg/Documentation.svg"
 
 - title: Team
-  info : Meet the team that works on this content.
+  info : More information about the team that works on MLOps at GitHub.
   link : "/team"
   icon : "https://ghicons.github.com/assets/images/blue/svg/GitHub%20for%20teams.svg" 
