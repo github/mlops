@@ -6,10 +6,15 @@
 - title: ML Ops with GitHub Actions and Azure Machine Learning
   link: https://github.com/machine-learning-apps/ml-template-azure
   info: This template can be used for easily setting up a data science or machine learning project with automated training and deployment using GitHub Actions and Azure Machine Learning
-  tags: [GitHub Actions, Azure, Templates]
+  tags: [Azure, Templates]
 
 
 - title: Self Hosted GitHub Actions on Kubernetes With Only Three Commands
   link: https://github.com/machine-learning-apps/self-hosted-k8s-runner
   info: Host your own Actions runner on the infrastructure of your choice on Kubernetes.  This is useful for allowing GitHub Actions to interface with your on-premise or enterprise infrastructure.
   tags: [Kubernetes, Self Hosted, Projects]
+
+- title: Covid19 Dashboards, powered by GitHub Actions & GitHub Pages
+  link: https://github.com/github/covid19-dashboard
+  info: Use Jupyter notebooks to publish a dashboard that is automatically refreshed with GitHub Actions.  Uses fastpages to convert notebooks into interactive dashboards.
+  tags: [fastpages, Jupyter]
