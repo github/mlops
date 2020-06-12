@@ -1,44 +1,49 @@
-- title: "Submit Argo Workflows on GKE "
-  info : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore cum vel nesciunt distinctio nobis"
+- title: "Submit Argo Workflows To GKE "
+  info : "Instantiate machine learning pipelines using Argo on Google Kubernetes Engine."
   link : "https://github.com/marketplace/actions/submit-argo-workflows-to-gke"
-  tags : [MLOps, Machine Learning, Data Science]
+  tags : [Kubernetes, Google-Cloud, Argo]
 
 - title: "Submit Argo Workflows on K8s (Cloud agnostic)"
-  info : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore cum vel nesciunt distinctio nobis
+  info : "Instantiate machine learning pipelines using Argo on any Kubernetes cluster.  This action is cloud agnostic."
   link : "https://github.com/marketplace/actions/submit-argo-workflows-from-github"
-  tags : [Machine Learning, Data Science]
+  tags : [Kubernetes, Argo]
 
-- title: "Fetch runs from Weights & Biases"
-  info : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore cum vel nesciunt distinctio nobis
+- title: "Fetch metrics from Weights & Biases"
+  info : Retrieve model metrics and metadata from Weights & Biases.  You can use this for automated testing and reporting in pull requests.
   link : "https://github.com/marketplace/actions/get-runs-from-weights-biases"
-  tags: [actions]
+  tags: ["Experiment Tracking"]
 
-- title: "To compile, deploy and run Kubeflow pipeline"
-  info : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore cum vel nesciunt distinctio nobis
+- title: "Compile, deploy and run Kubeflow pipelines"
+  info : Launch Kubeflow pipelines on Google Cloud.
   link : "https://github.com/marketplace/actions/kubeflow-compile-deploy-and-run"
-  tags: [kubeflow]
+  tags: [Kubeflow]
   
 - title: "Dockerize GitHub repositories automatically as a Jupyter Server"
-  info : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore cum vel nesciunt distinctio nobis
+  info : Automatically Dockerize GitHub repos and serve their contents with the appropriate dependencies with Jupyter or R-Markdown.  Can optionally be used in a complimentary way with mybinder.org
   link : "https://github.com/machine-learning-apps/repo2docker-action"
-  tags: [repo2docker]
+  tags: [Jupyter]
 
-- title: aml-workspace
-  link : https://github.com/marketplace/actions/azure-machine-learning-workspace) - creates an Azure Machine Learning workspace.
-  tags: [marketplace]
+- title: Create Azure ML Workspace
+  link : https://github.com/marketplace/actions/azure-machine-learning-workspace
+  info:  Creates an Azure Machine Learning workspace.
+  tags: [Azure]
 
-- title:  aml-compute
+- title:  Manage Azure Compute Resources
   link : "https://github.com/marketplace/actions/azure-machine-learning-compute-action"
-  info : Manage Azure Compute Resources.
+  info : Create, destroy and modify Azure compute resources.
+  tags: [Azure]
 
-- title:  aml-run
+- title:  Azure ML Run Jobs
   link : "https://github.com/marketplace/actions/azure-machine-learning-run-action"
   info : Run a training job, experiment or pipeline on Azure.
+  tags: [Azure]
 
-- title:  aml-registermodel
+- title:  Azure ML Register Models
   link : "https://github.com/marketplace/actions/azure-machine-learning-register-model-action"
   info: Register a model on Azure Machine Learning.
+  tags: [Azure]
 
-- title:  aml-deploy
+- title:  Azure ML Deploy Models
   linr : "https://github.com/marketplace/actions/azure-machine-learning-deploy-action"
-  info: Deploy a model to AKS or ACI.
+  info: Deploy a model to AKS or ACI for inference.
+  tags: [Azure]
