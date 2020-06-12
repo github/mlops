@@ -6,14 +6,8 @@ image: "/assets/images/michal.png"
 card_bg: "/assets/images/pngfuel.com (2).png"
 ---
 
-### What drew you into design systems?
+### About Me
 
-Over the decades, my primary expertise has slowly migrated from back-end development to front-end. I've always had an interest in design, and working on design systems allows me to explore that interest while continuing to leverage my expertise in front-end engineering.
+I am currently a Staff Data Engineer at GitHub. Prior to GitHub, I was the technical lead of the OpenStack Kolla project and a senior cloud software engineer at Intel.
 
-### Who have you learned from or been inspired by?
-
-The constant shifts in front-end programming over the years and an intrinsic desire to learn have always been a driving factor in my own exploration of computer programming. I'm fortuante to work with a huge number of talented engineers and designers at GitHub, which is very inspiring and very rewarding.
-
-### Favorite tools
-
-Vim, Photoshop, Blender, and a good, old-fashioned shell prompt.
+I am an open source fanatic and enthusiast of all things cloud.
