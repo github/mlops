@@ -64,7 +64,7 @@ The problem we are trying to solve is we want to be able to curate all of the be
   
   **Please Read Carefully**
   
-  - Enable Search on every page, similar to [Just the docs](https://github.com/pmarsceill/just-the-docs)
+  - Enable Search on the documentation section of the website, similar to [Just the docs](https://github.com/pmarsceill/just-the-docs)
         - The search is fast because it is happening on the client side (this is the only option you have anyways because of static site)
         - As you search, keywords are highlighted
         - [lunr.js](https://lunrjs.com/) might be helpful.  I have used this project for [fastpages](https://github.com/fastai/fastpages/blob/master/_pages/search.html)
