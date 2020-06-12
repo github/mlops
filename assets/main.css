@@ -336,8 +336,6 @@ li { margin: 0; }
 
 .content .content_grid .content_item:hover { background: #171a1d; }
 
-.content .content_grid .content_item .author_image { width: 100%; }
-
 .team_grid { display: grid; gap: 4rem; }
 
 .team_grid h1, .team_grid h2, .team_grid h3 { color: #2a7ae2; }
@@ -348,13 +346,15 @@ li { margin: 0; }
 
 .team_grid .team_item svg { position: absolute; fill: #2188ff; width: 100%; top: 0; left: 0; transform: rotate(180deg); }
 
-.team_grid .team_item img { display: block; margin: auto; border: 3px solid #2a7ae2; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; }
-
 .team_grid .team_item:nth-child(even) { direction: rtl; }
 
 .team_grid .team_item .text_box { direction: ltr; }
 
 .author_img_box { top: 15px; display: block; width: 100%; height: fit-content; position: relative; }
+
+.author_img_box .author_image { display: block; margin: auto; border: 3px solid #2a7ae2; border-radius: 50%; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; }
+
+.author_img_box .author_nick { margin: 0 auto; padding: 10px 0 10px 30px; width: max-content; background-image: url("/assets/images/favicon-32.png"); background-repeat: no-repeat; background-position: left center; background-size: 24px auto; font-size: 20px; direction: ltr; }
 
 .shape { position: absolute; top: 0; left: 0; width: 100%; }
 
@@ -378,6 +378,8 @@ li { margin: 0; }
 .footer_wrapper .footer-heading { padding: 15px; }
 
 .footer_wrapper p { margin: 0; }
+
+.social-media-list svg { fill: #c8ffff; vertical-align: middle; }
 
 /* Document style */
 .doc_page .docs { display: grid; grid-template-columns: 1fr; grid-template-rows: auto; grid-template-areas: "top" "middle" "bottom"; background: #ffffff; color: #1b1f23; }
