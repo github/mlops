@@ -1,17 +1,13 @@
 ---
 title: Markdown Here
 description: Markdown Here is a Google Chrome, Firefox, Safari, Opera, and Thunderbird extension that lets you write email<sup>&dagger;</sup> in Markdown<sup>&Dagger;</sup> and render them before sending. It also supports syntax highlighting (just specify the language in a fenced code block).
-titles:
-- Markdown Here
-- Table of Contents
-- Installation Instructions
-- Manual/Development
-- Mozilla Add-ons site
-- Things to know about converting/reverting a selection
-- Next Steps
+
 tags: [markdown, opera, github]
 order_n:  2
 ---
+
+* TOC
+{:toc}
 
 [**Visit the website.**](http://markdown-here.com)<br>
 [**Get it for Chrome.**](https://chrome.google.com/webstore/detail/elifhakcjgalahccnjkneoccemfahfoa)<br>
@@ -32,26 +28,21 @@ To discover what can be done with Markdown in *Markdown Here*, check out the [Ma
 
 ![screenshot of conversion](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image1.gimp.png)
 
-### Table of Contents
-**[Installation Instructions](#installation-instructions)**<br>
-**[Usage Instructions](#usage-instructions)**<br>
-**[Troubleshooting](#troubleshooting)**<br>
-**[Compatibility](#compatibility)**<br>
-**[Notes and Miscellaneous](#notes-and-miscellaneous)**<br>
-**[Building the Extension Bundles](#building-the-extension-bundles)**<br>
-**[Next Steps, Credits, Feedback, License](#next-steps)**<br>
 
 ## Installation Instructions
 
 ### Chrome
+{: .no_toc}
 
 #### Chrome Web Store
+{: .no_toc}
 
 Go to the [Chrome Web Store page for *Markdown Here*](https://chrome.google.com/webstore/detail/elifhakcjgalahccnjkneoccemfahfoa) and install normally.
 
 After installing, make sure to reload your webmail or restart Chrome!
 
 #### Manual/Development
+{: .no_toc}
 
 1. Clone this repo.
 2. In Chrome, open the Extensions settings. (Wrench button, Tools, Extensions.)
@@ -61,8 +52,10 @@ After installing, make sure to reload your webmail or restart Chrome!
 6. Reload your webmail page (and maybe application) before trying to convert an email.
 
 ### Firefox and Thunderbird
+{: .no_toc}
 
 #### Mozilla Add-ons site
+{: .no_toc}
 
 Go to the [Firefox Add-ons page for *Markdown Here*](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/) and install normally.
 
@@ -73,19 +66,23 @@ After installing, make sure to restart Firefox/Thunderbird!
 **Note:** It takes up to a month for Mozilla to approve changes to the Firefox/Thunderbird extension, so updates (features, fixes) will lag behind what is shown here. You can manually choose to install the newest version before it's reviewed from the list of versions: [https://addons.mozilla.org/en-US/firefox/addon/markdown-here/versions/](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/versions/)
 
 #### Manual/Development
+{: .no_toc}
 
 1. Clone this repo.
 2. Follow the instructions in the MDN ["Setting up an extension development environment"](https://developer.mozilla.org/en/Setting_up_extension_development_environment) article.
 
 ### Safari
+{: .no_toc}
 
 [Download the extension directly.](https://s3.amazonaws.com/markdown-here/markdown-here.safariextz) When it has finished downloading, double click it to install.
 
 #### Preferences
+{: .no_toc}
 
 To get to the Markdown Here preferences, open the Safari preferences and then go to the "Extensions" tab. Then click the "Click me to show Markdown Here options" box.
 
 ### Opera
+{: .no_toc}
 
 Note that *Markdown Here* only works with Opera versions 16 and higher (i.e., the ones that are based on Chromium).
 
@@ -117,6 +114,7 @@ Install it, and then…
 7. Send your awesome email to everyone you know. It will appear to them the same way it looks to you.
 
 ### Revert to Markdown
+{: .no_toc}
 
 After rendering your Markdown to pretty HTML, you can still get back to your original Markdown. Just right-click anywhere in the newly rendered Markdown and click "Markdown Toggle" -- your email compose body will change back to the Markdown you had written.
 
@@ -125,12 +123,14 @@ Note that any changes you make to the pretty HTML will be lost when you revert t
 In Gmail, you can also use the browser's Undo command (<kbd>CTRL</kbd>+<kbd>Z</kbd> / <kbd>CMD</kbd>+<kbd>Z</kbd>, or from the Edit menu). Be warned that you might also lose the last few characters you entered.
 
 ### Replies
+{: .no_toc}
 
 In Gmail, Thunderbird, and Google Groups, you can use "Markdown Toggle" normally: just write your reply (top, bottom, inline, wherever) and then convert. The original email that you're replying to will be left alone. (Technically: Existing `blockquote` blocks will be left intact.)
 
 In Hotmail and Yahoo (which don't put the original in a `blockquote`), and optionally in Gmail, Thunderbird, and Google Groups, you can ensure that only the part of the reply that you wrote gets converted by selecting what you want to convert and then clicking "Markdown Toggle" -- see the next section.
 
 ### Selection/Piecemeal Conversion
+{: .no_toc}
 
 Sometimes you don't want to convert the entire email; sometimes your email isn't entirely Markdown. To convert only part of the email, select the text (with your mouse or keyboard), right-click on it, and click the "Markdown Toggle" menu item. Your selection is magically rendered into pretty HTML.
 
@@ -139,6 +139,7 @@ To revert back to Markdown, just put your cursor anywhere in the block of conver
 ![screenshot of selection conversion](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image2.gimp.png)
 
 #### Things to know about converting/reverting a selection
+{: .no_toc}
 
 * If you select only part of a block of text, only that text will be converted. The converted block will be wrapped in a paragraph element, so the original line will be broken up. You probably don't want to ever do this.
 
@@ -147,6 +148,7 @@ To revert back to Markdown, just put your cursor anywhere in the block of conver
 * If you don't have anything selected when you click "Markdown Toggle", *Markdown Here* will check if there are converted blocks anywhere in the message and revert them. If there no converted blocks are found, it will convert the entire email.
 
 ### Options
+{: .no_toc}
 
 The *Markdown Here* Options page can be accessed via the Chrome, Firefox, Safari, or Thunderbird extensions list. The available options include:
 
@@ -198,6 +200,7 @@ node build.js
 
 
 ### Chrome and Opera extension
+{: .no_toc}
 
 Create a file with a `.zip` extension containing these files and directories:
 
@@ -208,6 +211,7 @@ chrome/
 ```
 
 ### Firefox/Thunderbird extension
+{: .no_toc}
 
 Create a file with a `.xpi` extension containing these files and directories:
 
@@ -219,6 +223,7 @@ firefox/
 ```
 
 ### Safari extension
+{: .no_toc}
 
 The browser-specific code is located in the [`markdown-here-safari`](https://github.com/adam-p/markdown-here-safari) project.
 
@@ -247,14 +252,17 @@ All bugs, feature requests, pull requests, feedback, etc., are welcome. [Create 
 ## License
 
 ### Code
+{: .no_toc}
 
 MIT License: http://adampritchard.mit-license.org/ or see [the `LICENSE` file](https://github.com/adam-p/markdown-here/blob/master/LICENSE).
 
 ### Logo
+{: .no_toc}
 
 Copyright 2015, [Austin Anderson](http://protractor.ninja/). Licensed to Markdown Here under the [MDH contributor license agreement](https://github.com/adam-p/markdown-here/blob/master/CLA-individual.md).
 
 ### Other images
+{: .no_toc}
 
 [Creative Commons Attribution 3.0 Unported (CC BY 3.0) License](http://creativecommons.org/licenses/by/3.0/)
 

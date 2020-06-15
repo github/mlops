@@ -2,14 +2,16 @@
 layout: document
 title:  "Welcome to Jekyll!"
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-titles:
-- Code snippets
-- Check out the Jekyll docs
+
 date:   2019-12-30 08:40:50 +0200
 categories: jekyll update
 order_n: 6
 tags: [jekyll, code]
 ---
+
+* TOC
+{:toc}
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 Jekyll requires blog post files to be named according to the following format:
