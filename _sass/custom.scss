@@ -269,6 +269,13 @@ li {
 .hidden {
   display: none;
 }
+.rot45 {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
 .site-footer {
   margin-top: 30px;
 }
@@ -309,6 +316,11 @@ li {
     .sidebar_left {
       grid-area: bottom;
       padding: 20px;
+      .toggle_sub {
+        display: inline-block;
+        cursor: pointer;
+        color: $brand-color;
+      }
       nav {
         top: 180px;
         position: sticky;
@@ -323,7 +335,26 @@ li {
               color: $sidebar-hover;
             }
           }
+          .active {
+            font-weight: 700;
+          }
         }
+        .active {
+          font-weight: 700;
+          a {
+            color: $sidebar-color;
+          }
+        }
+      }
+      .sub_menu {
+        a {
+          color: $text-color-t;
+          font-weight: normal;
+          margin-left: 20px;
+        }
+      }
+      .active > .sub_menu {
+        display: block;
       }
     }
     .document {
@@ -377,6 +408,18 @@ li {
   }
 }
 
+#markdown-toc {
+  font-size: 14px;
+  &::before {
+    content: "Table of contents";
+    font-size: 24px;
+  }
+}
+.highlighter-rouge {
+  max-width: 90vw;
+  overflow-x: auto;
+}
+
 /* media queries */
 @media screen and (min-width: 768px) {
   .blog_intro {
@@ -415,6 +458,14 @@ li {
 }
 
 @media screen and (min-width: 1024px) {
+  .highlighter-rouge {
+    max-width: 60vw;
+  }
+  .aside_nav {
+    overflow-y: auto;
+    max-height: 75vh;
+  }
+
   .doc_page .docs {
     width: 100%;
     display: grid;
@@ -434,7 +485,6 @@ li {
     .document {
       grid-area: c;
       display: grid;
-      grid-template-columns: 1fr 260px;
       h1,
       h2 {
         padding-top: 30px;
@@ -490,6 +540,21 @@ li {
   }
 }
 @media screen and (min-width: 1440px) {
+  .document {
+    grid-template-columns: 1fr 260px;
+  }
+  .highlighter-rouge {
+    max-width: 55vw;
+  }
+  #markdown-toc {
+    position: fixed;
+    width: 170px;
+    word-wrap: anywhere;
+    max-height: 50vh;
+    overflow-y: auto;
+    top: 200px;
+    right: 30px;
+  }
   .site-header .navbar .navigation {
     display: flex;
     position: relative;

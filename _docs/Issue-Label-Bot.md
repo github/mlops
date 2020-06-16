@@ -2,48 +2,24 @@
 title: Issue Label Bot
 description: A GitHub App powered by machine learning, written in Python.  A discussion of the motivation for building this app is described in this blog.  
 
-titles:
-- Important links
-- Files
-- Prerequisites
-- Environment Variables
-- Run Locally
-- Deploy As A Service
-- Contributing
-tags: [markdown, opera, github]
 order_n:  1
 ---
+
+* TOC
+{:toc}
 
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/) [![License: MIT](https://img.shields.io/badge/License-MIT-darkgreen.svg)](https://opensource.org/licenses/MIT)
 [![Install App](https://img.shields.io/badge/GitHub%20Marketplace-Install%20App-blueviolet.svg?logo=github)](https://github.com/marketplace/issue-label-bot)
 
 
-
-
-[blog]: https://medium.com/@hamelhusain/mlapp-419f90e8f007?source=friends_link&sk=760e18a2d6e60999d7eb2887352a92a8
+[blog]: (https://medium.com/@hamelhusain/mlapp-419f90e8f007?source=friends_link&sk=760e18a2d6e60999d7eb2887352a92a8)
 
 ##### Code for: ["How to automate tasks on GitHub with machine learning for fun and profit"][blog]
-
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-Table of Contents
-
-- [Issue-Label Bot](#issue-label-bot)
-	- [Important links](#important-links)
-	- [Files](#files)
-- [Running This Code](#running-this-code)
-	- [Environment Variables](#environment-variables)
-	- [Run Locally](#run-locally)
-	- [Deploy As A Service](#deploy-as-a-service)
-- [Contributing](#contributing)
-	- [Roadmap](#roadmap)
-	- [References](#references)
-- [Disclaimers](#disclaimers)
-
-<!-- /TOC -->
+{:.no_toc}
 
 Original Authors: [@hamelsmu](https://github.com/hamelsmu), [@inc0](https://github.com/inc0), [@jlewi](https://github.com/jlewi)
 
- <h1><img src="https://github.com/machine-learning-apps/MLapp/blob/master/images/Issue-Label-Bot7.png" width="100" height="100">Issue Label Bot</h1>
+ <h1><img src="https://github.com/machine-learning-apps/MLapp/raw/master/images/Issue-Label-Bot7.png" width="100" height="100">Issue Label Bot</h1>
 
 **Install this app [from the GitHub marketplace](https://github.com/marketplace/issue-label-bot)**
 
@@ -51,7 +27,7 @@ A GitHub App powered by machine learning, written in Python.  A discussion of th
 
 When an issue is opened, the bot predicts if the label should be a: `feature request`, `bug` or `question` and applies a label automatically if appropriate. Here is a screenshot of the bot in action:
 
-> ![alt text](images/example4_big.png)
+![alt text](https://github.com/machine-learning-apps/Issue-Label-Bot/blob/master/images/example4_big.png?raw=true)
 
 
 

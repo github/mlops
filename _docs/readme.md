@@ -2,20 +2,20 @@
 layout: document
 title: Read Me
 description: Create a Jekyll generated Static Site according to the following design specification. Provide me the Jekyll code and I will take care of creating and hosting it on my GitHub Pages repository.
-titles:
-- Request
-- What I want to achieve
-- Design
-- Advanced features of this site which are not needed
+
 order_n: 0
 tags: [jekyll]
 ---
+
+* TOC
+{:toc}
 
 # Request:
 
 Create a Jekyll generated Static Site according to the following design specification. Provide me the Jekyll code and I will take care of creating and hosting it on my GitHub Pages repository.
 
 ### What I want to achieve:
+{: .no_toc}
 
 This is a site primarily for writing content such as software instructions or lecture notes. I would like to easily sort content (posts) by category or date. Content should be written in markdown and I only want to store content in the "_posts" folder (no pages such as "About Me" are needed).
 
@@ -25,6 +25,7 @@ It is important to use **as little code as possible** to achieve this design. I 
 The design should match [this site](https://www.jetbrains.com/help/pycharm) by Jetbrains as closely as possible. Layout should react the same way as this site does to a pc screen or smarthphone, especially the left menu. Same formatting of links. 
 
 ### Sections that are needed:
+{: .no_toc}
 - A top bar with webpage title
 - A search box also shown in the top bar
 - A left menu showing post titles sorted by category or date. See below for further information (Left menu functionality is NB).
@@ -39,12 +40,14 @@ I need the following **markdown features** to be processed similar to the above 
 - If possible: Python syntax highlighting supported by GFM and also shown [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ### Advanced features of this site which are not needed:
+{: .no_toc}
 - The right column showing Header titles of the current page.
 - When using a smartphone, the left menu shows the header titles of current page under the term "On this page"
 - Previous post and Next Post
 
 
 ### Parameters 
+{: .no_toc}
 Parameters should be kept in the main jekyll config file:
 - Title
 - Website address, if not using the default '___.github.io/"
