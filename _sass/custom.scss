@@ -269,12 +269,20 @@ li {
 .hidden {
   display: none;
 }
-.rot45 {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
+.rot180 {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.active
+.rot180 {
+  transform: rotate(0) translateY(7px);
+  -webkit-transform: rotate(0) translateY(7px);
+  -moz-transform: rotate(0) translateY(7px);
+  -ms-transform: rotate(0) translateY(7px);
+  -o-transform: rotate(0) translateY(7px);
 }
 .site-footer {
   margin-top: 30px;
@@ -337,6 +345,9 @@ li {
           }
           .active {
             font-weight: 700;
+            * {
+            color: $sidebar-color;
+            }
           }
         }
         .active {
