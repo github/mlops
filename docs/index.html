@@ -8,14 +8,14 @@
 <meta name="generator" content="Jekyll v4.1.0" />
 <meta property="og:title" content="Documentation" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas voluptatum libero dignissimos reprehenderit doloribus, deserunt voluptatem nostrum repellat ab a cumque vitae reiciendis ut alias explicabo dolorem blanditiis, quisquam fuga. Dolores possimus aut perferendis enim unde architecto, debitis nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error at deleniti nulla voluptate eligendi iste modi, asperiores possimus architecto consectetur in dolore cum illum maxime neque molestias aspernatur culpa odio?" />
-<meta property="og:description" content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas voluptatum libero dignissimos reprehenderit doloribus, deserunt voluptatem nostrum repellat ab a cumque vitae reiciendis ut alias explicabo dolorem blanditiis, quisquam fuga. Dolores possimus aut perferendis enim unde architecto, debitis nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error at deleniti nulla voluptate eligendi iste modi, asperiores possimus architecto consectetur in dolore cum illum maxime neque molestias aspernatur culpa odio?" />
+<meta name="description" content="A collection of docs that are relevant to MLOps with GitHub. Some of the information presented here may be duplicative or complimentary to what is presented on our site." />
+<meta property="og:description" content="A collection of docs that are relevant to MLOps with GitHub. Some of the information presented here may be duplicative or complimentary to what is presented on our site." />
 <link rel="canonical" href="https://mlops-github.com/docs/" />
 <meta property="og:url" content="https://mlops-github.com/docs/" />
 <meta property="og:site_name" content="Machine Learning Ops" />
 <meta property="og:image" content="https://mlops-github.com/assets/images/Documentation.png" />
 <script type="application/ld+json">
-{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://mlops-github.com/assets/images/Data-driven-recommendations.png"}},"description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas voluptatum libero dignissimos reprehenderit doloribus, deserunt voluptatem nostrum repellat ab a cumque vitae reiciendis ut alias explicabo dolorem blanditiis, quisquam fuga. Dolores possimus aut perferendis enim unde architecto, debitis nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error at deleniti nulla voluptate eligendi iste modi, asperiores possimus architecto consectetur in dolore cum illum maxime neque molestias aspernatur culpa odio?","@type":"WebPage","image":"https://mlops-github.com/assets/images/Documentation.png","url":"https://mlops-github.com/docs/","headline":"Documentation","@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://mlops-github.com/assets/images/Data-driven-recommendations.png"}},"description":"A collection of docs that are relevant to MLOps with GitHub. Some of the information presented here may be duplicative or complimentary to what is presented on our site.","@type":"WebPage","image":"https://mlops-github.com/assets/images/Documentation.png","url":"https://mlops-github.com/docs/","headline":"Documentation","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://mlops-github.com/feed.xml" title="Machine Learning Ops" /><script>
@@ -112,46 +112,26 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
     </div>
     <div class="text_box">
       <h1>Documentation</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas voluptatum libero dignissimos reprehenderit doloribus, deserunt voluptatem nostrum repellat ab a cumque vitae reiciendis ut alias explicabo dolorem blanditiis, quisquam fuga. Dolores possimus aut perferendis enim unde architecto, debitis nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error at deleniti nulla voluptate eligendi iste modi, asperiores possimus architecto consectetur in dolore cum illum maxime neque molestias aspernatur culpa odio? </p>
+      <p>A collection of docs that are relevant to MLOps with GitHub.  Some of the information presented here may be duplicative or complimentary to what is presented on <a href='https://mlops-github.com/'>our site</a>.</p>
     </div>
   </section>
 </div>
   <section class="docs_content">
-    <h2 id="migrating">Migrating</h2>
-<p>:rotating_light: <strong>If you currently use the <code class="language-plaintext highlighter-rouge">primer</code> or <code class="language-plaintext highlighter-rouge">primer-</code>-prefixed npm packages, please read <a href="MIGRATING.md">the migration guide</a>!</strong></p>
+    <h2 id="contributing">Contributing</h2>
 
-<h2 id="install">Install</h2>
-<p>This repository is distributed with <a href="https://www.npmjs.com/">npm</a>. After <a href="https://docs.npmjs.com/getting-started/installing-node">installing npm</a>, you can install <code class="language-plaintext highlighter-rouge">@primer/css</code> with this command:</p>
+<p>Contribution to this site and docs are welcome.  You can make pull requests or open issues <a href="https://github.com/machine-learning-apps/website">on this GitHub repo</a>.  If you are unsure on whether or not your content is appropriate for this site, please <a href="https://github.com/machine-learning-apps/website/issues/new/choose">open an issue</a>.</p>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm <span class="nb">install</span> <span class="nt">--save</span> @primer/css
-</code></pre></div></div>
+<h2 id="what-is-mlops">What is MLOps?</h2>
 
-<h2 id="usage">Usage</h2>
-<p>The included source files are written in <a href="http://sass-lang.com/">Sass</a> using SCSS syntax. After <a href="#install">installing</a> with npm, you can add your project’s <code class="language-plaintext highlighter-rouge">node_modules</code> directory to your Sass <a href="https://github.com/sass/node-sass#includepaths">include paths</a> (AKA <a href="http://technology.customink.com/blog/2014/10/09/understanding-and-using-sass-load-paths/">load paths</a> in Ruby), then import it like this:</p>
+<p>From <a href="https://en.wikipedia.org/wiki/MLOps">Wikipedia</a>:</p>
 
-<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@import</span> <span class="s2">"@primer/css/index.scss"</span><span class="p">;</span>
-</code></pre></div></div>
+<blockquote>
+  <p>MLOps (a compound of “machine learning” and “operations”) is a practice for collaboration and communication between data scientists and operations professionals to help manage production ML (or deep learning) lifecycle.[1] Similar to the DevOps or DataOps approaches, MLOps looks to increase automation and improve the quality of production ML while also focusing on business and regulatory requirements. While MLOps also started as a set of best practices, it is slowly evolving into an independent approach to ML lifecycle management. MLOps applies to the entire lifecycle - from integrating with model generation (software development lifecycle, continuous integration/continuous delivery), orchestration, and deployment, to health, diagnostics, governance, and business metrics.</p>
+</blockquote>
 
-<p>You can import individual Primer modules directly from the <code class="language-plaintext highlighter-rouge">@primer/css</code> package:</p>
+<h2 id="how-can-github-help-with-mlops">How Can GitHub Help With MLOps?</h2>
 
-<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@import</span> <span class="s2">"@primer/css/core/index.scss"</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s2">"@primer/css/product/index.scss"</span><span class="p">;</span>
-<span class="k">@import</span> <span class="s2">"@primer/css/marketing/index.scss"</span><span class="p">;</span>
-</code></pre></div></div>
-
-<h2 id="development">Development</h2>
-<p>See <a href="./DEVELOP.md">DEVELOP.md</a> for development docs.</p>
-
-<h2 id="releasing-for-github-staff">Releasing (for GitHub staff)</h2>
-<p>You can find docs about our release process in <a href="./RELEASING.md">RELEASING.md</a>.</p>
-
-<h2 id="documentation">Documentation</h2>
-<p>The <a href="https://primer.style/css">Primer CSS docs site</a> is deployed from this repo with <a href="https://github.com/primer/deploy">primer/deploy</a>. See <a href="DEVELOP.md#docs-site">the development docs</a> for more info.</p>
-
-<h2 id="license">License</h2>
-
-<p><a href="./LICENSE">MIT</a> © <a href="https://github.com/">GitHub</a></p>
-
+<p>There are a series of new and emerging features that can aid with MLOps.  Some feautres that are relevant incldue <a href="https://github.com/features/actions">Actions</a> and <a href="https://github.com/features/codespaces">CodeSpaces</a>.</p>
 
     <ul><li>
         <a href="/docs/readme.html">Read Me"</a>
