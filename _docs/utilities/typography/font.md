@@ -1,6 +1,6 @@
 ---
 title: Fonts
-parent: Typography
+parent: Typography rules
 grand_parent: UI Components
 order_n: 1
 ---

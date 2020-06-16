@@ -29,10 +29,10 @@ $(".tag_filter").click(function () {
   $(this).addClass('active');
 });
 
-$(".toggle_sub").click(function () {
+/* $(".toggle_sub").click(function () {
   $(this).toggleClass('rot45');
   $(this).next('ul').toggleClass('hidden');
-});
+}); */
 
 $(document).ready(function () {
   var sidebar = $(".aside_nav_link");
@@ -48,6 +48,7 @@ console.log("leng=" + l);
         var grandparent = parent.parentElement.parentElement;
         if (grandparent.classList.contains('sub_menu')) {
           grandparent.classList.remove("hidden");
+          grandparent.classList.add("active");
         }
         console.log(sidebar[i].text);
       }

@@ -9,7 +9,7 @@
       <li{% if page.title == item.title %} class="active"{% endif %}>
         <a class="aside_nav_link{% if page.title == item.title %} active"{% endif %}" href="{{item.url}}">{{item.title}}</a>
         {%- if item.has_children -%}
-        <span class="toggle_sub"> +</span>
+        <!-- <span class="toggle_sub"> +</span> -->
         {%- assign this = item.title -%}
         {% assign children = site.docs | where: "parent", this %}
 
@@ -19,7 +19,7 @@
             <a class="aside_nav_link {% if page.title == child.title %} active{% endif %}" href="{{child.url}}">{{child.title}}</a>
 
             {%- if child.has_children -%}
-            <span class="toggle_sub"> +</span>
+            <!-- <span class="toggle_sub"> +</span> -->
             {%- assign father_name = child.title -%}
             {%- assign grandfather_name = item.title -%}
             {% assign grandsons = site.docs | where: "parent", father_name | where: "grand_parent", grandfather_name %}

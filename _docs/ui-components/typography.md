@@ -1,12 +1,9 @@
 ---
-title: Typography
+title: Typography rules
 parent: UI Components
 has_children: true
 order_n: 1
 ---
-
-
-
 
 1. TOC
 {:toc}
