@@ -99,6 +99,9 @@ li {
         border-bottom: 2px solid $brand-color;
       }
     }
+    .hidden {
+      display: none;
+    }
   }
 }
 
@@ -332,7 +335,26 @@ li {
               color: $sidebar-hover;
             }
           }
+          .active {
+            font-weight: 700;
+          }
         }
+        .active {
+          font-weight: 700;
+          a {
+            color: $sidebar-color;
+          }
+        }
+      }
+      .sub_menu {
+        a {
+          color: $text-color-t;
+          font-weight: normal;
+          margin-left: 20px;
+        }
+      }
+      .active > .sub_menu {
+        display: block;
       }
     }
     .document {

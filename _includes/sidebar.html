@@ -1,28 +1,33 @@
 <aside class="sidebar_left">
   <nav>
     <h2>Sections</h2>
-    <ul class="aside_nav">
+
+    <ul class="aside_nav" id="aside_nav">
+
       {%- for item in site.docs -%}
       {%- if item.parent == nil -%}
-      <li>
-        <a href="{{item.url}}">{{item.title}}</a>
+      <li{% if page.title == item.title %} class="active"{% endif %}>
+        <a class="aside_nav_link{% if page.title == item.title %} active"{% endif %}" href="{{item.url}}">{{item.title}}</a>
         {%- if item.has_children -%}
         <span class="toggle_sub"> +</span>
         {%- assign this = item.title -%}
         {% assign children = site.docs | where: "parent", this %}
+
         <ul class="sub_menu hidden">
           {%- for child in children -%}
-          <li style="margin-left: 10px;">
-            <a href="{{child.url}}">- {{child.title}}</a>
+          <li{% if page.title == child.title %} class="active"{% endif %}>
+            <a class="aside_nav_link {% if page.title == child.title %} active{% endif %}" href="{{child.url}}">{{child.title}}</a>
+
             {%- if child.has_children -%}
             <span class="toggle_sub"> +</span>
             {%- assign father_name = child.title -%}
             {%- assign grandfather_name = item.title -%}
             {% assign grandsons = site.docs | where: "parent", father_name | where: "grand_parent", grandfather_name %}
+
             <ul class="sub_menu hidden">
               {%- for gs in grandsons -%}
-              <li style="margin-left: 10px;">
-                <a href="{{gs.url}}">--- {{gs.title}}</a>
+              <li{% if page.title == gs.title %} class="active"{% endif %} style="margin-left: 10px;">
+                <a class="aside_nav_link{% if page.title == gs.title %} active{% endif %}" href="{{gs.url}}">{{gs.title}}</a>
               </li>
               {%- endfor -%}
             </ul>
