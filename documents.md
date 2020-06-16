@@ -2,7 +2,7 @@
 layout     : docs
 permalink  : /docs/
 title      : Documentation
-description: "A collection of docs that are relevant to MLOps with GitHub.  Some of the information presented here may be duplicative or complimentary to what is presented on <a href='https://mlops-github.com/'>our site</a>."
+description: "A collection of docs that are relevant to MLOps with GitHub."
 image     : "/assets/images/Documentation.png"
 ---
 
