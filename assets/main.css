@@ -371,7 +371,9 @@ li { margin: 0; }
 
 .hidden { display: none; }
 
-.rot45 { transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); }
+.rot180 { transform: rotate(180deg); -webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); }
+
+.active .rot180 { transform: rotate(0) translateY(7px); -webkit-transform: rotate(0) translateY(7px); -moz-transform: rotate(0) translateY(7px); -ms-transform: rotate(0) translateY(7px); -o-transform: rotate(0) translateY(7px); }
 
 .site-footer { margin-top: 30px; }
 
@@ -401,6 +403,8 @@ li { margin: 0; }
 .doc_page .docs .sidebar_left nav ul a:hover { color: #1b3361; }
 
 .doc_page .docs .sidebar_left nav ul .active { font-weight: 700; }
+
+.doc_page .docs .sidebar_left nav ul .active * { color: #212f49; }
 
 .doc_page .docs .sidebar_left nav .active { font-weight: 700; }
 
