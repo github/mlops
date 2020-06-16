@@ -2,51 +2,20 @@
 layout     : docs
 permalink  : /docs/
 title      : Documentation
-description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas voluptatum libero dignissimos reprehenderit doloribus, deserunt voluptatem nostrum repellat ab a cumque vitae reiciendis ut alias explicabo dolorem blanditiis, quisquam fuga. Dolores possimus aut perferendis enim unde architecto, debitis nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error at deleniti nulla voluptate eligendi iste modi, asperiores possimus architecto consectetur in dolore cum illum maxime neque molestias aspernatur culpa odio? "
+description: "A collection of docs that are relevant to MLOps with GitHub.  Some of the information presented here may be duplicative or complimentary to what is presented on <a href='https://mlops-github.com/'>our site</a>."
 image     : "/assets/images/Documentation.png"
 ---
 
-## Migrating
-:rotating_light: **If you currently use the `primer` or `primer-`-prefixed npm packages, please read [the migration guide](MIGRATING.md)!**
+## Contributing
 
-## Install
-This repository is distributed with [npm]. After [installing npm][install-npm], you can install `@primer/css` with this command:
+Contribution to this site and docs are welcome.  You can make pull requests or open issues [on this GitHub repo](https://github.com/machine-learning-apps/website).  If you are unsure on whether or not your content is appropriate for this site, please [open an issue](https://github.com/machine-learning-apps/website/issues/new/choose).
 
-```sh
-$ npm install --save @primer/css
-```
+## What is MLOps?
 
-## Usage
-The included source files are written in [Sass] using SCSS syntax. After [installing](#install) with npm, you can add your project's `node_modules` directory to your Sass [include paths](https://github.com/sass/node-sass#includepaths) (AKA [load paths](http://technology.customink.com/blog/2014/10/09/understanding-and-using-sass-load-paths/) in Ruby), then import it like this:
+From [Wikipedia](https://en.wikipedia.org/wiki/MLOps):
 
-```scss
-@import "@primer/css/index.scss";
-```
+> MLOps (a compound of “machine learning” and “operations”) is a practice for collaboration and communication between data scientists and operations professionals to help manage production ML (or deep learning) lifecycle.[1] Similar to the DevOps or DataOps approaches, MLOps looks to increase automation and improve the quality of production ML while also focusing on business and regulatory requirements. While MLOps also started as a set of best practices, it is slowly evolving into an independent approach to ML lifecycle management. MLOps applies to the entire lifecycle - from integrating with model generation (software development lifecycle, continuous integration/continuous delivery), orchestration, and deployment, to health, diagnostics, governance, and business metrics.
 
-You can import individual Primer modules directly from the `@primer/css` package:
+## How Can GitHub Help With MLOps?
 
-```scss
-@import "@primer/css/core/index.scss";
-@import "@primer/css/product/index.scss";
-@import "@primer/css/marketing/index.scss";
-```
-
-## Development
-See [DEVELOP.md](./DEVELOP.md) for development docs.
-
-## Releasing (for GitHub staff)
-You can find docs about our release process in [RELEASING.md](./RELEASING.md).
-
-## Documentation
-The [Primer CSS docs site](https://primer.style/css) is deployed from this repo with [primer/deploy](https://github.com/primer/deploy). See [the development docs](DEVELOP.md#docs-site) for more info.
-
-## License
-
-[MIT](./LICENSE) &copy; [GitHub](https://github.com/)
-
-
-[install-npm]: https://docs.npmjs.com/getting-started/installing-node
-[npm]: https://www.npmjs.com/
-[primer]: https://primer.style
-[sass]: http://sass-lang.com/
-
+There are a series of new and emerging features that can aid with MLOps.  Some feautres that are relevant incldue [Actions](https://github.com/features/actions) and [CodeSpaces](https://github.com/features/codespaces).
