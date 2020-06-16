@@ -1,6 +1,7 @@
 ---
 title: fastpages
 parent: Jupyter
+order_n: 2
 permalink: /docs/fastpages
 ---
 

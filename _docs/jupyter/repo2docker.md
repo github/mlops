@@ -1,6 +1,7 @@
 ---
 title: repo2docker
 parent: Jupyter
+order_n: 1
 permalink: /docs/repo2docker
 ---
 
