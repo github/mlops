@@ -43,6 +43,10 @@ defaults:
     values:
       layout: "document"
 
+# markdown_extensions:
+#   - toc:
+#       baselevel: 2
+#       toc_depth : "2-3"
 
 google_analytics: UA-57531313-6
 

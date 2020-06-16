@@ -1,19 +1,14 @@
 ---
 layout: document
 title: Spectral Inference
-titles: 
-- Spectral Inference Networks (SpIN)
-- Prerequisites
-- Installation
-- Installation
-- Usage
-- Create variables for simple MLP
-- Create function to construct simple MLP
-- Squared exponential kernel.
 
 tags: [spectral, python, network]
 order_n:  5
 ---
+
+* TOC
+{:toc}
+
 ## Spectral Inference Networks (SpIN)
 
 This package provides an implementation of Spectral Inference Networks,

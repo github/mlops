@@ -2,9 +2,7 @@
 layout: document
 title: Sources for markdown
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae felis vitae leo ornare auctor. Aenean nec magna elementum, euismod lectus et, commodo magna. Nunc eget urna in nisl tempor rutrum a in augue.
-titles:
-- Sources for markdown
-- Heading One
+
 tags: [markdown, source]
 order_n: 3
 ---
@@ -17,6 +15,9 @@ Style inspiration for the site layout:
 
 https://www.jetbrains.com/help/pycharm/quick-start-guide.html
 
+* TOC
+{:toc}
+
 # Heading One
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae felis vitae leo ornare auctor. Aenean nec magna elementum, euismod lectus et, commodo magna. Nunc eget urna in nisl tempor rutrum a in augue.
 
@@ -27,11 +28,16 @@ Integer eu aliquet turpis. Sed ipsum diam, fermentum non leo et, imperdiet fauci
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae felis vitae leo ornare auctor. Aenean nec magna elementum, euismod lectus et, commodo magna. Nunc eget urna in nisl tempor rutrum a in augue.
 
 ### Heading Three
+{: .no_toc}
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae felis vitae leo ornare auctor. Aenean nec magna elementum, euismod lectus et, commodo magna. Nunc eget urna in nisl tempor rutrum a in augue.
 
 #### Heading Four
+{: .no_toc}
 ##### Heading Five
+{: .no_toc}
 ###### Heading Six
+{: .no_toc}
 
 Unordered list
 - This is a list 1
@@ -52,6 +58,7 @@ Indented list
 - Fourth item
 
 ### Underline
+{: .no_toc}
 
 Does it work?
 
@@ -60,6 +67,7 @@ Does it work?
 Yes it does.
 
 ### Blockquotes
+{: .no_toc}
 
 > Blockquotes are very handy
 > This line is part of the same quote.
@@ -78,6 +86,7 @@ Blockquotes can be nested
 >> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
 
 ### Code with syntax highlighting
+{: .no_toc}
 
 This is a test of `some inline code` and whether it formats `correctly`.
 
@@ -102,6 +111,7 @@ def f(x):
 ```
 
 ### Tables
+{: .no_toc}
 
 SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
 
