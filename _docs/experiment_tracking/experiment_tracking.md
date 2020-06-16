@@ -1,5 +1,5 @@
 ---
-title: Experiment-Tracking
+title: Experiment Tracking
 order_n: 4
 has_children: true
 permalink: /docs/experiment-tracking
