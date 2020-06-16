@@ -14,9 +14,9 @@
 <meta property="og:url" content="https://mlops-github.com/docs/Issue-Label-Bot.html" />
 <meta property="og:site_name" content="Machine Learning Ops" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-06-13T13:09:25-05:00" />
+<meta property="article:published_time" content="2020-06-16T11:02:47-05:00" />
 <script type="application/ld+json">
-{"datePublished":"2020-06-13T13:09:25-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mlops-github.com/docs/Issue-Label-Bot.html"},"description":"A GitHub App powered by machine learning, written in Python. A discussion of the motivation for building this app is described in this blog.","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://mlops-github.com/assets/images/Data-driven-recommendations.png"}},"@type":"BlogPosting","url":"https://mlops-github.com/docs/Issue-Label-Bot.html","headline":"Issue Label Bot","dateModified":"2020-06-13T13:09:25-05:00","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://mlops-github.com/docs/Issue-Label-Bot.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://mlops-github.com/assets/images/Data-driven-recommendations.png"}},"description":"A GitHub App powered by machine learning, written in Python. A discussion of the motivation for building this app is described in this blog.","@type":"BlogPosting","url":"https://mlops-github.com/docs/Issue-Label-Bot.html","headline":"Issue Label Bot","dateModified":"2020-06-16T11:02:47-05:00","datePublished":"2020-06-16T11:02:47-05:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://mlops-github.com/feed.xml" title="Machine Learning Ops" /><script>
@@ -69,21 +69,42 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 </header><main class="page-content docs" aria-label="Content"><aside class="sidebar_left">
   <nav>
     <h2>Sections</h2>
-    <ul><li>
-        <a href="/docs/readme.html">Read Me</a>
-      </li><li>
-        <a href="/docs/Issue-Label-Bot.html">Issue Label Bot</a>
-      </li><li>
-        <a href="/docs/Markdown-here.html">Markdown Here</a>
-      </li><li>
-        <a href="/docs/Markdownsource.html">Sources for markdown</a>
-      </li><li>
-        <a href="/docs/spectral-interface.html">Spectral Inference</a>
-      </li><li>
-        <a href="/docs/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-      </li><li>
-        <a href="/docs/working-with-run-debug.html">Work with run/debug configurations</a>
-      </li></ul>
+
+    <ul class="aside_nav" id="aside_nav"><li>
+        <a class="aside_nav_link" href="/docs/readme.html">Read Me</a></li><li class="active">
+        <a class="aside_nav_link active"" href="/docs/Issue-Label-Bot.html">Issue Label Bot</a></li><li>
+        <a class="aside_nav_link" href="/docs/Markdown-here.html">Markdown Here</a></li><li>
+        <a class="aside_nav_link" href="/docs/configuration.html">Configuration</a></li><li>
+        <a class="aside_nav_link" href="/docs/Markdownsource.html">Sources for markdown</a></li><li>
+        <a class="aside_nav_link" href="/docs/ui-components">UI Components</a><!-- <span class="toggle_sub"> +</span> -->
+
+        <ul class="sub_menu hidden"><li>
+            <a class="aside_nav_link " href="/docs/ui-components/typography.html">Typography rules</a><!-- <span class="toggle_sub"> +</span> -->
+
+            <ul class="sub_menu hidden"><li style="margin-left: 10px;">
+                <a class="aside_nav_link" href="/docs/utilities/typography/font.html">Fonts</a>
+              </li><li style="margin-left: 10px;">
+                <a class="aside_nav_link" href="/docs/utilities/typography/text.html">Text</a>
+              </li></ul></li><li>
+            <a class="aside_nav_link " href="/docs/ui-components/buttons.html">Buttons</a></li><li>
+            <a class="aside_nav_link " href="/docs/ui-components/labels.html">Labels</a></li><li>
+            <a class="aside_nav_link " href="/docs/ui-components/tables.html">Tables</a></li><li>
+            <a class="aside_nav_link " href="/docs/ui-components/lists.html">Lists</a></li><li>
+            <a class="aside_nav_link " href="/docs/ui-components/code.html">Code</a></li></ul></li><li>
+        <a class="aside_nav_link" href="/docs/utilities">Utilities</a><!-- <span class="toggle_sub"> +</span> -->
+
+        <ul class="sub_menu hidden"><li>
+            <a class="aside_nav_link " href="/docs/utilities/responsive-modifiers.html">Responsive Modifiers</a></li><li>
+            <a class="aside_nav_link " href="/docs/utilities/layout.html">Layout</a></li><li>
+            <a class="aside_nav_link " href="/docs/utilities/color.html">Color</a></li><li>
+            <a class="aside_nav_link " href="/docs/utilities/typogr.html">Typography</a></li></ul></li><li>
+        <a class="aside_nav_link" href="/docs/navigation-structure.html">Navigation Structure</a></li><li>
+        <a class="aside_nav_link" href="/docs/spectral-interface.html">Spectral Inference</a></li><li>
+        <a class="aside_nav_link" href="/docs/customization.html">Customization</a></li><li>
+        <a class="aside_nav_link" href="/docs/welcome-to-jekyll.html">Welcome to Jekyll!</a></li><li>
+        <a class="aside_nav_link" href="/docs/search.html">Search</a></li><li>
+        <a class="aside_nav_link" href="/docs/working-with-run-debug.html">Work with run/debug configurations</a></li><li>
+        <a class="aside_nav_link" href="/docs/index-test.html">Markdown kitchen sink</a></li></ul>
   </nav>
 </aside><article class="h-entry document" itemscope itemtype="http://schema.org/BlogPosting">
   <div>
@@ -92,52 +113,39 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
     </header>
 
     <div class="doc_content e-content" itemprop="articleBody">
-      <p><a href="https://www.python.org/downloads/release/python-360/"><img src="https://img.shields.io/badge/python-3.6-blue.svg" alt="Python 3.6" /></a> <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-darkgreen.svg" alt="License: MIT" /></a>
-<a href="https://github.com/marketplace/issue-label-bot"><img src="https://img.shields.io/badge/GitHub%20Marketplace-Install%20App-blueviolet.svg?logo=github" alt="Install App" /></a></p>
-
-<h5 id="code-for-how-to-automate-tasks-on-github-with-machine-learning-for-fun-and-profit">Code for: <a href="https://medium.com/@hamelhusain/mlapp-419f90e8f007?source=friends_link&amp;sk=760e18a2d6e60999d7eb2887352a92a8">“How to automate tasks on GitHub with machine learning for fun and profit”</a></h5>
-
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-<p>Table of Contents</p>
-
-<ul>
-  <li><a href="#issue-label-bot">Issue-Label Bot</a>
-    <ul>
-      <li><a href="#important-links">Important links</a></li>
-      <li><a href="#files">Files</a></li>
+      <ul id="markdown-toc">
+  <li><a href="#important-links" id="markdown-toc-important-links">Important links</a></li>
+  <li><a href="#files" id="markdown-toc-files">Files</a></li>
+  <li><a href="#running-this-code" id="markdown-toc-running-this-code">Running This Code</a>    <ul>
+      <li><a href="#environment-variables" id="markdown-toc-environment-variables">Environment Variables</a></li>
+      <li><a href="#run-locally" id="markdown-toc-run-locally">Run Locally</a></li>
+      <li><a href="#deploy-as-a-service" id="markdown-toc-deploy-as-a-service">Deploy As A Service</a></li>
     </ul>
   </li>
-  <li><a href="#running-this-code">Running This Code</a>
-    <ul>
-      <li><a href="#environment-variables">Environment Variables</a></li>
-      <li><a href="#run-locally">Run Locally</a></li>
-      <li><a href="#deploy-as-a-service">Deploy As A Service</a></li>
+  <li><a href="#contributing" id="markdown-toc-contributing">Contributing</a>    <ul>
+      <li><a href="#roadmap" id="markdown-toc-roadmap">Roadmap</a></li>
+      <li><a href="#references" id="markdown-toc-references">References</a></li>
     </ul>
   </li>
-  <li><a href="#contributing">Contributing</a>
-    <ul>
-      <li><a href="#roadmap">Roadmap</a></li>
-      <li><a href="#references">References</a></li>
-    </ul>
-  </li>
-  <li><a href="#disclaimers">Disclaimers</a></li>
+  <li><a href="#disclaimers" id="markdown-toc-disclaimers">Disclaimers</a></li>
 </ul>
 
-<!-- /TOC -->
+<p><a href="https://www.python.org/downloads/release/python-360/"><img src="https://img.shields.io/badge/python-3.6-blue.svg" alt="Python 3.6" /></a> <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-darkgreen.svg" alt="License: MIT" /></a>
+<a href="https://github.com/marketplace/issue-label-bot"><img src="https://img.shields.io/badge/GitHub%20Marketplace-Install%20App-blueviolet.svg?logo=github" alt="Install App" /></a></p>
+
+<h5 class="no_toc" id="code-for-how-to-automate-tasks-on-github-with-machine-learning-for-fun-and-profit">Code for: <a href="(https://medium.com/@hamelhusain/mlapp-419f90e8f007?source=friends_link&amp;sk=760e18a2d6e60999d7eb2887352a92a8)">“How to automate tasks on GitHub with machine learning for fun and profit”</a></h5>
 
 <p>Original Authors: <a href="https://github.com/hamelsmu">@hamelsmu</a>, <a href="https://github.com/inc0">@inc0</a>, <a href="https://github.com/jlewi">@jlewi</a></p>
 
-<h1><img src="https://github.com/machine-learning-apps/MLapp/blob/master/images/Issue-Label-Bot7.png" width="100" height="100" />Issue Label Bot</h1>
+<h1><img src="https://github.com/machine-learning-apps/MLapp/raw/master/images/Issue-Label-Bot7.png" width="100" height="100" />Issue Label Bot</h1>
 
 <p><strong>Install this app <a href="https://github.com/marketplace/issue-label-bot">from the GitHub marketplace</a></strong></p>
 
-<p>A GitHub App powered by machine learning, written in Python.  A discussion of the motivation for building this app is described in this <a href="https://medium.com/@hamelhusain/mlapp-419f90e8f007?source=friends_link&amp;sk=760e18a2d6e60999d7eb2887352a92a8">blog post</a>.</p>
+<p>A GitHub App powered by machine learning, written in Python.  A discussion of the motivation for building this app is described in this <a href="(https://medium.com/@hamelhusain/mlapp-419f90e8f007?source=friends_link&amp;sk=760e18a2d6e60999d7eb2887352a92a8)">blog post</a>.</p>
 
 <p>When an issue is opened, the bot predicts if the label should be a: <code class="language-plaintext highlighter-rouge">feature request</code>, <code class="language-plaintext highlighter-rouge">bug</code> or <code class="language-plaintext highlighter-rouge">question</code> and applies a label automatically if appropriate. Here is a screenshot of the bot in action:</p>
 
-<blockquote>
-  <p><img src="images/example4_big.png" alt="alt text" /></p>
-</blockquote>
+<p><img src="https://github.com/machine-learning-apps/Issue-Label-Bot/blob/master/images/example4_big.png?raw=true" alt="alt text" /></p>
 
 <p>More examples can be viewed on our <a href="https://label-bot-prod.mlbot.net/">app’s homepage</a>.  It should be noted that the bot may not apply any label in circumstances where the prediction is uncertain.  See the <a href="#Disclaimers">disclaimers</a> section for more caveats.</p>
 
@@ -272,39 +280,6 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
   <a class="u-url" href="/docs/Issue-Label-Bot.html" hidden></a>
 
   <aside class="sidebar_right">
-    
-    <ul>
-      <h2>Titles:</h2>
-      
-      <li>
-        <a class="p_link" href="#important-links">Important links</a>
-      </li>
-      
-      <li>
-        <a class="p_link" href="#files">Files</a>
-      </li>
-      
-      <li>
-        <a class="p_link" href="#prerequisites">Prerequisites</a>
-      </li>
-      
-      <li>
-        <a class="p_link" href="#environment-variables">Environment Variables</a>
-      </li>
-      
-      <li>
-        <a class="p_link" href="#run-locally">Run Locally</a>
-      </li>
-      
-      <li>
-        <a class="p_link" href="#deploy-as-a-service">Deploy As A Service</a>
-      </li>
-      
-      <li>
-        <a class="p_link" href="#contributing">Contributing</a>
-      </li>
-      
-    </ul>
     
     </nav>
   </aside>

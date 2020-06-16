@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Machine Learning Ops" />
 <meta property="og:image" content="https://mlops-github.com/assets/images/Documentation.png" />
 <script type="application/ld+json">
-{"description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas voluptatum libero dignissimos reprehenderit doloribus, deserunt voluptatem nostrum repellat ab a cumque vitae reiciendis ut alias explicabo dolorem blanditiis, quisquam fuga. Dolores possimus aut perferendis enim unde architecto, debitis nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error at deleniti nulla voluptate eligendi iste modi, asperiores possimus architecto consectetur in dolore cum illum maxime neque molestias aspernatur culpa odio?","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://mlops-github.com/assets/images/Data-driven-recommendations.png"}},"@type":"WebPage","image":"https://mlops-github.com/assets/images/Documentation.png","url":"https://mlops-github.com/docs/","headline":"Documentation","@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://mlops-github.com/assets/images/Data-driven-recommendations.png"}},"description":"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas voluptatum libero dignissimos reprehenderit doloribus, deserunt voluptatem nostrum repellat ab a cumque vitae reiciendis ut alias explicabo dolorem blanditiis, quisquam fuga. Dolores possimus aut perferendis enim unde architecto, debitis nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Error at deleniti nulla voluptate eligendi iste modi, asperiores possimus architecto consectetur in dolore cum illum maxime neque molestias aspernatur culpa odio?","@type":"WebPage","image":"https://mlops-github.com/assets/images/Documentation.png","url":"https://mlops-github.com/docs/","headline":"Documentation","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://mlops-github.com/feed.xml" title="Machine Learning Ops" /><script>
@@ -68,21 +68,42 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 </header><main class="page-content docs" aria-label="Content"><aside class="sidebar_left">
   <nav>
     <h2>Sections</h2>
-    <ul><li>
-        <a href="/docs/readme.html">Read Me</a>
-      </li><li>
-        <a href="/docs/Issue-Label-Bot.html">Issue Label Bot</a>
-      </li><li>
-        <a href="/docs/Markdown-here.html">Markdown Here</a>
-      </li><li>
-        <a href="/docs/Markdownsource.html">Sources for markdown</a>
-      </li><li>
-        <a href="/docs/spectral-interface.html">Spectral Inference</a>
-      </li><li>
-        <a href="/docs/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-      </li><li>
-        <a href="/docs/working-with-run-debug.html">Work with run/debug configurations</a>
-      </li></ul>
+
+    <ul class="aside_nav" id="aside_nav"><li>
+        <a class="aside_nav_link" href="/docs/readme.html">Read Me</a></li><li>
+        <a class="aside_nav_link" href="/docs/Issue-Label-Bot.html">Issue Label Bot</a></li><li>
+        <a class="aside_nav_link" href="/docs/Markdown-here.html">Markdown Here</a></li><li>
+        <a class="aside_nav_link" href="/docs/configuration.html">Configuration</a></li><li>
+        <a class="aside_nav_link" href="/docs/Markdownsource.html">Sources for markdown</a></li><li>
+        <a class="aside_nav_link" href="/docs/ui-components">UI Components</a><!-- <span class="toggle_sub"> +</span> -->
+
+        <ul class="sub_menu hidden"><li>
+            <a class="aside_nav_link " href="/docs/ui-components/typography.html">Typography rules</a><!-- <span class="toggle_sub"> +</span> -->
+
+            <ul class="sub_menu hidden"><li style="margin-left: 10px;">
+                <a class="aside_nav_link" href="/docs/utilities/typography/font.html">Fonts</a>
+              </li><li style="margin-left: 10px;">
+                <a class="aside_nav_link" href="/docs/utilities/typography/text.html">Text</a>
+              </li></ul></li><li>
+            <a class="aside_nav_link " href="/docs/ui-components/buttons.html">Buttons</a></li><li>
+            <a class="aside_nav_link " href="/docs/ui-components/labels.html">Labels</a></li><li>
+            <a class="aside_nav_link " href="/docs/ui-components/tables.html">Tables</a></li><li>
+            <a class="aside_nav_link " href="/docs/ui-components/lists.html">Lists</a></li><li>
+            <a class="aside_nav_link " href="/docs/ui-components/code.html">Code</a></li></ul></li><li>
+        <a class="aside_nav_link" href="/docs/utilities">Utilities</a><!-- <span class="toggle_sub"> +</span> -->
+
+        <ul class="sub_menu hidden"><li>
+            <a class="aside_nav_link " href="/docs/utilities/responsive-modifiers.html">Responsive Modifiers</a></li><li>
+            <a class="aside_nav_link " href="/docs/utilities/layout.html">Layout</a></li><li>
+            <a class="aside_nav_link " href="/docs/utilities/color.html">Color</a></li><li>
+            <a class="aside_nav_link " href="/docs/utilities/typogr.html">Typography</a></li></ul></li><li>
+        <a class="aside_nav_link" href="/docs/navigation-structure.html">Navigation Structure</a></li><li>
+        <a class="aside_nav_link" href="/docs/spectral-interface.html">Spectral Inference</a></li><li>
+        <a class="aside_nav_link" href="/docs/customization.html">Customization</a></li><li>
+        <a class="aside_nav_link" href="/docs/welcome-to-jekyll.html">Welcome to Jekyll!</a></li><li>
+        <a class="aside_nav_link" href="/docs/search.html">Search</a></li><li>
+        <a class="aside_nav_link" href="/docs/working-with-run-debug.html">Work with run/debug configurations</a></li><li>
+        <a class="aside_nav_link" href="/docs/index-test.html">Markdown kitchen sink</a></li></ul>
   </nav>
 </aside><div class="intro_wrapper">
   <section class="intro">
@@ -139,20 +160,77 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
         <a href="/docs/Issue-Label-Bot.html">Issue Label Bot"</a>
         <p>A GitHub App powered by machine learning, written in Python.  A discussion of the motivation for building this app is described in this blog.</p>
       </li><li>
+        <a href="/docs/ui-components/typography.html">Typography rules"</a>
+        <p></p>
+      </li><li>
+        <a href="/docs/utilities/responsive-modifiers.html">Responsive Modifiers"</a>
+        <p></p>
+      </li><li>
+        <a href="/docs/utilities/typography/font.html">Fonts"</a>
+        <p></p>
+      </li><li>
         <a href="/docs/Markdown-here.html">Markdown Here"</a>
         <p>Markdown Here is a Google Chrome, Firefox, Safari, Opera, and Thunderbird extension that lets you write email<sup>&dagger;</sup> in Markdown<sup>&Dagger;</sup> and render them before sending. It also supports syntax highlighting (just specify the language in a fenced code block).</p>
+      </li><li>
+        <a href="/docs/configuration.html">Configuration"</a>
+        <p></p>
+      </li><li>
+        <a href="/docs/ui-components/buttons.html">Buttons"</a>
+        <p></p>
+      </li><li>
+        <a href="/docs/utilities/layout.html">Layout"</a>
+        <p></p>
+      </li><li>
+        <a href="/docs/utilities/typography/text.html">Text"</a>
+        <p></p>
       </li><li>
         <a href="/docs/Markdownsource.html">Sources for markdown"</a>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae felis vitae leo ornare auctor. Aenean nec magna elementum, euismod lectus et, commodo magna. Nunc eget urna in nisl tempor rutrum a in augue.</p>
       </li><li>
+        <a href="/docs/ui-components/labels.html">Labels"</a>
+        <p></p>
+      </li><li>
+        <a href="/docs/ui-components">UI Components"</a>
+        <p></p>
+      </li><li>
+        <a href="/docs/utilities/color.html">Color"</a>
+        <p></p>
+      </li><li>
+        <a href="/docs/ui-components/tables.html">Tables"</a>
+        <p></p>
+      </li><li>
+        <a href="/docs/utilities/typogr.html">Typography"</a>
+        <p></p>
+      </li><li>
+        <a href="/docs/utilities">Utilities"</a>
+        <p></p>
+      </li><li>
+        <a href="/docs/navigation-structure.html">Navigation Structure"</a>
+        <p></p>
+      </li><li>
         <a href="/docs/spectral-interface.html">Spectral Inference"</a>
+        <p></p>
+      </li><li>
+        <a href="/docs/ui-components/lists.html">Lists"</a>
+        <p></p>
+      </li><li>
+        <a href="/docs/customization.html">Customization"</a>
+        <p></p>
+      </li><li>
+        <a href="/docs/ui-components/code.html">Code"</a>
         <p></p>
       </li><li>
         <a href="/docs/welcome-to-jekyll.html">Welcome to Jekyll!"</a>
         <p>You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.</p>
       </li><li>
+        <a href="/docs/search.html">Search"</a>
+        <p></p>
+      </li><li>
         <a href="/docs/working-with-run-debug.html">Work with run/debug configurations"</a>
         <p>To run or debug your code in PyCharm, you can use numerous run/debug configurations. Each run/debug configuration represents a named set of run/debug startup properties. When you perform run, debug, or test operations with PyCharm, you always start a process based on one of the existing configurations using its parameters.</p>
+      </li><li>
+        <a href="/docs/index-test.html">Markdown kitchen sink"</a>
+        <p></p>
       </li></ul>
   </section>
   </main><footer class="site-footer h-card">

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/assets/images/favicon-32.png" type="image/x-icon" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Typography | Machine Learning Ops</title>
+<meta name="generator" content="Jekyll v4.1.0" />
+<meta property="og:title" content="Typography" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Font size Font weight Line height code example Font size Use the .fs-1 - .fs-10 to set an explicit font-size. Class Small screen size font-size Large screen size font-size .fs-1 9px 10px .fs-2 11px 12px .fs-3 12px 14px .fs-4 14px 16px .fs-5 16px 18px .fs-6 18px 24px .fs-7 24px 32px .fs-8 32px 38px .fs-9 38px 42px .fs-10 42px 48px Font size 1 Font size 2 Font size 3 Font size 4 Font size 5 Font size 6 Font size 7 Font size 8 Font size 9 Font size 10 In Markdown, use the `{: }` wrapper to apply custom classes: Font size 1 {: .fs-1 } Font size 2 {: .fs-2 } Font size 3 {: .fs-3 } Font size 4 {: .fs-4 } Font size 5 {: .fs-5 } Font size 6 {: .fs-6 } Font size 7 {: .fs-7 } Font size 8 {: .fs-8 } Font size 9 {: .fs-9 } Font size 10 {: .fs-10 } Font weight Use the .fw-300 - .fw-700 to set an explicit font-size. Font weight 300 Font weight 400 Font weight 500 Font weight 700 In Markdown, use the `{: }` wrapper to apply custom classes: Font weight 300 {: .fw-300 } Font weight 400 {: .fw-400 } Font weight 500 {: .fw-500 } Font weight 700 {: .fw-700 } Line height Use the lh- classes to explicitly apply line height to text. Class line-height value Notes .lh-0 0   .lh-tight 1.1 Default for headings .lh-default 1.4 Default for body (paragraphs) code example No Line height No Line height Tight line height Tight line height Default line height Default line height In Markdown, use the `{: }` wrapper to apply custom classes: No Line height No Line height {: .lh-0 } Tight line height Tight line height {: .lh-tight } Default line height Default line height {: .fh-default }" />
+<meta property="og:description" content="Font size Font weight Line height code example Font size Use the .fs-1 - .fs-10 to set an explicit font-size. Class Small screen size font-size Large screen size font-size .fs-1 9px 10px .fs-2 11px 12px .fs-3 12px 14px .fs-4 14px 16px .fs-5 16px 18px .fs-6 18px 24px .fs-7 24px 32px .fs-8 32px 38px .fs-9 38px 42px .fs-10 42px 48px Font size 1 Font size 2 Font size 3 Font size 4 Font size 5 Font size 6 Font size 7 Font size 8 Font size 9 Font size 10 In Markdown, use the `{: }` wrapper to apply custom classes: Font size 1 {: .fs-1 } Font size 2 {: .fs-2 } Font size 3 {: .fs-3 } Font size 4 {: .fs-4 } Font size 5 {: .fs-5 } Font size 6 {: .fs-6 } Font size 7 {: .fs-7 } Font size 8 {: .fs-8 } Font size 9 {: .fs-9 } Font size 10 {: .fs-10 } Font weight Use the .fw-300 - .fw-700 to set an explicit font-size. Font weight 300 Font weight 400 Font weight 500 Font weight 700 In Markdown, use the `{: }` wrapper to apply custom classes: Font weight 300 {: .fw-300 } Font weight 400 {: .fw-400 } Font weight 500 {: .fw-500 } Font weight 700 {: .fw-700 } Line height Use the lh- classes to explicitly apply line height to text. Class line-height value Notes .lh-0 0   .lh-tight 1.1 Default for headings .lh-default 1.4 Default for body (paragraphs) code example No Line height No Line height Tight line height Tight line height Default line height Default line height In Markdown, use the `{: }` wrapper to apply custom classes: No Line height No Line height {: .lh-0 } Tight line height Tight line height {: .lh-tight } Default line height Default line height {: .fh-default }" />
+<link rel="canonical" href="https://mlops-github.com/docs/utilities/typogr.html" />
+<meta property="og:url" content="https://mlops-github.com/docs/utilities/typogr.html" />
+<meta property="og:site_name" content="Machine Learning Ops" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-06-16T11:02:47-05:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"https://mlops-github.com/docs/utilities/typogr.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://mlops-github.com/assets/images/Data-driven-recommendations.png"}},"description":"Font size Font weight Line height code example Font size Use the .fs-1 - .fs-10 to set an explicit font-size. Class Small screen size font-size Large screen size font-size .fs-1 9px 10px .fs-2 11px 12px .fs-3 12px 14px .fs-4 14px 16px .fs-5 16px 18px .fs-6 18px 24px .fs-7 24px 32px .fs-8 32px 38px .fs-9 38px 42px .fs-10 42px 48px Font size 1 Font size 2 Font size 3 Font size 4 Font size 5 Font size 6 Font size 7 Font size 8 Font size 9 Font size 10 In Markdown, use the `{: }` wrapper to apply custom classes: Font size 1 {: .fs-1 } Font size 2 {: .fs-2 } Font size 3 {: .fs-3 } Font size 4 {: .fs-4 } Font size 5 {: .fs-5 } Font size 6 {: .fs-6 } Font size 7 {: .fs-7 } Font size 8 {: .fs-8 } Font size 9 {: .fs-9 } Font size 10 {: .fs-10 } Font weight Use the .fw-300 - .fw-700 to set an explicit font-size. Font weight 300 Font weight 400 Font weight 500 Font weight 700 In Markdown, use the `{: }` wrapper to apply custom classes: Font weight 300 {: .fw-300 } Font weight 400 {: .fw-400 } Font weight 500 {: .fw-500 } Font weight 700 {: .fw-700 } Line height Use the lh- classes to explicitly apply line height to text. Class line-height value Notes .lh-0 0   .lh-tight 1.1 Default for headings .lh-default 1.4 Default for body (paragraphs) code example No Line height No Line height Tight line height Tight line height Default line height Default line height In Markdown, use the `{: }` wrapper to apply custom classes: No Line height No Line height {: .lh-0 } Tight line height Tight line height {: .lh-tight } Default line height Default line height {: .fh-default }","@type":"BlogPosting","url":"https://mlops-github.com/docs/utilities/typogr.html","headline":"Typography","dateModified":"2020-06-16T11:02:47-05:00","datePublished":"2020-06-16T11:02:47-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://mlops-github.com/feed.xml" title="Machine Learning Ops" /><script>
+if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNotTrack === "yes" || navigator.msDoNotTrack === "1")) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57531313-6', 'auto');
+  ga('send', 'pageview');
+}
+</script>
+  
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+   <style>
+    body {
+      background: #1b1f23;
+    }
+  </style>
+</head><body class="doc_page"><header class="site-header" role="banner">
+  <div class="navbar">
+
+    <div class="logo">
+      <!-- <img src="/assets/images/Data-driven-recommendations.png" alt="logo"> --><svg aria-hidden="true" class="indexesm__StyledOcticon-sc-1ao7p5-27 xrdzL" height="32" role="img" viewBox="0 0 16 16" width="32" style="display:inline-block;fill:currentColor;user-select:none;vertical-align:text-bottom"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg><a href="/">
+        <span>Machine Learning Ops</span>
+      </a>
+    </div>
+
+    <nav class="navigation hidden" id="navigation">
+      
+      <a href="/blog" >Blog Posts</a>
+      
+      <a href="/actions" >GitHub Actions</a>
+      
+      <a href="/examples" >Examples</a>
+      
+      <a href="/talks" >Talks</a>
+      
+      <a href="/docs" >Docs</a>
+      
+      <a href="/team" >Team</a></nav>
+
+    <button class="toggle_mnu" id="toggle_menu" onclick="toggle_menu()">
+      <img src="/assets/images/sandwich_white.png" class="open toggle_icon" alt="menu open">
+      <img src="/assets/images/times.png" class="close toggle_icon hidden" alt="menu close">
+    </button>
+  </div>
+</header><main class="page-content docs" aria-label="Content"><aside class="sidebar_left">
+  <nav>
+    <h2>Sections</h2>
+
+    <ul class="aside_nav" id="aside_nav"><li>
+        <a class="aside_nav_link" href="/docs/readme.html">Read Me</a></li><li>
+        <a class="aside_nav_link" href="/docs/Issue-Label-Bot.html">Issue Label Bot</a></li><li>
+        <a class="aside_nav_link" href="/docs/Markdown-here.html">Markdown Here</a></li><li>
+        <a class="aside_nav_link" href="/docs/configuration.html">Configuration</a></li><li>
+        <a class="aside_nav_link" href="/docs/Markdownsource.html">Sources for markdown</a></li><li>
+        <a class="aside_nav_link" href="/docs/ui-components">UI Components</a><!-- <span class="toggle_sub"> +</span> -->
+
+        <ul class="sub_menu hidden"><li>
+            <a class="aside_nav_link " href="/docs/ui-components/typography.html">Typography rules</a><!-- <span class="toggle_sub"> +</span> -->
+
+            <ul class="sub_menu hidden"><li style="margin-left: 10px;">
+                <a class="aside_nav_link" href="/docs/utilities/typography/font.html">Fonts</a>
+              </li><li style="margin-left: 10px;">
+                <a class="aside_nav_link" href="/docs/utilities/typography/text.html">Text</a>
+              </li></ul></li><li>
+            <a class="aside_nav_link " href="/docs/ui-components/buttons.html">Buttons</a></li><li>
+            <a class="aside_nav_link " href="/docs/ui-components/labels.html">Labels</a></li><li>
+            <a class="aside_nav_link " href="/docs/ui-components/tables.html">Tables</a></li><li>
+            <a class="aside_nav_link " href="/docs/ui-components/lists.html">Lists</a></li><li>
+            <a class="aside_nav_link " href="/docs/ui-components/code.html">Code</a></li></ul></li><li>
+        <a class="aside_nav_link" href="/docs/utilities">Utilities</a><!-- <span class="toggle_sub"> +</span> -->
+
+        <ul class="sub_menu hidden"><li>
+            <a class="aside_nav_link " href="/docs/utilities/responsive-modifiers.html">Responsive Modifiers</a></li><li>
+            <a class="aside_nav_link " href="/docs/utilities/layout.html">Layout</a></li><li>
+            <a class="aside_nav_link " href="/docs/utilities/color.html">Color</a></li><li class="active">
+            <a class="aside_nav_link  active" href="/docs/utilities/typogr.html">Typography</a></li></ul></li><li>
+        <a class="aside_nav_link" href="/docs/navigation-structure.html">Navigation Structure</a></li><li>
+        <a class="aside_nav_link" href="/docs/spectral-interface.html">Spectral Inference</a></li><li>
+        <a class="aside_nav_link" href="/docs/customization.html">Customization</a></li><li>
+        <a class="aside_nav_link" href="/docs/welcome-to-jekyll.html">Welcome to Jekyll!</a></li><li>
+        <a class="aside_nav_link" href="/docs/search.html">Search</a></li><li>
+        <a class="aside_nav_link" href="/docs/working-with-run-debug.html">Work with run/debug configurations</a></li><li>
+        <a class="aside_nav_link" href="/docs/index-test.html">Markdown kitchen sink</a></li></ul>
+  </nav>
+</aside><article class="h-entry document" itemscope itemtype="http://schema.org/BlogPosting">
+  <div>
+    <header class="doc_header">
+      <h1 class="doc_title p-name" itemprop="name headline">Typography</h1>
+    </header>
+
+    <div class="doc_content e-content" itemprop="articleBody">
+      <ol id="markdown-toc">
+  <li><a href="#font-size" id="markdown-toc-font-size">Font size</a></li>
+  <li><a href="#font-weight" id="markdown-toc-font-weight">Font weight</a></li>
+  <li><a href="#line-height" id="markdown-toc-line-height">Line height</a></li>
+  <li><a href="#code-example" id="markdown-toc-code-example">code example</a></li>
+</ol>
+
+<hr />
+
+<h2 id="font-size">Font size</h2>
+
+<p>Use the <code class="language-plaintext highlighter-rouge">.fs-1</code> - <code class="language-plaintext highlighter-rouge">.fs-10</code> to set an explicit font-size.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Class</th>
+      <th style="text-align: left">Small screen size <code class="language-plaintext highlighter-rouge">font-size</code></th>
+      <th style="text-align: left">Large screen size <code class="language-plaintext highlighter-rouge">font-size</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">.fs-1</code></td>
+      <td style="text-align: left">9px</td>
+      <td style="text-align: left">10px</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">.fs-2</code></td>
+      <td style="text-align: left">11px</td>
+      <td style="text-align: left">12px</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">.fs-3</code></td>
+      <td style="text-align: left">12px</td>
+      <td style="text-align: left">14px</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">.fs-4</code></td>
+      <td style="text-align: left">14px</td>
+      <td style="text-align: left">16px</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">.fs-5</code></td>
+      <td style="text-align: left">16px</td>
+      <td style="text-align: left">18px</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">.fs-6</code></td>
+      <td style="text-align: left">18px</td>
+      <td style="text-align: left">24px</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">.fs-7</code></td>
+      <td style="text-align: left">24px</td>
+      <td style="text-align: left">32px</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">.fs-8</code></td>
+      <td style="text-align: left">32px</td>
+      <td style="text-align: left">38px</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">.fs-9</code></td>
+      <td style="text-align: left">38px</td>
+      <td style="text-align: left">42px</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">.fs-10</code></td>
+      <td style="text-align: left">42px</td>
+      <td style="text-align: left">48px</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="code-example">
+  <p class="fs-1">Font size 1</p>
+  <p class="fs-2">Font size 2</p>
+  <p class="fs-3">Font size 3</p>
+  <p class="fs-4">Font size 4</p>
+  <p class="fs-5">Font size 5</p>
+  <p class="fs-6">Font size 6</p>
+  <p class="fs-7">Font size 7</p>
+  <p class="fs-8">Font size 8</p>
+  <p class="fs-9">Font size 9</p>
+  <p class="fs-10">Font size 10</p>
+</div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>In Markdown, use the <span class="sb">`{: }`</span> wrapper to apply custom classes:
+
+Font size 1
+{: .fs-1 }
+Font size 2
+{: .fs-2 }
+Font size 3
+{: .fs-3 }
+Font size 4
+{: .fs-4 }
+Font size 5
+{: .fs-5 }
+Font size 6
+{: .fs-6 }
+Font size 7
+{: .fs-7 }
+Font size 8
+{: .fs-8 }
+Font size 9
+{: .fs-9 }
+Font size 10
+{: .fs-10 }
+</code></pre></div></div>
+
+<h2 id="font-weight">Font weight</h2>
+
+<p>Use the <code class="language-plaintext highlighter-rouge">.fw-300</code> - <code class="language-plaintext highlighter-rouge">.fw-700</code> to set an explicit font-size.</p>
+
+<div class="code-example">
+  <p class="fw-300">Font weight 300</p>
+  <p class="fw-400">Font weight 400</p>
+  <p class="fw-500">Font weight 500</p>
+  <p class="fw-700">Font weight 700</p>
+</div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>In Markdown, use the <span class="sb">`{: }`</span> wrapper to apply custom classes:
+
+Font weight 300
+{: .fw-300 }
+Font weight 400
+{: .fw-400 }
+Font weight 500
+{: .fw-500 }
+Font weight 700
+{: .fw-700 }
+</code></pre></div></div>
+
+<h2 id="line-height">Line height</h2>
+
+<p>Use the <code class="language-plaintext highlighter-rouge">lh-</code> classes to explicitly apply line height to text.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Class</th>
+      <th style="text-align: left"><code class="language-plaintext highlighter-rouge">line-height</code> value</th>
+      <th style="text-align: left">Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">.lh-0</code></td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">.lh-tight</code></td>
+      <td style="text-align: left">1.1</td>
+      <td style="text-align: left">Default for headings</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="language-plaintext highlighter-rouge">.lh-default</code></td>
+      <td style="text-align: left">1.4</td>
+      <td style="text-align: left">Default for body (paragraphs)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="code-example">code example</h2>
+
+<div class="code-example">
+  <p class="lh-0">No Line height
+No Line height</p>
+
+  <p class="lh-tight">Tight line height
+Tight line height</p>
+
+  <p class="fh-default">Default line height
+Default line height</p>
+</div>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>In Markdown, use the <span class="sb">`{: }`</span> wrapper to apply custom classes:
+
+No Line height
+No Line height
+{: .lh-0 }
+
+Tight line height
+Tight line height
+{: .lh-tight }
+
+Default line height
+Default line height
+{: .fh-default }
+</code></pre></div></div>
+
+    </div>
+  </div>
+  <a class="u-url" href="/docs/utilities/typogr.html" hidden></a>
+
+  <aside class="sidebar_right">
+    
+    </nav>
+  </aside>
+</article>
+  </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="footer_wrapper">
+
+    <!-- <h2 class="footer-heading">Machine Learning Ops</h2> -->
+
+    <div class="footer_grid">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Machine Learning Ops</li><li><a class="u-email" href="mailto:"></a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/github"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">github</span></a></li><li><a href="https://www.twitter.com/github"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">github</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>A collection of resources on how to facilitate Machine Learning Ops with GitHub.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer><script src="/assets/js/common.js"></script>
+</body>
+
+</html>
