@@ -110,6 +110,8 @@ Use the `lh-` classes to explicitly apply line height to text.
 | `.lh-tight`   | 1.1                  | Default for headings          |
 | `.lh-default` | 1.4                  | Default for body (paragraphs) |
 
+## code example
+
 <div class="code-example" markdown="1">
 No Line height
 No Line height

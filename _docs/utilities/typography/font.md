@@ -1,11 +1,9 @@
 ---
-title: Typography
-parent: UI Components
-has_children: true
+title: Fonts
+parent: Typography
+grand_parent: UI Components
 order_n: 1
 ---
-
-
 
 
 1. TOC
@@ -73,39 +71,3 @@ Headings are rendered like this:
 ##### Heading 5
 ###### Heading 6
 ```
-
----
-
-## Body text
-
-Default body text is rendered like this:
-
-<div class="code-example" markdown="1">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</div>
-```markdown
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-```
-
----
-
-## Inline elements
-
-<div class="code-example" markdown="1">
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](another-page).
-</div>
-```markdown
-Text can be **bold**, _italic_, or ~~strikethrough~~.
-
-[Link to another page](another-page).
-```
-
----
-
-## Typographic Utilities
-
-There are a number of specific typographic CSS classes that allow you to override default styling for font size, font weight, line height, and capitalization.
-
-

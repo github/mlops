@@ -15,6 +15,7 @@ function toggle_menu() {
     nav.classList.remove('hidden');
   }
 }
+
 $(".tag_filter").click(function () {
   const filter = '.' + $(this).attr('data-tag');
   if (filter == '.all') {
@@ -26,4 +27,9 @@ $(".tag_filter").click(function () {
   };
   $(".tag_filter").removeClass("active");
   $(this).addClass('active');
+});
+
+$(".toggle_sub").click(function () {
+  $(this).toggleClass('rot45');
+  $(this).next('ul').toggleClass('hidden');
 });

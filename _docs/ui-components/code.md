@@ -4,10 +4,6 @@ parent: UI Components
 order_n: 6
 ---
 
-{: .no_toc }
-
-
-
 1. TOC
 {:toc}
 

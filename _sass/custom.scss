@@ -99,9 +99,6 @@ li {
         border-bottom: 2px solid $brand-color;
       }
     }
-    .hidden {
-      display: none;
-    }
   }
 }
 
@@ -269,6 +266,13 @@ li {
 .hidden {
   display: none;
 }
+.rot45 {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
 .site-footer {
   margin-top: 30px;
 }
@@ -309,6 +313,11 @@ li {
     .sidebar_left {
       grid-area: bottom;
       padding: 20px;
+      .toggle_sub {
+        display: inline-block;
+        cursor: pointer;
+        color: $brand-color;
+      }
       nav {
         top: 180px;
         position: sticky;
