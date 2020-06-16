@@ -8,7 +8,7 @@ permalink: /docs/fastpages
 
 ## [fastai/fastpages](https://github.com/fastai/fastpages):  Blogging with Jupyter Notebooks
 
-<img src ='https://raw.githubusercontent.com/fastai/fastpages/master/images/diagram.png'></img>
+<img src ='https://raw.githubusercontent.com/fastai/fastpages/master/images/diagram.png'>
 
 From the [project page](https://github.com/fastai/fastpages):
 
