@@ -4,11 +4,12 @@ title : Meet the team
 description: "There is a growing team that maintains and builds the assets you find on this site.
 Keep an eye on the <a href='https://github.com/about/careers'>GitHub Careers page</a> if you are interested in working
 with us."
-image : "/assets/images/GitHub-for-teams.png"
+image : "/assets/images/GitHub-for-teams.svg"
 ---
+
 <section class="intro team_intro">
   <div class="image_box">
-    <img src="{{page.image}}" alt="team">
+    <img src="{{page.image}}" alt="team" />
   </div>
   <div class="text_box">
     <h1>{{page.title}}</h1>
@@ -20,7 +21,11 @@ image : "/assets/images/GitHub-for-teams.png"
   {% for author in site.team %}
   <div class="team_item">
     <a class="author_img_box" href="https://github.com/{{author.nick}}">
-      <img class="author_image" src="{{author.image}}" alt="{{ author.title }}">
+      <img
+        class="author_image"
+        src="{{author.image}}"
+        alt="{{ author.title }}"
+      />
       <p class="author_nick">
         @{{author.nick}}
       </p>
