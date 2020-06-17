@@ -1,20 +1,19 @@
 ---
 layout: default
 description: A collection of resources on how to facilitate Machine Learning Ops with GitHub.
-image: "/assets/images/Data-driven-recommendations.png"
+image: "/assets/images/Data-driven-recommendations.svg"
 ---
+
 {%- include intro.html -%}
 <div class="content_grid">
   {%- for item in site.data.navigation -%}
   <div class="blog content_item">
     <a href="{{item.link}}">
-    <!-- <img class="card_bg" src="{{item.card_bg}}" alt="card bg"> -->
-    <img class="card_icon" src="{{item.icon}}" alt="icon">
-    <h2>{{item.title}}</h2>
-    <p>{{item.info}}</p>
+      <!-- <img class="card_bg" src="{{item.card_bg}}" alt="card bg"> -->
+      <img class="card_icon" src="{{item.icon}}" alt="icon" />
+      <h2>{{item.title}}</h2>
+      <p>{{item.info}}</p>
     </a>
   </div>
   {%- endfor -%}
 </div>
-
-

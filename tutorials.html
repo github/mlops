@@ -1,12 +1,13 @@
 ---
-layout      : default
-title       : "Tutorials"
-description : "Recorded demos and tutorials on GitHub Actions and MLOps."
-image       : "/assets/images/Enterprise-Observability.png"
+layout: default
+title: "Tutorials"
+description: "Recorded demos and tutorials on GitHub Actions and MLOps."
+image: "/assets/images/Enterprise-Observability.svg"
 ---
+
 <section class="intro blog_intro">
   <div class="image_box">
-    <img src="{{page.image}}" alt="demos">
+    <img src="{{page.image}}" alt="demos" />
   </div>
   <div class="text_box">
     <h1>{{page.title}}</h1>
@@ -14,26 +15,33 @@ image       : "/assets/images/Enterprise-Observability.png"
 
     <!-- tags filter -->
     <div class="tags">
-      {% assign tags =  site.data.demos | map: 'tags' | uniq %}
+      {% assign tags = site.data.demos | map: 'tags' | uniq %}
       <button class="tag_filter active" data-tag="all">All</button>
-      {%- assign s = tags | size | minus: 2 -%}
-      {%- for i in (0..s) -%}
-      <button class="tag_filter" data-tag="{{tags[i] | replace: ' ', '_'}}">{{tags[i]}}</button>
+      {%- assign s = tags | size | minus: 2 -%} {%- for i in (0..s) -%}
+      <button class="tag_filter" data-tag="{{tags[i] | replace: ' ', '_'}}">
+        {{tags[i]}}
+      </button>
       {%- endfor -%}
     </div>
 
     <div class="posts_list">
-      {%- for item in site.data.demos -%}
-      {% assign t = item.tags | join: "%%" | replace: " ", "_"| replace: "%%", " " %}
+      {%- for item in site.data.demos -%} {% assign t = item.tags | join: "%%" |
+      replace: " ", "_"| replace: "%%", " " %}
       <div class="blog content_item {{t}}">
         <a href="{{item.link}}">
           <h2>{{item.title}}</h2>
         </a>
         <h3>{{item.subtitle}}</h3>
         <p>{{item.info}}</p>
-        <iframe class="y_video" width="600" height="400" src="https://www.youtube.com/embed/{{item.video_id}}"
-          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
+        <iframe
+          class="y_video"
+          width="600"
+          height="400"
+          src="https://www.youtube.com/embed/{{item.video_id}}"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
         </iframe>
       </div>
       {%- endfor -%}

@@ -111,6 +111,9 @@ li {
   gap: 2em;
   align-items: start;
   .text_box {
+    h2 {
+      font-weight: 400;
+    }
     p {
       font-size: 16px;
       line-height: 1.5;
@@ -276,8 +279,7 @@ li {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
-.active
-.rot180 {
+.active .rot180 {
   transform: rotate(0) translateY(7px);
   -webkit-transform: rotate(0) translateY(7px);
   -moz-transform: rotate(0) translateY(7px);
@@ -346,7 +348,7 @@ li {
           .active {
             font-weight: 700;
             * {
-            color: $sidebar-color;
+              color: $sidebar-color;
             }
           }
         }
@@ -395,9 +397,9 @@ li {
 .tag_filter {
   background: transparent;
   color: $text-color;
-  border: 1px solid $sidebar-color;
-  padding: 8px 15px 8px 18px;
-  margin: 5px;
+  border: 1px solid $brand-color;
+  padding: 4px 12px;
+  margin: 4px;
   outline: 0;
   border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -407,15 +409,16 @@ li {
 }
 .tags {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   flex-wrap: wrap;
   .active {
     background-color: $bg-color-doc;
-    background-image: url("/assets/images/checkmark-outline.svg");
+    background-image: url("/assets/images/check.svg");
     background-position: 3px;
     background-size: auto 50%;
     background-repeat: no-repeat;
     color: $brand-color;
+    padding-left: 16px;
   }
 }
 
