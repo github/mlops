@@ -312,6 +312,8 @@ li { margin: 0; }
 
 .home_intro { padding-top: 30px; display: grid; gap: 2em; align-items: start; }
 
+.home_intro .text_box h2 { font-weight: 400; }
+
 .home_intro .text_box p { font-size: 16px; line-height: 1.5; color: #c8ffff; }
 
 .team_intro a { color: #84b2ee; text-decoration: underline; }
@@ -425,11 +427,11 @@ li { margin: 0; }
 .doc_page .docs .docs_content * { max-width: 90vw; }
 
 /* tags filters */
-.tag_filter { background: transparent; color: #fdfdfd; border: 1px solid #212f49; padding: 8px 15px 8px 18px; margin: 5px; outline: 0; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; }
+.tag_filter { background: transparent; color: #fdfdfd; border: 1px solid #2a7ae2; padding: 4px 12px; margin: 4px; outline: 0; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; }
 
-.tags { display: flex; justify-content: center; flex-wrap: wrap; }
+.tags { display: flex; justify-content: left; flex-wrap: wrap; }
 
-.tags .active { background-color: #ffffff; background-image: url("/assets/images/checkmark-outline.svg"); background-position: 3px; background-size: auto 50%; background-repeat: no-repeat; color: #2a7ae2; }
+.tags .active { background-color: #ffffff; background-image: url("/assets/images/check.svg"); background-position: 3px; background-size: auto 50%; background-repeat: no-repeat; color: #2a7ae2; padding-left: 16px; }
 
 #markdown-toc { font-size: 14px; }
 
