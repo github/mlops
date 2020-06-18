@@ -1,8 +1,3 @@
-- title: Using GitHub Actions for MLOps & Data Science
-  info : Jun 17, 2020, The GitHub Engineering Blog.
-  link : "https://github.blog/2020-06-17-using-github-actions-for-mlops-data-science/"
-  tags : [overview]
-
 - title: Providing Data Scientists With New Superpowers
   info : Mar 6, 2020, Hamel Husain & Jeremy Howard.  An introduction to GitHub Actions For Data Scientists. 
   link : "https://fastpages.fast.ai/actions/markdown/2020/03/06/fastpages-actions.html"
