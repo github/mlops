@@ -143,9 +143,12 @@ li {
   margin: 0 auto;
   padding: 30px;
   .content_grid {
-    display: grid;
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     .content_item {
+      margin: 10px 0;
+      width: 100%;
       position: relative;
       padding: 0 20px;
       border: 1px solid $grey-color-dark;
@@ -463,8 +466,9 @@ li {
     display: block;
     padding: 20px;
   }
-  .content_grid {
-    grid-template-columns: 1fr 1fr;
+  .content .content_grid .content_item {
+    width: 42%;
+    margin: 1%;
   }
   .author_image {
     width: 50%;
@@ -554,6 +558,10 @@ li {
   }
 }
 @media screen and (min-width: 1440px) {
+    .content .content_grid .content_item {
+    width: 27%;
+    margin: 10px;
+  }
   .document {
     grid-template-columns: 1fr 260px;
   }
