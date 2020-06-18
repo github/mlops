@@ -29,8 +29,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
   ga('send', 'pageview');
 }
 </script>
-  
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
    <style>
     body {
@@ -61,7 +60,142 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 
 <script>
 
-var documents = [];
+var documents = [
+    
+    {
+    "id": 0,
+    "url": "https://mlops-github.com/404.html",
+    "title": "",
+    "body": " 404 Page not found :(  The requested page could not be found. "
+    }, {
+    "id": 1,
+    "url": "https://mlops-github.com/about/",
+    "title": "About",
+    "body": "This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at jekyllrb. com You can find the source code for Minima at GitHub:jekyll /minima You can find the source code for Jekyll at GitHub:jekyll /jekyll "
+    }, {
+    "id": 2,
+    "url": "https://mlops-github.com/actions.html",
+    "title": "GitHub Actions",
+    "body": "       GitHub Actions  GitHub Actions relevant to machine learning and data science, that you can use to automate tasks.  These are free to use and are open source.           AllKubernetesGoogle-CloudArgoExperiment TrackingKubeflowJupyter                Submit Argo Workflows To GKE :          Instantiate machine learning pipelines using Argo on Google Kubernetes Engine.                Submit Argo Workflows on K8s (Cloud agnostic):          Instantiate machine learning pipelines using Argo on any Kubernetes cluster.  This action is cloud agnostic.                Fetch metrics from Weights &amp; Biases:          Retrieve model metrics and metadata from Weights &amp; Biases.  You can use this for automated testing and reporting in pull requests.                Compile, deploy and run Kubeflow pipelines:          Launch Kubeflow pipelines on Google Cloud.                Dockerize GitHub repositories automatically as a Jupyter Server:          Automatically Dockerize GitHub repos and serve their contents with the appropriate dependencies with Jupyter or R-Markdown.  Can optionally be used in a complimentary way with mybinder. org                Create Azure ML Workspace:          Creates an Azure Machine Learning workspace.                Manage Azure Compute Resources:          Create, destroy and modify Azure compute resources.                Azure ML Run Jobs:          Run a training job, experiment or pipeline on Azure.                Azure ML Register Models:          Register a model on Azure Machine Learning.                Azure ML Deploy Models:          Deploy a model to AKS or ACI for inference.     "
+    }, {
+    "id": 3,
+    "url": "https://mlops-github.com/blog.html",
+    "title": "Blog Posts",
+    "body": "       Blog Posts  Blog Posts that are relevant to using GitHub for data science and ML Ops.           Allfastpages                    Providing Data Scientists With New Superpowers:         Mar 6, 2020, Hamel Husain &amp; Jeremy Howard.  An introduction to GitHub Actions For Data Scientists.                      Using GitHub Actions &amp; Azure Machine Learning for MLOps:         May 26, 2020, David Aronchick.  An overview of GitHub Actions that integrate with Azure Machine Learning.          "
+    }, {
+    "id": 4,
+    "url": "https://mlops-github.com/docs/",
+    "title": "Documentation",
+    "body": "Contributing: Contribution to this site and docs are welcome.  You can make pull requests or open issues on this GitHub repo.  If you are unsure on whether or not your content is appropriate for this site, please open an issue. What is MLOps?: From Wikipedia:  MLOps (a compound of “machine learning” and “operations”) is a practice for collaboration and communication between data scientists and operations professionals to help manage production ML (or deep learning) lifecycle. [1] Similar to the DevOps or DataOps approaches, MLOps looks to increase automation and improve the quality of production ML while also focusing on business and regulatory requirements. While MLOps also started as a set of best practices, it is slowly evolving into an independent approach to ML lifecycle management. MLOps applies to the entire lifecycle - from integrating with model generation (software development lifecycle, continuous integration/continuous delivery), orchestration, and deployment, to health, diagnostics, governance, and business metrics. How Can GitHub Help With MLOps?: There are a series of new and emerging features that can aid with MLOps.  Some feautres that are relevant incldue Actions and CodeSpaces. "
+    }, {
+    "id": 5,
+    "url": "https://mlops-github.com/examples.html",
+    "title": "Related Projects & Examples",
+    "body": "       {{page. title}}  {{page. description}}        {% assign tags = site. data. repository_templates | map: 'tags' | uniq %}   All   {%- assign s = tags | size | minus: 2 -%} {%- for i in (0. . s) -%}       {{tags[i]}}      {%- endfor -%}         {%- for item in site. data. repository_templates -%} {% assign t = item. tags   | join:  %%  | replace:    ,  _ | replace:  %% ,     %}            {{item. title}}:         {{item. info}}       {%- endfor -%}   "
+    }, {
+    "id": 6,
+    "url": "https://mlops-github.com/",
+    "title": "",
+    "body": "{%- include intro. html -%}  {%- for item in site. data. navigation -%}            {{item. title}}:    {{item. info}}     {%- endfor -%}"
+    }, {
+    "id": 7,
+    "url": "https://mlops-github.com/talks.html",
+    "title": "Talks",
+    "body": "       {{page. title}}  {{page. description}}        {% assign tags = site. data. demos | map: 'tags' | uniq %}   All   {%- assign s = tags | size | minus: 2 -%} {%- for i in (0. . s) -%}       {{tags[i]}}      {%- endfor -%}       {%- for item in site. data. demos -%} {% assign t = item. tags | join:  %%  |   replace:    ,  _ | replace:  %% ,     %}            {{item. title}}:         {{item. subtitle}}:     {{item. info}}               {%- endfor -%}   "
+    }, {
+    "id": 8,
+    "url": "https://mlops-github.com/team.html",
+    "title": "Meet the team",
+    "body": "       {{page. title}}  {{page. description}}   {% for author in site. team %}             @{{author. nick}}           {{ author. title }}:    {{author. content}}    {% endfor %}"
+    }, {
+    "id": 9,
+    "url": "https://mlops-github.com/tutorials.html",
+    "title": "Tutorials",
+    "body": "       {{page. title}}  {{page. description}}        {% assign tags = site. data. demos | map: 'tags' | uniq %}   All   {%- assign s = tags | size | minus: 2 -%} {%- for i in (0. . s) -%}       {{tags[i]}}      {%- endfor -%}       {%- for item in site. data. demos -%} {% assign t = item. tags | join:  %%  |   replace:    ,  _ | replace:  %% ,     %}            {{item. title}}:         {{item. subtitle}}:     {{item. info}}               {%- endfor -%}   "
+    }, 
+    {
+    "id": 10,
+    "url": "https://mlops-github.com/team/david.html",
+    "title": "David Aronchick",
+    "body": "About Me: I lead Open Source Machine Learning Strategy at Azure. This means I spend most of my time helping humans to convince machines to be smarter. I am only moderately successful at this. Previously, I led product management for Kubernetes on behalf of Google, launched Google Kubernetes Engine, and co-founded the Kubeflow project. I have also worked at Amazon and Chef and co-founded three startups. My Mission: I believe, above all, that we have a responsibility to the future and that we must help technology be beneficial to humanity. We have seen technology do some amazing things. But, we’ve also seen technology misused, misapplied, or just plain broken. Technology is NOT neutral; we must actively use it for good. My Favorite Tools: I use Chrome almost constantly during the day (armed with LastPass), with VS Code and OneNote for random notes. Outlook Web Acces and Gmail with Gmail key bindings are critical for processing mail quickly. For development, I use Kubeflow with Docker (for local development), Kubernetes (for cloud) and Draft with a Jupyter notebook, and VS Code for this as well. You can find more information about me on my page. "
+    }, {
+    "id": 11,
+    "url": "https://mlops-github.com/team/hamel.html",
+    "title": "Hamel Husain",
+    "body": "About Me: I am currently a Staff Machine Learning Engineer at GitHub.  Previously, I was a machine learning engineer at Airbnb and DataRobot.  Prior to that, I was a management consultant. Recently, I led the development of fastpages with the fastai community.  I also led GitHub’s CodeSearchNet project, and am a contributor to Kubeflow. Throughout my history as a data scientist, I have been most frustrated by the lack of tools and infrastructure for machine learning.  This led me to develop a keen interest in creating tools that can mimize toil for data scientists. You can find more information on my other projects and interests on my page. Favorite tools: Bash Scripting, VSCode, Python, Jupyter, Keras, Altair, fastai, pytorch, Docker, DataRobot, GitHub Actions, GitHub Pages. "
+    }, {
+    "id": 12,
+    "url": "https://mlops-github.com/team/marvin.html",
+    "title": "Marvin Buss",
+    "body": "About Me: I am currently a Cloud Solution Architect at Microsoft in the areas of Machine Learning &amp; Data Science.  I enjoy working with customers to make the process of deploying machine learning and data products easier. "
+    }, {
+    "id": 13,
+    "url": "https://mlops-github.com/team/michal.html",
+    "title": "Michał Jastrzębski",
+    "body": "About Me: I am currently a Staff Data Engineer at GitHub. Prior to GitHub, I was the technical lead of the OpenStack Kolla project and a Senior Cloud Software Engineer at Intel. I am an open source fanatic and an enthusiast of all things cloud. "
+    }, {
+    "id": 14,
+    "url": "https://mlops-github.com/team/rimas.html",
+    "title": "Rimas Silkaitis",
+    "body": "About Me: I’m a Senior Director of Product Management at GitHub, where I currently focus on data products and systems.  Prior to GitHub, I was leading product for Heroku’s data services. You can learn more about my professional history here. "
+    }, {
+    "id": 15,
+    "url": "https://mlops-github.com/team/taylor.html",
+    "title": "Taylor Holland",
+    "body": "About Me: I am currently a Director of Data Science at GitHub, where I lead Analytics, Decision &amp; Data Science, Machine Learning, and Machine Learning Infrastructure.  Prior to GitHub, I was leading infrastructure optimization at Heroku. You can learn more about my professional history here. "
+    }, {
+    "id": 16,
+    "url": "https://mlops-github.com/team/zander.html",
+    "title": "Zander",
+    "body": "About Me: Currently I am a Senior Data Scientist at GitHub and prior to that I was a Senior Data Analyst at Heroku. You can learn more about my professional history here. Over the last couple years I have transitioned to building internal tooling and infrastructure for Data Scientists and Machine Learning Engineers. I love this space because of the impact that we can have on the efficacy of Data Science and Machine Learning teams. The prospect of building tooling that will allow data scientists to more effectively use GitHub to get their work done is extremely exciting. I love working with the Python ecosystem, Kubernetes, GitHub Actions, Jupyter and massively parallel computing for Data Warehousing and Analytics. "
+    }, 
+    {
+    "id": 17,
+    "url": "https://mlops-github.com/docs/repo2docker",
+    "title": "repo2docker",
+    "body": "The repo2docker Action: repo2docker is a project that will automatically create a docker image of your GitHub repository based on configuration files found in the repository, with additional Jupyter or RStudio support (depending upon the configuration files found). This is extremely useful for serving Jupyter notebooks automatically from GitHub repos. The repo2docker action packages this functionality in an easy-to-use interface that can be triggered in your GitHub workflows. For example, you can build a Jupyter-enabled Docker image of your repository like so: name: Build Notebook Containeron: [push] # You may want to trigger this Action on other things than a push. jobs: build:  runs-on: ubuntu-latest  steps:  - name: checkout files in repo   uses: actions/checkout@master  - name: update jupyter dependencies with repo2docker   uses: machine-learning-apps/repo2docker-action@master   with:    DOCKER_USERNAME: $    DOCKER_PASSWORD: $Additionally, this action allows you to pre-cache images for your own BinderHub cluster, or for mybinder. org. "
+    }, {
+    "id": 18,
+    "url": "https://mlops-github.com/docs/fastpages",
+    "title": "fastpages",
+    "body": "fastai/fastpages: Blogging with Jupyter Notebooks: From the project page: fastpages uses GitHub Actions to simplify the process of creating Jekyll blog posts on GitHub Pages from a variety of input formats. fastpages provides the following features::  Create posts containing code, outputs of code (which can be interactive), formatted text, etc directly from Jupyter Notebooks; Notebook posts support features such as:     Interactive visualizations made with Altair remain interactive.    Hide or show cell input and output.    Collapsable code cells that are either open or closed by default.    Define the Title, Summary and other metadata via a special markdown cells   Ability to add links to Colab and GitHub automatically.     Support for comments, supported natively through GitHub Issues.  Built-in search.  Support for customizing the styling of your site.  Embed Twitter cards and YouTube videos.  Categorization of blog posts by user-supplied tags for discoverability.  Create and edit Markdown posts.  Create posts, including formatting and images, directly from Microsoft Word documents.  Write posts on your local machine and preview them with live reload. See the project for more details. "
+    }, {
+    "id": 19,
+    "url": "https://mlops-github.com/docs/wandb",
+    "title": "Weights & Biases",
+    "body": "Fetch Runs From Weights &amp; Biases: Weights and Biases is a system for experiment tracking, model optimization, and dataset versioning. The Weights and Biases (W&amp;B) Action can help you fetch runs from W&amp;B for reporting in your GitHub workflows. This Action saves a csv file called wandb_report. csv into the path specified by the default environment variable GITHUB_WORKSPACE set for you in GitHub Actions, which allows this data to be accessed by subsequent Actions.  Information in this CSV can be displayed in a variety of ways, such as a markdown formatted comment in a pull request or via the GitHub Checks API. This csv file always has the following fields:  run. url: the url for the run in the W&amp;B api.  run. name: the name of the run. This is automatically set by wandb if not specified by the user.  run. tags: a list with all of the tags assigned to the run.  run. id: the id associated with the run.  This corresponds to the input RUN_ID run. entity: this name of the entity that contains the project the run can be found in.  This is similar to an org in GitHub.  run. project: the name of the project that contains the run.  This is simlar to a repo in GitHub.  github_sha: the config variable github_sha.  __eval. category: this field will contain either the value candiate or baseline, depending on how the run was queried. In addition to the above fields the user can specify additional fields. Below is an example of how this Action can be used to fetch model runs: name: Get WandB Runson: [issue_comment]jobs: get-runs:  if: (github. event. issue. pull_request != null) &amp;&amp; contains(github. event. comment. body, '/get-runs')  runs-on: ubuntu-latest  steps: - name: Get the latest SHA for the PR that was commented on  id: chatops  uses: machine-learning-apps/actions-chatops@master  with:   TRIGGER_PHRASE:  /get-runs   env:   GITHUB_TOKEN: ${{ secrets. GITHUB_TOKEN }}    - name: Get Runs Using SHA  uses: machine-learning-apps/wandb-action@master  with:   PROJECT_NAME: ${{ format('{0}/{1}', secrets. WANDB_ENTITY, secrets. WANDB_PROJECT) }}   FILTER_GITHUB_SHA: ${{ steps. chatops. outputs. SHA }}   BASELINE_TAGS:  ['baseline', 'reference']    DISPLAY_METRICS:  ['accuracy', 'loss', 'best_val_acc', 'best_val_loss', '_runtime']    WANDB_API_KEY: ${{ secrets. WANDB_API_KEY }}   DEBUG: 'true'See this project for more information. "
+    }, {
+    "id": 20,
+    "url": "https://mlops-github.com/docs/jupyter",
+    "title": "Jupyter",
+    "body": "There are many interesting things you can do with Actions, and CodeSpaces to compliment jupyter notebooks on GitHub.  Navigate the menu on the left hand side to learn more. "
+    }, {
+    "id": 21,
+    "url": "https://mlops-github.com/docs/Argo",
+    "title": "Argo",
+    "body": "Deploy Machine Learning Workflows With Argo: What are Argo Workflows? From the docs:    Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes. Argo Workflows is implemented as a Kubernetes CRD (Custom Resource Definition).   Define workflows where each step in the workflow is a container. Model multi-step workflows as a sequence of tasks or capture the dependencies between tasks using a graph (DAG).  Easily run compute intensive jobs for machine learning or data processing in a fraction of the time using Argo Workflows on Kubernetes.  Run CI/CD pipelines natively on Kubernetes without configuring complex software development products. The Argo GitHub Action: See this repo for full context. A Hello-World Workflow: name: ML Workflows Via Actionson: [push]jobs: build:  runs-on: ubuntu-latest  steps:  # This copies the files in this repo, particulary the yaml workflow spec needed for Argo.   - name: Step One - checkout files in repo   uses: actions/checkout@master  # Get credentials (the kubeconfig file) the k8 cluster. Copies kubeconfig into /github/workspace/. kube/config  - name: Step Two - Get kubeconfig file from GKE   uses: machine-learning-apps/gke-kubeconfig@master   with:    application_credentials: $    project_id: $    location_zone: $    cluster_name: $   ###################################################   # This is the action that submits the Argo Workflow   - name: Step Three - Submit Argo Workflow from the examples/ folder in this repo   id: argo   uses: machine-learning-apps/actions-argo@master   with:    argo_url: $    # below is a reference to a YAML file in this repo that defines the workflow.     workflow_yaml_path:  examples/coinflip. yaml     parameter_file_path:  examples/arguments-parameters. yaml    env:    # KUBECONFIG tells kubectl where it can find your authentication information.  A config file was saved to this path in Step Two.     KUBECONFIG: '/github/workspace/. kube/config'   # This step displays the Argo URL, and illustrates how you can use the output of the previous Action.   - name: test argo outputs   run: echo  Argo URL $WORKFLOW_URL    env:    WORKFLOW_URL: $Running Argo On Self Hosted Runners: You can skip the . kubeconfig if your Actions runner is running on a self-hosted runner on your Kubernetes cluster that has access to Argo.  See these docs for further instructions. "
+    }, {
+    "id": 22,
+    "url": "https://mlops-github.com/docs/k8s",
+    "title": "Kubernetes",
+    "body": "Resources for MLOps on Kubernetes with GitHub.  This is useful if you need to access broader infrastructure resources in your machine learning workflows.  For example:  Deploying and serving models, including a service mesh Deploying and serving arbitrary applications, such as Jupyter Notebooks or documentation sites.  Accessing other resources that are visible from your internal k8s cluster, such as:     Databases, i. e. Presto, Hive   Storage, i. e. HDFS   Distributed data processing, such as Dask or Spark   Specialized computing such as GPUs.    Integration with experiment tracking systems.     Access to secrets.  Native resource management and kubernetes for scalability and resiliance.  Interoperability with machine learning or data pipelines, such as Argo, MLFlow, Prefect, etc.  … and much more. "
+    }, {
+    "id": 23,
+    "url": "https://mlops-github.com/docs/k8s-self-hosted-runner",
+    "title": "Self-Hosted K8s Actions Runner",
+    "body": "Create A Self-Hosted Actions Runner On Your Kubernetes Cluster With 3 Commands: Motivation: GitHub Actions allow you to use self hosted runners.  From the docs:  Self-hosted runners offer more control of hardware, operating system, and software tools than GitHub-hosted runners provide. With self-hosted runners, you can choose to create a custom hardware configuration with more processing power or memory to run larger jobs, install software available on your local network, and choose an operating system not offered by GitHub-hosted runners. Self-hosted runners can be physical, virtual, in a container, on-premises, or in a cloud. This repository shows how to run a self hosted runner in a Kubernetes cluster, which is useful if your Actions runner needs to create resources or update deployments. "
+    }, {
+    "id": 24,
+    "url": "https://mlops-github.com/docs/experiment-tracking",
+    "title": "Experiment Tracking",
+    "body": "Experiment tracking for machine learning involves logging of metrics and artificacts associated with different training runs.  This is essential for effective mlops as it allows you to track your performance metrics and promotes reproduceability in a transparent, reuseable way. There are several experiment tracking systems available as third-party solutions that GitHub Actions can integrate with.  For example, the below example illustrates how results of a training run can be fetched from Weights and Biases and dropped into a pull request: &lt;/img&gt; "
+    }, {
+    "id": 25,
+    "url": "https://mlops-github.com/docs/papermill",
+    "title": "papermill",
+    "body": "Refresh Jupyter Notebooks With Papermill: papermill is a great project for running notebooks programatically.  You can pass parameters to notebooks, use different kernels, etc. Example: refresh notebooks every 6 hours: Put a shell script at the location_action_files/run_notebooks. sh with the following contents: #!/bin/shset -ecd $(dirname  $0 )/. . cd _notebooks/ERRORS=  # Loop through all notebooks and run them with papermillfor file in *. ipynbdo  if papermill --kernel python3  ${file}   ${file} ; then    echo  Sucessfully refreshed ${file}\n\n\n\n   else    echo  ERROR Refreshing ${file}     ERRORS= ${ERRORS}, ${file}   fidone# Emit Errors If Exists So Downstream Task Can Open An Issueif [ -z  $ERRORS  ]then  echo  ::set-output name=error_bool::false else  echo  These files failed to update properly: ${ERRORS}   echo  ::set-output name=error_bool::true   echo  ::set-output name=error_str::${ERRORS} fiIn the location . github/workflows/update-nb. yaml define an Actions workflow with the following contents name: Update Notebooks And Refresh Pageon: schedule:  - cron: '0 */6 * * *'jobs: update-notebooks:  runs-on: ubuntu-latest  steps:   - name: Copy Repository Contents   uses: actions/checkout@v2  - name: Set up Python   uses: actions/setup-python@v1   with:    python-version: 3. 6  - name: install dependencies   run: |    pip3 install -r . /_notebooks/requirements. txt    python3 -m ipykernel install --user --name python3    sudo chmod -R 777 .   - name: update notebooks   id: update_nb   run: |    . /_action_files/run_notebooks. sh      - name: Create an issue if notebook update failure occurs   if: steps. update_nb. outputs. error_bool == 'true'   uses: actions/github-script@0. 6. 0   with:    github-token: $    script: |     var err = process. env. ERROR_STRING;     var run_id = process. env. RUN_ID;     github. issues. create({      owner: context. repo. owner,      repo: context. repo. repo,      title:  Error updating notebooks ,      body: `These are the notebooks that failed to update properly: \n${err}\n\n See run [${run_id}](https://github. com/github/covid19-dashboard/actions/runs/${run_id}) for more details. `     })   env:    ERROR_STRING: $    RUN_ID: $This example is based on covid19dashboards. com, which uses fastpages and papermill to refresh notebooks and serve them as dasbhoards.  You can see browse the workflow files of this project to see how papermill is used. "
+    }, 
+    ];
 
 var idx = lunr(function () {
     this.ref('id')
@@ -75,7 +209,7 @@ var idx = lunr(function () {
 function lunr_search(term) {
     document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
     if(term) {
-        document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + document.getElementById('lunrsearchresults').innerHTML;
+        document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + "<div id='search_closer' onclick='search_close()'><img src='/assets/images/times.png' alt='closer'></div>" + document.getElementById('lunrsearchresults').innerHTML; 
         //put results on the screen.
         var results = idx.search(term);
         if(results.length>0){
@@ -95,11 +229,14 @@ function lunr_search(term) {
     }
     return false;
 }
+    function search_close() {
+        $("#lunrsearchresults").empty();
+    };
 </script>
 <style>
     #lunrsearchresults {padding-top: 0.2rem;}
     .lunrsearchresult {padding-bottom: 1rem;}
-    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .title {color: #fff;}
     .lunrsearchresult .url {color: silver;}
     .lunrsearchresult a {display: block; color: #777;}
     .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
@@ -111,7 +248,7 @@ function lunr_search(term) {
     <p><input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search" /></p>
 </form>
 <div id="lunrsearchresults">
-    <ul></ul>
+  <ul></ul>
 </div>
 </div><button class="toggle_mnu" id="toggle_menu" onclick="toggle_menu()">
       <img src="/assets/images/sandwich_white.png" class="open toggle_icon" alt="menu open">
