@@ -34,6 +34,7 @@ p {
 }
 li {
   margin: 0;
+  font-size: 15px;
 }
 
 .site-header {
@@ -476,6 +477,16 @@ li {
 }
 
 @media screen and (min-width: 1024px) {
+  .search {
+    left: 340px;
+     position: fixed;
+    z-index: 1001;
+  }
+  #lunrsearchresults {
+       background: $background-color;
+    color: $text-color;
+    padding: 0 20px;
+  }
   .highlighter-rouge {
     max-width: 60vw;
   }
@@ -558,7 +569,7 @@ li {
   }
 }
 @media screen and (min-width: 1440px) {
-    .content .content_grid .content_item {
+  .content .content_grid .content_item {
     width: 27%;
     margin: 10px;
   }

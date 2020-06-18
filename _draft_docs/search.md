@@ -30,7 +30,7 @@ Before you can use search, you must initialize the feature by running this `rake
 $ bundle exec just-the-docs rake search:init
 ```
 
-This command creates the `search-data.json` file that Jekyll uses to create your search index. Alternatively, you can create the file manually in the `assets/js/` directory of your Jekyll site with this content:
+This command creates the `search-data.json` file that Jekyll uses to create your search index. Alternatively, you can create the file manually in the `js/` directory of your Jekyll site with this content:
 
 ```liquid
 {% raw %}---
