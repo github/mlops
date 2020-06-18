@@ -17,6 +17,12 @@
       {%- endfor -%}
     </nav>
 
+{%- if page.layout == 'docs' -%}
+<div class="search">
+  {%- include search-lunr.html -%}
+</div>
+{%- endif -%}
+
     <button class="toggle_mnu" id="toggle_menu" onclick="toggle_menu()">
       <img src="{{'/assets/images/sandwich_white.png' | relative_url}}" class="open toggle_icon" alt="menu open">
       <img src="{{'/assets/images/times.png' | relative_url}}" class="close toggle_icon hidden" alt="menu close">
