@@ -51,7 +51,7 @@ var idx = lunr(function () {
 function lunr_search(term) {
     document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
     if(term) {
-        document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + "<button id='search_closer' onclick='search_close()'><img src='/assets/images/times.png' alt='closer'></button>" + document.getElementById('lunrsearchresults').innerHTML; 
+        document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + "<div id='search_closer' onclick='search_close()'><img src='/assets/images/times.png' alt='closer'></div>" + document.getElementById('lunrsearchresults').innerHTML; 
         //put results on the screen.
         var results = idx.search(term);
         if(results.length>0){
