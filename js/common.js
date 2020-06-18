@@ -29,17 +29,11 @@ $(".tag_filter").click(function () {
   $(this).addClass('active');
 });
 
-/* $(".toggle_sub").click(function () {
-  $(this).toggleClass('rot45');
-  $(this).next('ul').toggleClass('hidden');
-}); */
-
 $(document).ready(function () {
   var sidebar = $(".aside_nav_link");
   var title = $('.doc_title').text();
  console.log(sidebar);
 l=sidebar.length;
-console.log("leng=" + l);
   for (i=0; i<l; i++) {
     if (sidebar[i].text == title) {
       var parent = sidebar[i].parentElement.parentElement;
@@ -50,7 +44,6 @@ console.log("leng=" + l);
           grandparent.classList.remove("hidden");
           grandparent.classList.add("active");
         }
-        console.log(sidebar[i].text);
       }
     }
   }
