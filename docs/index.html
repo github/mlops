@@ -37,6 +37,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
       background: #1b1f23;
     }
   </style>
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 </head><body class="doc_page"><header class="site-header" role="banner">
   <div class="navbar">
 
@@ -56,9 +57,63 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
       
       <a href="/talks" >Talks</a>
       
-      <a href="/team" >Team</a></nav>
+      <a href="/team" >Team</a></nav><div class="search"><script src="/js/lunr.js"></script>
 
-    <button class="toggle_mnu" id="toggle_menu" onclick="toggle_menu()">
+<script>
+
+var documents = [];
+
+var idx = lunr(function () {
+    this.ref('id')
+    this.field('title')
+    this.field('body')
+
+    documents.forEach(function (doc) {
+        this.add(doc)
+    }, this)
+});
+function lunr_search(term) {
+    document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
+    if(term) {
+        document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + document.getElementById('lunrsearchresults').innerHTML;
+        //put results on the screen.
+        var results = idx.search(term);
+        if(results.length>0){
+            //console.log(idx.search(term));
+            //if results
+            for (var i = 0; i < results.length; i++) {
+                // more statements
+                var ref = results[i]['ref'];
+                var url = documents[ref]['url'];
+                var title = documents[ref]['title'];
+                var body = documents[ref]['body'].substring(0,160)+'...';
+                document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'><a href='" + url + "'><span class='title'>" + title + "</span><br /><span class='body'>"+ body +"</span><br /><span class='url'>"+ url +"</span></a></li>";
+            }
+        } else {
+            document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = "<li class='lunrsearchresult'>No results found...</li>";
+        }
+    }
+    return false;
+}
+</script>
+<style>
+    #lunrsearchresults {padding-top: 0.2rem;}
+    .lunrsearchresult {padding-bottom: 1rem;}
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <p><input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search" /></p>
+</form>
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+</div><button class="toggle_mnu" id="toggle_menu" onclick="toggle_menu()">
       <img src="/assets/images/sandwich_white.png" class="open toggle_icon" alt="menu open">
       <img src="/assets/images/times.png" class="close toggle_icon hidden" alt="menu close">
     </button>
@@ -87,7 +142,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 </aside><div class="intro_wrapper">
   <section class="intro">
     <div class="image_box">
-      <img src="https://ghicons.github.com/assets/images/blue/svg/Documentation.svg" width="75px" alt="docs">
+      <img src="https://ghicons.github.com/assets/images/blue/svg/Documentation.svg" alt="docs">
     </div>
     <div class="text_box">
       <h1>Documentation</h1>
@@ -113,34 +168,6 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 <p>There are a series of new and emerging features that can aid with MLOps.  Some feautres that are relevant incldue <a href="https://github.com/features/actions">Actions</a> and <a href="https://github.com/features/codespaces">CodeSpaces</a>.</p>
 
 
-    <!-- <ul><li>
-        <a href="/docs/repo2docker">repo2docker"</a>
-        <p></p>
-      </li><li>
-        <a href="/docs/fastpages">fastpages"</a>
-        <p></p>
-      </li><li>
-        <a href="/docs/wandb">Weights & Biases"</a>
-        <p></p>
-      </li><li>
-        <a href="/docs/jupyter">Jupyter"</a>
-        <p></p>
-      </li><li>
-        <a href="/docs/Argo">Argo"</a>
-        <p></p>
-      </li><li>
-        <a href="/docs/k8s">Kubernetes"</a>
-        <p></p>
-      </li><li>
-        <a href="/docs/k8s-self-hosted-runner">Self-Hosted K8s Actions Runner"</a>
-        <p></p>
-      </li><li>
-        <a href="/docs/experiment-tracking">Experiment Tracking"</a>
-        <p></p>
-      </li><li>
-        <a href="/docs/papermill">papermill"</a>
-        <p></p>
-      </li></ul> -->
   </section>
   </main><footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
@@ -165,7 +192,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 
   </div>
 
-</footer><script src="/assets/js/common.js"></script>
+</footer><script src="/js/common.js"></script>
 </body>
 
 </html>
