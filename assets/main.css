@@ -324,9 +324,9 @@ li { margin: 0; }
 
 .content { grid-area: c; margin: 0 auto; padding: 30px; }
 
-.content .content_grid { display: grid; gap: 1rem; }
+.content .content_grid { display: flex; flex-wrap: wrap; justify-content: center; }
 
-.content .content_grid .content_item { position: relative; padding: 0 20px; border: 1px solid #424242; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; }
+.content .content_grid .content_item { margin: 10px 0; width: 100%; position: relative; padding: 0 20px; border: 1px solid #424242; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; }
 
 .content .content_grid .content_item a { color: #fdfdfd; text-decoration: none; }
 
@@ -440,11 +440,11 @@ li { margin: 0; }
 .highlighter-rouge { max-width: 90vw; overflow-x: auto; }
 
 /* media queries */
-@media screen and (min-width: 768px) { .blog_intro { padding: 20px; } .intro { padding: 30px; } .home_intro h1 { font-size: 56px; } .home_intro h2 { font-size: 24px; } .home_intro p { font-size: 16px; } .site-header .navbar { grid-template-columns: 320px 1fr; } .site-header .navbar .navigation { width: max-content; } .sidebar_left { display: block; padding: 20px; } .content_grid { grid-template-columns: 1fr 1fr; } .author_image { width: 50%; } }
+@media screen and (min-width: 768px) { .blog_intro { padding: 20px; } .intro { padding: 30px; } .home_intro h1 { font-size: 56px; } .home_intro h2 { font-size: 24px; } .home_intro p { font-size: 16px; } .site-header .navbar { grid-template-columns: 320px 1fr; } .site-header .navbar .navigation { width: max-content; } .sidebar_left { display: block; padding: 20px; } .content .content_grid .content_item { width: 42%; margin: 1%; } .author_image { width: 50%; } }
 
 @media screen and (min-width: 1024px) { .highlighter-rouge { max-width: 60vw; } .aside_nav { overflow-y: auto; max-height: 75vh; } .doc_page .docs { width: 100%; display: grid; grid-template-columns: 320px 1fr; grid-template-areas: "l c" "l d"; } .doc_page .docs .docs_content { grid-area: d; max-width: 1000px; padding: 40px; } .doc_page .docs .intro_wrapper { grid-area: c; } .doc_page .docs .sidebar_left { grid-area: l; } .doc_page .docs .document { grid-area: c; display: grid; } .doc_page .docs .document h1, .doc_page .docs .document h2 { padding-top: 30px; } .doc_page .docs .document .sidebar_right { padding: 30px; } .doc_page .docs .document .sidebar_right ul { list-style: none; position: sticky; top: 150px; } .doc_page .docs .document .sidebar_right ul a { font-size: 14px; } .doc_page .docs .document .sidebar_right ul a:hover { color: #000; } .home_intro h1 { font-size: 84px; } .home_intro h2 { font-size: 40px; } .intro { max-width: 1000px; padding: 5vw 40px 30px; display: grid; gap: 40px; grid-template-columns: 2fr 1fr; grid-template-areas: "a b"; } .intro .image_box { grid-area: b; } .intro .image_box img { width: 100%; } .intro .text_box { grid-area: a; } .team_item { grid-template-columns: 1fr 2fr; gap: 4rem; } .author_image { width: 80%; } }
 
-@media screen and (min-width: 1440px) { .document { grid-template-columns: 1fr 260px; } .highlighter-rouge { max-width: 55vw; } #markdown-toc { position: fixed; width: 170px; word-wrap: anywhere; max-height: 50vh; overflow-y: auto; top: 200px; right: 30px; } .site-header .navbar .navigation { display: flex; position: relative; justify-self: right; height: 100%; padding: 0; top: 0; background: transparent; letter-spacing: -0.5px; } .toggle_icon { display: none; } .content_grid { grid-template-columns: 1fr 1fr 1fr; } .page-content { /* grid-template-columns: 260px 1fr 260px; */ } .page-content .content { max-width: 1000px; } .home_intro { padding-top: 5vh; } }
+@media screen and (min-width: 1440px) { .content .content_grid .content_item { width: 27%; margin: 10px; } .document { grid-template-columns: 1fr 260px; } .highlighter-rouge { max-width: 55vw; } #markdown-toc { position: fixed; width: 170px; word-wrap: anywhere; max-height: 50vh; overflow-y: auto; top: 200px; right: 30px; } .site-header .navbar .navigation { display: flex; position: relative; justify-self: right; height: 100%; padding: 0; top: 0; background: transparent; letter-spacing: -0.5px; } .toggle_icon { display: none; } .content_grid { grid-template-columns: 1fr 1fr 1fr; } .page-content { /* grid-template-columns: 260px 1fr 260px; */ } .page-content .content { max-width: 1000px; } .home_intro { padding-top: 5vh; } }
 
 @media screen and (max-width: 767px) { .y_video { width: calc(100vw * 0.8); height: calc(100vw * 0.6); } }
 
