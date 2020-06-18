@@ -483,9 +483,13 @@ li {
     z-index: 1001;
   }
   #lunrsearchresults {
-       background: $background-color;
+    background: $background-color;
     color: $text-color;
     padding: 0 20px;
+    #search_closer {
+      cursor: pointer;
+      z-index: 9999;
+    }
   }
   .highlighter-rouge {
     max-width: 60vw;
