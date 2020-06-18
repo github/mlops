@@ -478,14 +478,21 @@ li {
 
 @media screen and (min-width: 1024px) {
   .search {
-    left: 340px;
+    left: 360px;
+    top: 15px;
      position: fixed;
     z-index: 1001;
   }
   #lunrsearchresults {
-       background: $background-color;
+    background: $background-color;
     color: $text-color;
     padding: 0 20px;
+    max-height: 70vh;
+    overflow-y: auto;
+    #search_closer {
+      cursor: pointer;
+      z-index: 9999;
+    }
   }
   .highlighter-rouge {
     max-width: 60vw;
