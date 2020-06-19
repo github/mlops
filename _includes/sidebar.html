@@ -10,7 +10,7 @@
         <a class="aside_nav_link{% if page.title == item.title %} active"{% endif %}" href="{{item.url}}">{{item.title}}</a>
 
         {%- if item.has_children -%}
-         <div class="toggle_sub rot180"></div>
+         <div class="toggle_sub rot90"></div>
         {%- assign this = item.title -%}
         {% assign children = site.docs | where: "parent", this %}
 
