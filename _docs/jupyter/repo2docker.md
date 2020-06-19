@@ -1,5 +1,5 @@
 ---
-title: repo2docker
+title: Containerize repos as a Jupyter server
 parent: Jupyter
 order_n: 1
 permalink: /docs/repo2docker

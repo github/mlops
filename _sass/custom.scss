@@ -290,6 +290,20 @@ li {
   -ms-transform: rotate(0) translateY(7px);
   -o-transform: rotate(0) translateY(7px);
 }
+.rot90 {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+.active .rot90 {
+  transform: rotate(0);
+  -webkit-transform: rotate(0);
+  -moz-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+}
 .site-footer {
   margin-top: 30px;
 }

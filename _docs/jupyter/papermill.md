@@ -1,5 +1,5 @@
 ---
-title: papermill
+title: Programatically run notebooks
 parent: Jupyter
 order_n: 5
 permalink: /docs/papermill
