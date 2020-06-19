@@ -43,7 +43,7 @@ li {
   position: sticky;
   top: 0;
   z-index: 1000;
-
+  min-height: 80px;
   .toggle_mnu {
     background: transparent;
     border: 0;
@@ -107,9 +107,7 @@ li {
 }
 
 .home_intro {
-  padding-top: 30px;
   display: grid;
-  gap: 2em;
   align-items: start;
   .text_box {
     h2 {
@@ -132,7 +130,7 @@ li {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 70%;
+  width: 90%;
 }
 
 .page-content {
@@ -142,7 +140,7 @@ li {
 .content {
   grid-area: c;
   margin: 0 auto;
-  padding: 30px;
+  padding: 20px;
   .content_grid {
     display: flex;
     flex-wrap: wrap;
@@ -283,27 +281,6 @@ li {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
-.active .rot180 {
-  transform: rotate(0) translateY(7px);
-  -webkit-transform: rotate(0) translateY(7px);
-  -moz-transform: rotate(0) translateY(7px);
-  -ms-transform: rotate(0) translateY(7px);
-  -o-transform: rotate(0) translateY(7px);
-}
-.rot90 {
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-}
-.active .rot90 {
-  transform: rotate(0);
-  -webkit-transform: rotate(0);
-  -moz-transform: rotate(0);
-  -ms-transform: rotate(0);
-  -o-transform: rotate(0);
-}
 .site-footer {
   margin-top: 30px;
 }
@@ -325,6 +302,7 @@ li {
     vertical-align: middle;
   }
 }
+
 /* Document style */
 .doc_page {
   .docs {
@@ -337,9 +315,7 @@ li {
     .intro_wrapper {
       grid-area: top;
       padding: 20px;
-      background: $background-color;
-      color: $text-color;
-      /* grid-area: c; */
+      color: $background-color;
     }
     .sidebar_left {
       grid-area: bottom;
@@ -347,7 +323,18 @@ li {
       .toggle_sub {
         display: inline-block;
         cursor: pointer;
-        color: $brand-color;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 4px 8px 4px;
+        border-color: transparent transparent $brand-color transparent;
+      }
+      .active .rot180 {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 0 4px 8px;
+        border-color: transparent transparent transparent #111;
       }
       nav {
         top: 180px;
@@ -355,8 +342,11 @@ li {
         ul {
           list-style-type: none;
           margin: 0;
+          li {
+            margin: 10px 0;
+          }
           a {
-            padding: 5px;
+            padding: 8px;
             font-size: $sidebar_f_size;
             color: $brand-color;
             &:hover {
@@ -390,7 +380,6 @@ li {
     }
     .document {
       box-sizing: border-box;
-
       grid-area: middle;
       padding: 30px;
       doc_title {
@@ -410,6 +399,70 @@ li {
     }
   }
 }
+
+/* search block */
+
+.search {
+  position: fixed;
+  top: 44px;
+  position: fixed;
+  z-index: 1001;
+}
+.lunrsearchresults {
+  box-sizing: border-box;
+  position: fixed;
+  width: 96%;
+  left: 2%;
+  top: 80px;
+  border: 1px solid #828282;
+  box-shadow: inset 1px 1px 34px 9px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  background: lighten($brand-color, 90%);
+  color: $text-color;
+  padding: 20px;
+  max-height: 70vh;
+  overflow-y: auto;
+  .lunrsearchresult a {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #search_closer {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  ul {
+    li {
+      padding: 10px;
+    }
+    list-style-type: none;
+    margin-left: 0;
+    .page_title {
+      border-right: 1px solid $grey-color-light;
+    }
+  }
+}
+.search h3 {
+  color: $brand-color;
+}
+.lunrsearchresult .url {
+  color: $sidebar-color;
+}
+.lunrsearchresult a {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  color: $grey-color-dark;
+}
+.lunrsearchresult a:hover,
+.lunrsearchresult a:focus {
+  text-decoration: none;
+}
+.lunrsearchresult a:hover .title {
+  text-decoration: underline;
+}
+
 /* tags filters */
 
 .tag_filter {
@@ -444,7 +497,7 @@ li {
   font-size: 14px;
   &::before {
     content: "Table of contents";
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 .highlighter-rouge {
@@ -458,8 +511,22 @@ li {
     padding: 20px;
   }
   .intro {
-    padding: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "a b";
+    .image_box {
+      grid-area: b;
+      img {
+        width: 100%;
+      }
+    }
+    .text_box {
+      grid-area: a;
+      align-self: center;
+    }
   }
+
   .home_intro {
     h1 {
       font-size: 56px;
@@ -491,22 +558,59 @@ li {
 }
 
 @media screen and (min-width: 1024px) {
-  .search {
-    left: 360px;
-    top: 15px;
-     position: fixed;
-    z-index: 1001;
-  }
-  #lunrsearchresults {
-    background: $background-color;
+  .lunrsearchresults {
+    border: 1px solid $grey-color;
+    box-shadow: inset 1px 1px 34px 9px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 0.2rem;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    background: lighten($brand-color, 90%);
     color: $text-color;
-    padding: 0 20px;
+    padding: 20px;
     max-height: 70vh;
     overflow-y: auto;
     #search_closer {
+      width: 20px;
+      height: auto;
       cursor: pointer;
       z-index: 9999;
     }
+    ul {
+      li {
+        padding: 10px;
+      }
+      list-style-type: none;
+      margin-left: 0;
+      .page_title {
+        border-right: 1px solid $grey-color-light;
+      }
+    }
+  }
+  .search h3 {
+    color: $brand-color;
+  }
+  .lunrsearchresults
+  .lunrsearchresult a {
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+  .lunrsearchresult a:hover,
+  .lunrsearchresult a:focus {
+    text-decoration: none;
+  }
+  .lunrsearchresult a:hover .title {
+    text-decoration: underline;
+  }
+
+  .search {
+    left: 360px;
+    top: 13px;
+    padding-right: 50px;
+  }
+
+  .hidden {
+    display: none;
   }
   .highlighter-rouge {
     max-width: 60vw;
@@ -524,7 +628,7 @@ li {
     .docs_content {
       grid-area: d;
       max-width: 1000px;
-      padding: 40px;
+      padding-right: 40px;
     }
     .intro_wrapper {
       grid-area: c;
@@ -566,7 +670,6 @@ li {
   }
   .intro {
     max-width: 1000px;
-    padding: 5vw 40px 30px;
     display: grid;
     gap: 40px;
     grid-template-columns: 2fr 1fr;
@@ -590,6 +693,13 @@ li {
   }
 }
 @media screen and (min-width: 1440px) {
+  .search {
+    top: 22px;
+  }
+  .lunrsearchresults {
+  width: 60%;
+  left: 20%;
+  }
   .content .content_grid .content_item {
     width: 27%;
     margin: 10px;
