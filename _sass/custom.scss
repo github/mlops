@@ -283,13 +283,7 @@ li {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
 }
-.active .rot180 {
-  transform: rotate(0) translateY(7px);
-  -webkit-transform: rotate(0) translateY(7px);
-  -moz-transform: rotate(0) translateY(7px);
-  -ms-transform: rotate(0) translateY(7px);
-  -o-transform: rotate(0) translateY(7px);
-}
+
 .site-footer {
   margin-top: 30px;
 }
@@ -333,7 +327,18 @@ li {
       .toggle_sub {
         display: inline-block;
         cursor: pointer;
-        color: $brand-color;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 4px 8px 4px;
+        border-color: transparent transparent $brand-color transparent;
+      }
+      .active .rot180 {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 0 4px 8px;
+        border-color: transparent transparent transparent #111;
       }
       nav {
         top: 180px;
@@ -341,8 +346,11 @@ li {
         ul {
           list-style-type: none;
           margin: 0;
+          li {
+            margin: 10px 0;
+          }
           a {
-            padding: 5px;
+            padding: 8px;
             font-size: $sidebar_f_size;
             color: $brand-color;
             &:hover {
@@ -376,7 +384,6 @@ li {
     }
     .document {
       box-sizing: border-box;
-
       grid-area: middle;
       padding: 30px;
       doc_title {
@@ -480,7 +487,7 @@ li {
   .search {
     left: 360px;
     top: 15px;
-     position: fixed;
+    position: fixed;
     z-index: 1001;
   }
   #lunrsearchresults {
