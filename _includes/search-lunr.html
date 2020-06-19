@@ -51,7 +51,7 @@ var idx = lunr(function () {
 function lunr_search(term) {
     document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
     if(term) {
-        document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + 
+        document.getElementById('lunrsearchresults').innerHTML = "<h3 class='search_title'>Search results for '" + term + "'</h3>" + 
         "<div id='search_closer' onclick='search_close()'>\
             <img src='/assets/images/times.png' alt='closer'>\
         </div>" 
@@ -74,9 +74,9 @@ function lunr_search(term) {
                     <a href='" + url + "'>\
                         <div class='page_title'>\
                             <h3 class='title'>" + title + "</h3>\
-                            <p class='url'>"+ url +"</p>\
+                            <span class='url'>"+ url +"</span>\
                         </div>\
-                        <p class='body'>"+ body +"</p>\
+                        <span class='body'>"+ body +"</span>\
                     </a>\
                 </li>";
             }
@@ -94,7 +94,7 @@ function lunr_search(term) {
 </script>
 
 <form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-    <p><input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search" /></p>
+    <h3><input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search" /></h3>
 </form>
 <div id="lunrsearchresults" class="lunrsearchresults hidden">
   <ul></ul>
