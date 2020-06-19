@@ -26,12 +26,6 @@
        </url>
   
       <url>
-        <loc>https://mlops-github.com/docs/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
         <loc>https://mlops-github.com/examples.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
