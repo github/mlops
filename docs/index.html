@@ -44,19 +44,7 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
       <!-- <img src="/assets/images/Data-driven-recommendations.svg" alt="logo"> --><svg aria-hidden="true" class="indexesm__StyledOcticon-sc-1ao7p5-27 xrdzL" height="32" role="img" viewBox="0 0 16 16" width="32" style="display:inline-block;fill:currentColor;user-select:none;vertical-align:text-bottom"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg><a href="/">
         <span>Machine Learning Ops</span>
       </a>
-    </div>
-
-    <nav class="navigation hidden" id="navigation">
-      
-      <a href="/blog" >Blog Posts</a>
-      
-      <a href="/actions" >GitHub Actions</a>
-      
-      <a href="/examples" >Examples</a>
-      
-      <a href="/talks" >Talks</a>
-      
-      <a href="/team" >Team</a></nav><div class="search"><script src="/js/lunr.js"></script>
+    </div><div class="search"><script src="/js/lunr.js"></script>
 
 <script>
 
@@ -209,7 +197,13 @@ var idx = lunr(function () {
 function lunr_search(term) {
     document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
     if(term) {
-        document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + "<div id='search_closer' onclick='search_close()'><img src='/assets/images/times.png' alt='closer'></div>" + document.getElementById('lunrsearchresults').innerHTML; 
+        document.getElementById('lunrsearchresults').innerHTML = "<h3 class='search_title'>Search results for '" + term + "'</h3>" + 
+        "<div id='search_closer' onclick='search_close()'>\
+            <img src='/assets/images/times.png' alt='closer'>\
+        </div>" 
+        + document.getElementById('lunrsearchresults').innerHTML; 
+        /* document.getElemenstById('lunrsearchresults').element.classList.remove("hidden"); */
+        $('#lunrsearchresults').removeClass("hidden");
         //put results on the screen.
         var results = idx.search(term);
         if(results.length>0){
@@ -221,36 +215,50 @@ function lunr_search(term) {
                 var url = documents[ref]['url'];
                 var title = documents[ref]['title'];
                 var body = documents[ref]['body'].substring(0,160)+'...';
-                document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'><a href='" + url + "'><span class='title'>" + title + "</span><br /><span class='body'>"+ body +"</span><br /><span class='url'>"+ url +"</span></a></li>";
+                document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + 
+                "<li class='lunrsearchresult'>\
+                    <a href='" + url + "'>\
+                        <div class='page_title'>\
+                            <h3 class='title'>" + title + "</h3>\
+                            <span class='url'>"+ url +"</span>\
+                        </div>\
+                        <span class='body'>"+ body +"</span>\
+                    </a>\
+                </li>";
             }
         } else {
             document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = "<li class='lunrsearchresult'>No results found...</li>";
         }
+
     }
     return false;
 }
     function search_close() {
-        $("#lunrsearchresults").empty();
+        $('#lunrsearchresults').empty().addClass("hidden");
+        /* document.getElementById('lunrsearchresults').element.classList.add("hidden"); */
     };
 </script>
-<style>
-    #lunrsearchresults {padding-top: 0.2rem;}
-    .lunrsearchresult {padding-bottom: 1rem;}
-    .lunrsearchresult .title {color: #fff;}
-    .lunrsearchresult .url {color: silver;}
-    .lunrsearchresult a {display: block; color: #777;}
-    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
-    .lunrsearchresult a:hover .title {text-decoration: underline;}
-</style>
-
 
 <form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-    <p><input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search" /></p>
+    <h3><input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search" /></h3>
 </form>
-<div id="lunrsearchresults">
+<div id="lunrsearchresults" class="lunrsearchresults hidden">
   <ul></ul>
 </div>
-</div><button class="toggle_mnu" id="toggle_menu" onclick="toggle_menu()">
+</div><nav class="navigation hidden" id="navigation">
+      
+      <a href="/blog" >Blog Posts</a>
+      
+      <a href="/actions" >GitHub Actions</a>
+      
+      <a href="/examples" >Examples</a>
+      
+      <a href="/talks" >Talks</a>
+      
+      <a href="/team" >Team</a></nav>
+
+
+    <button class="toggle_mnu" id="toggle_menu" onclick="toggle_menu()">
       <img src="/assets/images/sandwich_white.png" class="open toggle_icon" alt="menu open">
       <img src="/assets/images/times.png" class="close toggle_icon hidden" alt="menu close">
     </button>
@@ -260,18 +268,18 @@ function lunr_search(term) {
     <h2>Sections</h2>
 
     <ul class="aside_nav" id="aside_nav"><li>
-        <a class="aside_nav_link" href="/docs/jupyter">Jupyter</a><span class="toggle_sub rot90">▸</span>
+        <a class="aside_nav_link" href="/docs/jupyter">Jupyter</a><div class="toggle_sub rot180"></div>
 
         <ul class="sub_menu hidden"><li>
             <a class="aside_nav_link " href="/docs/repo2docker">Containerize repos as a Jupyter server</a></li><li>
             <a class="aside_nav_link " href="/docs/fastpages">Blog with fastpages</a></li><li>
             <a class="aside_nav_link " href="/docs/papermill">Programatically run notebooks</a></li></ul></li><li>
-        <a class="aside_nav_link" href="/docs/k8s">Kubernetes</a><span class="toggle_sub rot90">▸</span>
+        <a class="aside_nav_link" href="/docs/k8s">Kubernetes</a><div class="toggle_sub rot180"></div>
 
         <ul class="sub_menu hidden"><li>
             <a class="aside_nav_link " href="/docs/Argo">Argo</a></li><li>
             <a class="aside_nav_link " href="/docs/k8s-self-hosted-runner">Self-Hosted K8s Actions Runner</a></li></ul></li><li>
-        <a class="aside_nav_link" href="/docs/experiment-tracking">Experiment Tracking</a><span class="toggle_sub rot90">▸</span>
+        <a class="aside_nav_link" href="/docs/experiment-tracking">Experiment Tracking</a><div class="toggle_sub rot180"></div>
 
         <ul class="sub_menu hidden"><li>
             <a class="aside_nav_link " href="/docs/wandb">Weights & Biases</a></li></ul></li></ul>
