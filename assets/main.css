@@ -377,6 +377,10 @@ li { margin: 0; font-size: 15px; }
 
 .active .rot180 { transform: rotate(0) translateY(7px); -webkit-transform: rotate(0) translateY(7px); -moz-transform: rotate(0) translateY(7px); -ms-transform: rotate(0) translateY(7px); -o-transform: rotate(0) translateY(7px); }
 
+.rot90 { transform: rotate(90deg); -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); }
+
+.active .rot90 { transform: rotate(0); -webkit-transform: rotate(0); -moz-transform: rotate(0); -ms-transform: rotate(0); -o-transform: rotate(0); }
+
 .site-footer { margin-top: 30px; }
 
 .footer_wrapper { max-width: 1000px; padding: 2%; margin-left: auto; margin-right: auto; }

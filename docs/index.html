@@ -152,12 +152,12 @@ var documents = [
     {
     "id": 17,
     "url": "https://mlops-github.com/docs/repo2docker",
-    "title": "repo2docker",
+    "title": "Containerize repos as a Jupyter server",
     "body": "The repo2docker Action: repo2docker is a project that will automatically create a docker image of your GitHub repository based on configuration files found in the repository, with additional Jupyter or RStudio support (depending upon the configuration files found). This is extremely useful for serving Jupyter notebooks automatically from GitHub repos. The repo2docker action packages this functionality in an easy-to-use interface that can be triggered in your GitHub workflows. For example, you can build a Jupyter-enabled Docker image of your repository like so: name: Build Notebook Containeron: [push] # You may want to trigger this Action on other things than a push. jobs: build:  runs-on: ubuntu-latest  steps:  - name: checkout files in repo   uses: actions/checkout@master  - name: update jupyter dependencies with repo2docker   uses: machine-learning-apps/repo2docker-action@master   with:    DOCKER_USERNAME: $    DOCKER_PASSWORD: $Additionally, this action allows you to pre-cache images for your own BinderHub cluster, or for mybinder. org. "
     }, {
     "id": 18,
     "url": "https://mlops-github.com/docs/fastpages",
-    "title": "fastpages",
+    "title": "Blog with fastpages",
     "body": "fastai/fastpages: Blogging with Jupyter Notebooks: From the project page: fastpages uses GitHub Actions to simplify the process of creating Jekyll blog posts on GitHub Pages from a variety of input formats. fastpages provides the following features::  Create posts containing code, outputs of code (which can be interactive), formatted text, etc directly from Jupyter Notebooks; Notebook posts support features such as:     Interactive visualizations made with Altair remain interactive.    Hide or show cell input and output.    Collapsable code cells that are either open or closed by default.    Define the Title, Summary and other metadata via a special markdown cells   Ability to add links to Colab and GitHub automatically.     Support for comments, supported natively through GitHub Issues.  Built-in search.  Support for customizing the styling of your site.  Embed Twitter cards and YouTube videos.  Categorization of blog posts by user-supplied tags for discoverability.  Create and edit Markdown posts.  Create posts, including formatting and images, directly from Microsoft Word documents.  Write posts on your local machine and preview them with live reload. See the project for more details. "
     }, {
     "id": 19,
@@ -192,7 +192,7 @@ var documents = [
     }, {
     "id": 25,
     "url": "https://mlops-github.com/docs/papermill",
-    "title": "papermill",
+    "title": "Programatically run notebooks",
     "body": "Refresh Jupyter Notebooks With Papermill: papermill is a great project for running notebooks programatically.  You can pass parameters to notebooks, use different kernels, etc. Example: refresh notebooks every 6 hours: Put a shell script at the location_action_files/run_notebooks. sh with the following contents: #!/bin/shset -ecd $(dirname  $0 )/. . cd _notebooks/ERRORS=  # Loop through all notebooks and run them with papermillfor file in *. ipynbdo  if papermill --kernel python3  ${file}   ${file} ; then    echo  Sucessfully refreshed ${file}\n\n\n\n   else    echo  ERROR Refreshing ${file}     ERRORS= ${ERRORS}, ${file}   fidone# Emit Errors If Exists So Downstream Task Can Open An Issueif [ -z  $ERRORS  ]then  echo  ::set-output name=error_bool::false else  echo  These files failed to update properly: ${ERRORS}   echo  ::set-output name=error_bool::true   echo  ::set-output name=error_str::${ERRORS} fiIn the location . github/workflows/update-nb. yaml define an Actions workflow with the following contents name: Update Notebooks And Refresh Pageon: schedule:  - cron: '0 */6 * * *'jobs: update-notebooks:  runs-on: ubuntu-latest  steps:   - name: Copy Repository Contents   uses: actions/checkout@v2  - name: Set up Python   uses: actions/setup-python@v1   with:    python-version: 3. 6  - name: install dependencies   run: |    pip3 install -r . /_notebooks/requirements. txt    python3 -m ipykernel install --user --name python3    sudo chmod -R 777 .   - name: update notebooks   id: update_nb   run: |    . /_action_files/run_notebooks. sh      - name: Create an issue if notebook update failure occurs   if: steps. update_nb. outputs. error_bool == 'true'   uses: actions/github-script@0. 6. 0   with:    github-token: $    script: |     var err = process. env. ERROR_STRING;     var run_id = process. env. RUN_ID;     github. issues. create({      owner: context. repo. owner,      repo: context. repo. repo,      title:  Error updating notebooks ,      body: `These are the notebooks that failed to update properly: \n${err}\n\n See run [${run_id}](https://github. com/github/covid19-dashboard/actions/runs/${run_id}) for more details. `     })   env:    ERROR_STRING: $    RUN_ID: $This example is based on covid19dashboards. com, which uses fastpages and papermill to refresh notebooks and serve them as dasbhoards.  You can see browse the workflow files of this project to see how papermill is used. "
     }, 
     ];
@@ -260,18 +260,18 @@ function lunr_search(term) {
     <h2>Sections</h2>
 
     <ul class="aside_nav" id="aside_nav"><li>
-        <a class="aside_nav_link" href="/docs/jupyter">Jupyter</a><span class="toggle_sub rot180"> &#94;</span>
+        <a class="aside_nav_link" href="/docs/jupyter">Jupyter</a><span class="toggle_sub rot90">▸</span>
 
         <ul class="sub_menu hidden"><li>
-            <a class="aside_nav_link " href="/docs/repo2docker">repo2docker</a></li><li>
-            <a class="aside_nav_link " href="/docs/fastpages">fastpages</a></li><li>
-            <a class="aside_nav_link " href="/docs/papermill">papermill</a></li></ul></li><li>
-        <a class="aside_nav_link" href="/docs/k8s">Kubernetes</a><span class="toggle_sub rot180"> &#94;</span>
+            <a class="aside_nav_link " href="/docs/repo2docker">Containerize repos as a Jupyter server</a></li><li>
+            <a class="aside_nav_link " href="/docs/fastpages">Blog with fastpages</a></li><li>
+            <a class="aside_nav_link " href="/docs/papermill">Programatically run notebooks</a></li></ul></li><li>
+        <a class="aside_nav_link" href="/docs/k8s">Kubernetes</a><span class="toggle_sub rot90">▸</span>
 
         <ul class="sub_menu hidden"><li>
             <a class="aside_nav_link " href="/docs/Argo">Argo</a></li><li>
             <a class="aside_nav_link " href="/docs/k8s-self-hosted-runner">Self-Hosted K8s Actions Runner</a></li></ul></li><li>
-        <a class="aside_nav_link" href="/docs/experiment-tracking">Experiment Tracking</a><span class="toggle_sub rot180"> &#94;</span>
+        <a class="aside_nav_link" href="/docs/experiment-tracking">Experiment Tracking</a><span class="toggle_sub rot90">▸</span>
 
         <ul class="sub_menu hidden"><li>
             <a class="aside_nav_link " href="/docs/wandb">Weights & Biases</a></li></ul></li></ul>
