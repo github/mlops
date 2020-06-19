@@ -484,22 +484,59 @@ li {
 }
 
 @media screen and (min-width: 1024px) {
-  .search {
-    left: 360px;
-    top: 15px;
-    position: fixed;
-    z-index: 1001;
-  }
-  #lunrsearchresults {
+  .lunrsearchresults {
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 0.2rem;
+    display: grid;
+    grid-template-columns: 1fr 50px;
     background: $background-color;
     color: $text-color;
-    padding: 0 20px;
+    padding: 20px;
     max-height: 70vh;
     overflow-y: auto;
     #search_closer {
       cursor: pointer;
       z-index: 9999;
     }
+    ul {
+      list-style-type: none;
+      margin-left: 0;
+      .page_title {
+        border-right: 1px solid;
+      }
+    }
+  }
+  .lunrsearchresult .title {
+    color: $brand-color;
+  }
+  .lunrsearchresult .url {
+    color: silver;
+  }
+  .lunrsearchresult a {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    color: #777;
+  }
+  .lunrsearchresult a:hover,
+  .lunrsearchresult a:focus {
+    text-decoration: none;
+  }
+  .lunrsearchresult a:hover .title {
+    text-decoration: underline;
+  }
+
+  .search {
+    left: 360px;
+    top: 15px;
+    padding-right: 50px;
+    position: fixed;
+    z-index: 1001;
+  }
+
+  .hidden {
+    display: none;
   }
   .highlighter-rouge {
     max-width: 60vw;

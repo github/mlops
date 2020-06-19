@@ -9,6 +9,12 @@
       </a>
     </div>
 
+    {%- if page.layout == 'docs' -%}
+    <div class="search">
+      {%- include search-lunr.html -%}
+    </div>
+    {%- endif -%}
+
     <nav class="navigation hidden" id="navigation">
       {%- for item in site.data.navigation -%}
       {% assign link = item.link | replace: ".html" %}
@@ -17,11 +23,6 @@
       {%- endfor -%}
     </nav>
 
-{%- if page.layout == 'docs' -%}
-<div class="search">
-  {%- include search-lunr.html -%}
-</div>
-{%- endif -%}
 
     <button class="toggle_mnu" id="toggle_menu" onclick="toggle_menu()">
       <img src="{{'/assets/images/sandwich_white.png' | relative_url}}" class="open toggle_icon" alt="menu open">

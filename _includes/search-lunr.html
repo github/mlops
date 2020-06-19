@@ -51,7 +51,13 @@ var idx = lunr(function () {
 function lunr_search(term) {
     document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
     if(term) {
-        document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + "<div id='search_closer' onclick='search_close()'><img src='/assets/images/times.png' alt='closer'></div>" + document.getElementById('lunrsearchresults').innerHTML; 
+        document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + 
+        "<div id='search_closer' onclick='search_close()'>\
+            <img src='/assets/images/times.png' alt='closer'>\
+        </div>" 
+        + document.getElementById('lunrsearchresults').innerHTML; 
+        /* document.getElemenstById('lunrsearchresults').element.classList.remove("hidden"); */
+        $('#lunrsearchresults').removeClass("hidden");
         //put results on the screen.
         var results = idx.search(term);
         if(results.length>0){
@@ -63,32 +69,33 @@ function lunr_search(term) {
                 var url = documents[ref]['url'];
                 var title = documents[ref]['title'];
                 var body = documents[ref]['body'].substring(0,160)+'...';
-                document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'><a href='" + url + "'><span class='title'>" + title + "</span><br /><span class='body'>"+ body +"</span><br /><span class='url'>"+ url +"</span></a></li>";
+                document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + 
+                "<li class='lunrsearchresult'>\
+                    <a href='" + url + "'>\
+                        <div class='page_title'>\
+                            <h3 class='title'>" + title + "</h3>\
+                            <p class='url'>"+ url +"</p>\
+                        </div>\
+                        <p class='body'>"+ body +"</p>\
+                    </a>\
+                </li>";
             }
         } else {
             document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = "<li class='lunrsearchresult'>No results found...</li>";
         }
+
     }
     return false;
 }
     function search_close() {
-        $("#lunrsearchresults").empty();
+        $('#lunrsearchresults').empty().addClass("hidden");
+        /* document.getElementById('lunrsearchresults').element.classList.add("hidden"); */
     };
 </script>
-<style>
-    #lunrsearchresults {padding-top: 0.2rem;}
-    .lunrsearchresult {padding-bottom: 1rem;}
-    .lunrsearchresult .title {color: #fff;}
-    .lunrsearchresult .url {color: silver;}
-    .lunrsearchresult a {display: block; color: #777;}
-    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
-    .lunrsearchresult a:hover .title {text-decoration: underline;}
-</style>
-
 
 <form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
     <p><input type="text" class="form-control" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search" /></p>
 </form>
-<div id="lunrsearchresults">
+<div id="lunrsearchresults" class="lunrsearchresults hidden">
   <ul></ul>
 </div>
