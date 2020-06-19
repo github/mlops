@@ -63,60 +63,6 @@
   
   
   
-      <url>
-        <loc>https://mlops-github.com/docs/repo2docker</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
-        <loc>https://mlops-github.com/docs/fastpages</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
-        <loc>https://mlops-github.com/docs/wandb</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
-        <loc>https://mlops-github.com/docs/jupyter</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
-        <loc>https://mlops-github.com/docs/Argo</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
-        <loc>https://mlops-github.com/docs/k8s</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
-        <loc>https://mlops-github.com/docs/k8s-self-hosted-runner</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
-        <loc>https://mlops-github.com/docs/experiment-tracking</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
-        <loc>https://mlops-github.com/docs/papermill</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
   
       <url>
         <loc>https://mlops-github.com/team/david.html</loc>

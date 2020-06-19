@@ -137,52 +137,7 @@ var documents = [
     "title": "Zander",
     "body": "About Me: Currently I am a Senior Data Scientist at GitHub and prior to that I was a Senior Data Analyst at Heroku. You can learn more about my professional history here. Over the last couple years I have transitioned to building internal tooling and infrastructure for Data Scientists and Machine Learning Engineers. I love this space because of the impact that we can have on the efficacy of Data Science and Machine Learning teams. The prospect of building tooling that will allow data scientists to more effectively use GitHub to get their work done is extremely exciting. I love working with the Python ecosystem, Kubernetes, GitHub Actions, Jupyter and massively parallel computing for Data Warehousing and Analytics. "
     }, 
-    {
-    "id": 17,
-    "url": "https://mlops-github.com/docs/repo2docker",
-    "title": "Containerize repos as a Jupyter server",
-    "body": "The repo2docker Action: repo2docker is a project that will automatically create a docker image of your GitHub repository based on configuration files found in the repository, with additional Jupyter or RStudio support (depending upon the configuration files found). This is extremely useful for serving Jupyter notebooks automatically from GitHub repos. The repo2docker action packages this functionality in an easy-to-use interface that can be triggered in your GitHub workflows. For example, you can build a Jupyter-enabled Docker image of your repository like so: name: Build Notebook Containeron: [push] # You may want to trigger this Action on other things than a push. jobs: build:  runs-on: ubuntu-latest  steps:  - name: checkout files in repo   uses: actions/checkout@master  - name: update jupyter dependencies with repo2docker   uses: machine-learning-apps/repo2docker-action@master   with:    DOCKER_USERNAME: $    DOCKER_PASSWORD: $Additionally, this action allows you to pre-cache images for your own BinderHub cluster, or for mybinder. org. "
-    }, {
-    "id": 18,
-    "url": "https://mlops-github.com/docs/fastpages",
-    "title": "Blog with fastpages",
-    "body": "fastai/fastpages: Blogging with Jupyter Notebooks: From the project page: fastpages uses GitHub Actions to simplify the process of creating Jekyll blog posts on GitHub Pages from a variety of input formats. fastpages provides the following features::  Create posts containing code, outputs of code (which can be interactive), formatted text, etc directly from Jupyter Notebooks; Notebook posts support features such as:     Interactive visualizations made with Altair remain interactive.    Hide or show cell input and output.    Collapsable code cells that are either open or closed by default.    Define the Title, Summary and other metadata via a special markdown cells   Ability to add links to Colab and GitHub automatically.     Support for comments, supported natively through GitHub Issues.  Built-in search.  Support for customizing the styling of your site.  Embed Twitter cards and YouTube videos.  Categorization of blog posts by user-supplied tags for discoverability.  Create and edit Markdown posts.  Create posts, including formatting and images, directly from Microsoft Word documents.  Write posts on your local machine and preview them with live reload. See the project for more details. "
-    }, {
-    "id": 19,
-    "url": "https://mlops-github.com/docs/wandb",
-    "title": "Weights & Biases",
-    "body": "Fetch Runs From Weights &amp; Biases: Weights and Biases is a system for experiment tracking, model optimization, and dataset versioning. The Weights and Biases (W&amp;B) Action can help you fetch runs from W&amp;B for reporting in your GitHub workflows. This Action saves a csv file called wandb_report. csv into the path specified by the default environment variable GITHUB_WORKSPACE set for you in GitHub Actions, which allows this data to be accessed by subsequent Actions.  Information in this CSV can be displayed in a variety of ways, such as a markdown formatted comment in a pull request or via the GitHub Checks API. This csv file always has the following fields:  run. url: the url for the run in the W&amp;B api.  run. name: the name of the run. This is automatically set by wandb if not specified by the user.  run. tags: a list with all of the tags assigned to the run.  run. id: the id associated with the run.  This corresponds to the input RUN_ID run. entity: this name of the entity that contains the project the run can be found in.  This is similar to an org in GitHub.  run. project: the name of the project that contains the run.  This is simlar to a repo in GitHub.  github_sha: the config variable github_sha.  __eval. category: this field will contain either the value candiate or baseline, depending on how the run was queried. In addition to the above fields the user can specify additional fields. Below is an example of how this Action can be used to fetch model runs: name: Get WandB Runson: [issue_comment]jobs: get-runs:  if: (github. event. issue. pull_request != null) &amp;&amp; contains(github. event. comment. body, '/get-runs')  runs-on: ubuntu-latest  steps: - name: Get the latest SHA for the PR that was commented on  id: chatops  uses: machine-learning-apps/actions-chatops@master  with:   TRIGGER_PHRASE:  /get-runs   env:   GITHUB_TOKEN: ${{ secrets. GITHUB_TOKEN }}    - name: Get Runs Using SHA  uses: machine-learning-apps/wandb-action@master  with:   PROJECT_NAME: ${{ format('{0}/{1}', secrets. WANDB_ENTITY, secrets. WANDB_PROJECT) }}   FILTER_GITHUB_SHA: ${{ steps. chatops. outputs. SHA }}   BASELINE_TAGS:  ['baseline', 'reference']    DISPLAY_METRICS:  ['accuracy', 'loss', 'best_val_acc', 'best_val_loss', '_runtime']    WANDB_API_KEY: ${{ secrets. WANDB_API_KEY }}   DEBUG: 'true'See this project for more information. "
-    }, {
-    "id": 20,
-    "url": "https://mlops-github.com/docs/jupyter",
-    "title": "Jupyter",
-    "body": "There are many interesting things you can do with Actions, and CodeSpaces to compliment jupyter notebooks on GitHub.  Navigate the menu on the left hand side to learn more. "
-    }, {
-    "id": 21,
-    "url": "https://mlops-github.com/docs/Argo",
-    "title": "Argo",
-    "body": "Deploy Machine Learning Workflows With Argo: What are Argo Workflows? From the docs:    Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes. Argo Workflows is implemented as a Kubernetes CRD (Custom Resource Definition).   Define workflows where each step in the workflow is a container. Model multi-step workflows as a sequence of tasks or capture the dependencies between tasks using a graph (DAG).  Easily run compute intensive jobs for machine learning or data processing in a fraction of the time using Argo Workflows on Kubernetes.  Run CI/CD pipelines natively on Kubernetes without configuring complex software development products. The Argo GitHub Action: See this repo for full context. A Hello-World Workflow: name: ML Workflows Via Actionson: [push]jobs: build:  runs-on: ubuntu-latest  steps:  # This copies the files in this repo, particulary the yaml workflow spec needed for Argo.   - name: Step One - checkout files in repo   uses: actions/checkout@master  # Get credentials (the kubeconfig file) the k8 cluster. Copies kubeconfig into /github/workspace/. kube/config  - name: Step Two - Get kubeconfig file from GKE   uses: machine-learning-apps/gke-kubeconfig@master   with:    application_credentials: $    project_id: $    location_zone: $    cluster_name: $   ###################################################   # This is the action that submits the Argo Workflow   - name: Step Three - Submit Argo Workflow from the examples/ folder in this repo   id: argo   uses: machine-learning-apps/actions-argo@master   with:    argo_url: $    # below is a reference to a YAML file in this repo that defines the workflow.     workflow_yaml_path:  examples/coinflip. yaml     parameter_file_path:  examples/arguments-parameters. yaml    env:    # KUBECONFIG tells kubectl where it can find your authentication information.  A config file was saved to this path in Step Two.     KUBECONFIG: '/github/workspace/. kube/config'   # This step displays the Argo URL, and illustrates how you can use the output of the previous Action.   - name: test argo outputs   run: echo  Argo URL $WORKFLOW_URL    env:    WORKFLOW_URL: $Running Argo On Self Hosted Runners: You can skip the . kubeconfig if your Actions runner is running on a self-hosted runner on your Kubernetes cluster that has access to Argo.  See these docs for further instructions. "
-    }, {
-    "id": 22,
-    "url": "https://mlops-github.com/docs/k8s",
-    "title": "Kubernetes",
-    "body": "Resources for MLOps on Kubernetes with GitHub.  This is useful if you need to access broader infrastructure resources in your machine learning workflows.  For example:  Deploying and serving models, including a service mesh Deploying and serving arbitrary applications, such as Jupyter Notebooks or documentation sites.  Accessing other resources that are visible from your internal k8s cluster, such as:     Databases, i. e. Presto, Hive   Storage, i. e. HDFS   Distributed data processing, such as Dask or Spark   Specialized computing such as GPUs.    Integration with experiment tracking systems.     Access to secrets.  Native resource management and kubernetes for scalability and resiliance.  Interoperability with machine learning or data pipelines, such as Argo, MLFlow, Prefect, etc.  … and much more. "
-    }, {
-    "id": 23,
-    "url": "https://mlops-github.com/docs/k8s-self-hosted-runner",
-    "title": "Self-Hosted K8s Actions Runner",
-    "body": "Create A Self-Hosted Actions Runner On Your Kubernetes Cluster With 3 Commands: Motivation: GitHub Actions allow you to use self hosted runners.  From the docs:  Self-hosted runners offer more control of hardware, operating system, and software tools than GitHub-hosted runners provide. With self-hosted runners, you can choose to create a custom hardware configuration with more processing power or memory to run larger jobs, install software available on your local network, and choose an operating system not offered by GitHub-hosted runners. Self-hosted runners can be physical, virtual, in a container, on-premises, or in a cloud. This repository shows how to run a self hosted runner in a Kubernetes cluster, which is useful if your Actions runner needs to create resources or update deployments. "
-    }, {
-    "id": 24,
-    "url": "https://mlops-github.com/docs/experiment-tracking",
-    "title": "Experiment Tracking",
-    "body": "Experiment tracking for machine learning involves logging of metrics and artificacts associated with different training runs.  This is essential for effective mlops as it allows you to track your performance metrics and promotes reproduceability in a transparent, reuseable way. There are several experiment tracking systems available as third-party solutions that GitHub Actions can integrate with.  For example, the below example illustrates how results of a training run can be fetched from Weights and Biases and dropped into a pull request: &lt;/img&gt; "
-    }, {
-    "id": 25,
-    "url": "https://mlops-github.com/docs/papermill",
-    "title": "Programatically run notebooks",
-    "body": "Refresh Jupyter Notebooks With Papermill: papermill is a great project for running notebooks programatically.  You can pass parameters to notebooks, use different kernels, etc. Example: refresh notebooks every 6 hours: Put a shell script at the location_action_files/run_notebooks. sh with the following contents: #!/bin/shset -ecd $(dirname  $0 )/. . cd _notebooks/ERRORS=  # Loop through all notebooks and run them with papermillfor file in *. ipynbdo  if papermill --kernel python3  ${file}   ${file} ; then    echo  Sucessfully refreshed ${file}\n\n\n\n   else    echo  ERROR Refreshing ${file}     ERRORS= ${ERRORS}, ${file}   fidone# Emit Errors If Exists So Downstream Task Can Open An Issueif [ -z  $ERRORS  ]then  echo  ::set-output name=error_bool::false else  echo  These files failed to update properly: ${ERRORS}   echo  ::set-output name=error_bool::true   echo  ::set-output name=error_str::${ERRORS} fiIn the location . github/workflows/update-nb. yaml define an Actions workflow with the following contents name: Update Notebooks And Refresh Pageon: schedule:  - cron: '0 */6 * * *'jobs: update-notebooks:  runs-on: ubuntu-latest  steps:   - name: Copy Repository Contents   uses: actions/checkout@v2  - name: Set up Python   uses: actions/setup-python@v1   with:    python-version: 3. 6  - name: install dependencies   run: |    pip3 install -r . /_notebooks/requirements. txt    python3 -m ipykernel install --user --name python3    sudo chmod -R 777 .   - name: update notebooks   id: update_nb   run: |    . /_action_files/run_notebooks. sh      - name: Create an issue if notebook update failure occurs   if: steps. update_nb. outputs. error_bool == 'true'   uses: actions/github-script@0. 6. 0   with:    github-token: $    script: |     var err = process. env. ERROR_STRING;     var run_id = process. env. RUN_ID;     github. issues. create({      owner: context. repo. owner,      repo: context. repo. repo,      title:  Error updating notebooks ,      body: `These are the notebooks that failed to update properly: \n${err}\n\n See run [${run_id}](https://github. com/github/covid19-dashboard/actions/runs/${run_id}) for more details. `     })   env:    ERROR_STRING: $    RUN_ID: $This example is based on covid19dashboards. com, which uses fastpages and papermill to refresh notebooks and serve them as dasbhoards.  You can see browse the workflow files of this project to see how papermill is used. "
-    }, 
+    
     ];
 
 var idx = lunr(function () {
@@ -269,22 +224,7 @@ function lunr_search(term) {
   <nav>
     <h2>Sections</h2>
 
-    <ul class="aside_nav" id="aside_nav"><li>
-        <a class="aside_nav_link" href="/docs/jupyter">Jupyter</a><div class="toggle_sub rot90"></div>
-
-        <ul class="sub_menu hidden"><li>
-            <a class="aside_nav_link " href="/docs/repo2docker">Containerize repos as a Jupyter server</a></li><li>
-            <a class="aside_nav_link " href="/docs/fastpages">Blog with fastpages</a></li><li>
-            <a class="aside_nav_link " href="/docs/papermill">Programatically run notebooks</a></li></ul></li><li>
-        <a class="aside_nav_link" href="/docs/k8s">Kubernetes</a><div class="toggle_sub rot90"></div>
-
-        <ul class="sub_menu hidden"><li>
-            <a class="aside_nav_link " href="/docs/Argo">Argo</a></li><li>
-            <a class="aside_nav_link " href="/docs/k8s-self-hosted-runner">Self-Hosted K8s Actions Runner</a></li></ul></li><li>
-        <a class="aside_nav_link" href="/docs/experiment-tracking">Experiment Tracking</a><div class="toggle_sub rot90"></div>
-
-        <ul class="sub_menu hidden"><li>
-            <a class="aside_nav_link " href="/docs/wandb">Weights & Biases</a></li></ul></li></ul>
+    <ul class="aside_nav" id="aside_nav"></ul>
   </nav>
 </aside><div class="intro_wrapper">
   <section class="intro">
