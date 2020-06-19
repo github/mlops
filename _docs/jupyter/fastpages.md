@@ -1,5 +1,5 @@
 ---
-title: fastpages
+title: Blog with fastpages
 parent: Jupyter
 order_n: 2
 permalink: /docs/fastpages
