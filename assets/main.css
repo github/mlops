@@ -276,6 +276,8 @@ table td { border: 1px solid #e8e8e8; }
 
 body { display: grid; grid-template-rows: 80px 1fr auto; font-family: "Roboto", sans-serif; }
 
+a { color: #6CA8FE !important; }
+
 h1 { font-size: 34px; font-weight: 700; color: #2a7ae2; line-height: 1; }
 
 h2 { font-size: 24px; font-weight: 700; line-height: 1.25; }
