@@ -18,12 +18,12 @@
   link : "/talks"
   icon : "https://ghicons.github.com/assets/images/blue/svg/Enterprise%20Observability.svg" 
 
-- title: Docs
-  info : Documentation and resources for getting started.
-  link : "https://docs.mlops-github.com/"
-  icon : "https://ghicons.github.com/assets/images/blue/svg/Documentation.svg"
-
 - title: Team
   info : More information about the team that works on MLOps at GitHub.
   link : "/team"
   icon : "https://ghicons.github.com/assets/images/blue/svg/GitHub%20for%20teams.svg" 
+
+- title: Docs
+  info : Documentation and resources for getting started.
+  link : "https://docs.mlops-github.com/"
+  icon : "https://ghicons.github.com/assets/images/blue/svg/Documentation.svg"
