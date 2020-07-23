@@ -20,7 +20,7 @@
   
 - title: "Dockerize GitHub repositories automatically as a Jupyter Server"
   info : Automatically Dockerize GitHub repos and serve their contents with the appropriate dependencies with Jupyter or R-Markdown.  Can optionally be used in a complimentary way with mybinder.org
-  link : "https://github.com/machine-learning-apps/repo2docker-action"
+  link : "https://github.com/jupyterhub/repo2docker-action"
   tags: [Jupyter]
 
 - title: Create Azure ML Workspace
