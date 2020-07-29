@@ -12,7 +12,7 @@ jobs:
     steps:
 
     - name: Copy Repository Contents
-      uses: actions/checkout@master
+      uses: actions/checkout@main
       with:
         persist-credentials: false
 
