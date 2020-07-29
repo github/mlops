@@ -1,3 +1,8 @@
+- title: MLOps tutorial: Intro to continuous integration for ML
+  info : Jul 24, 2020, Dr. Elle O'Brien.  A video tutorial of CML, DVC and GitHub Actions for ML workflows.
+  link : "https://dev.to/andronovhopf/video-mlops-tutorial-intro-to-continuous-integration-for-ml-479b"
+  tags : [dvc]
+
 - title: Providing Data Scientists With New Superpowers
   info : Mar 6, 2020, Hamel Husain & Jeremy Howard.  An introduction to GitHub Actions For Data Scientists. 
   link : "https://fastpages.fast.ai/actions/markdown/2020/03/06/fastpages-actions.html"
