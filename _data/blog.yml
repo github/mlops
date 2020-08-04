@@ -1,3 +1,8 @@
+- title: "Data Science Meets Devops: MLOps with Jupyter, Git, & Kubernetes."
+  info : "Aug 4, 2020, Jeremy Lewi & Hamel Husain.  A tutorial of how to enable Jupyter based ML workflows in production with GitOps."
+  link : "https://blog.kubeflow.org/mlops"
+  tags : [gitops, kubeflow, jupyter]
+
 - title: "An Intro to continuous integration for ML"
   info : "Jul 24, 2020, Dr. Elle O'Brien.  A video tutorial of CML, DVC and GitHub Actions for ML workflows."
   link : "https://dev.to/andronovhopf/video-mlops-tutorial-intro-to-continuous-integration-for-ml-479b"
