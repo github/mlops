@@ -1,3 +1,8 @@
+- title: "Using GitHub Actions for MLOps & Data Science."
+  info : "Jun 17, 2020, Hamel Husain. The GitHub Engineering Blog."
+  link : "https://github.blog/2020-06-17-using-github-actions-for-mlops-data-science"
+  tags : [overview]
+
 - title: "Data Science Meets Devops: MLOps with Jupyter, Git, & Kubernetes."
   info : "Aug 4, 2020, Jeremy Lewi & Hamel Husain.  A tutorial of how to enable Jupyter based ML workflows in production with GitOps."
   link : "https://blog.kubeflow.org/mlops"
