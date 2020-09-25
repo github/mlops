@@ -1,3 +1,8 @@
+- title: "Great Expectations - CI/CD For Data Pipelines"
+  info : "Validate the integrity of your data and the health of your data pipelines."
+  link : "https://github.com/marketplace/actions/great-expectations-data"
+  tags : [Data-Pipelines]
+
 - title: "Submit Argo Workflows To GKE "
   info : "Instantiate machine learning pipelines using Argo on Google Kubernetes Engine."
   link : "https://github.com/marketplace/actions/submit-argo-workflows-to-gke"
