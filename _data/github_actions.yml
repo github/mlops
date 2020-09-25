@@ -3,6 +3,11 @@
   link : "https://github.com/marketplace/actions/great-expectations-data"
   tags : [Data-Pipelines]
 
+- title: "Dockerize GitHub repositories automatically as a Jupyter Server"
+  info : Automatically Dockerize GitHub repos and serve their contents with the appropriate dependencies with Jupyter or R-Markdown.  Can optionally be used in a complimentary way with mybinder.org
+  link : "https://github.com/jupyterhub/repo2docker-action"
+  tags: [Jupyter]
+
 - title: "Submit Argo Workflows To GKE "
   info : "Instantiate machine learning pipelines using Argo on Google Kubernetes Engine."
   link : "https://github.com/marketplace/actions/submit-argo-workflows-to-gke"
@@ -22,11 +27,6 @@
   info : Launch Kubeflow pipelines on Google Cloud.
   link : "https://github.com/marketplace/actions/kubeflow-compile-deploy-and-run"
   tags: [Kubeflow]
-  
-- title: "Dockerize GitHub repositories automatically as a Jupyter Server"
-  info : Automatically Dockerize GitHub repos and serve their contents with the appropriate dependencies with Jupyter or R-Markdown.  Can optionally be used in a complimentary way with mybinder.org
-  link : "https://github.com/jupyterhub/repo2docker-action"
-  tags: [Jupyter]
 
 - title: Create Azure ML Workspace
   link : https://github.com/marketplace/actions/azure-machine-learning-workspace
