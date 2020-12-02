@@ -77,19 +77,7 @@
        </url>
   
       <url>
-        <loc>https://mlops-github.com/team/michal.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
         <loc>https://mlops-github.com/team/rimas.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-       </url>
-  
-      <url>
-        <loc>https://mlops-github.com/team/taylor.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
