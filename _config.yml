@@ -3,8 +3,8 @@ subtitle: A collection of resources on how to facilitate Machine Learning Ops wi
 email: ""
 description: Learn how to use GitHub for automation, collaboration and reproducibility in your machine learning workflows.
 logo: "/assets/images/Data-driven-recommendations.svg"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mlops-github.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/mlops" # the subpath of your site, e.g. /blog
+url: "https://github.github.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: github
 github_username: github
 excerpt_separator: <!--more-->
