@@ -2,55 +2,55 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
       <url>
-        <loc>https://mlops-github.com/404.html</loc>
+        <loc>https://github.github.com/404.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://mlops-github.com/about/</loc>
+        <loc>https://github.github.com/about/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://mlops-github.com/actions.html</loc>
+        <loc>https://github.github.com/actions.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://mlops-github.com/blog.html</loc>
+        <loc>https://github.github.com/blog.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://mlops-github.com/examples.html</loc>
+        <loc>https://github.github.com/examples.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://mlops-github.com/</loc>
+        <loc>https://github.github.com/</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://mlops-github.com/talks.html</loc>
+        <loc>https://github.github.com/talks.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://mlops-github.com/team.html</loc>
+        <loc>https://github.github.com/team.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://mlops-github.com/tutorials.html</loc>
+        <loc>https://github.github.com/tutorials.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
@@ -59,31 +59,31 @@
   
   
       <url>
-        <loc>https://mlops-github.com/team/david.html</loc>
+        <loc>https://github.github.com/team/david.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://mlops-github.com/team/hamel.html</loc>
+        <loc>https://github.github.com/team/hamel.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://mlops-github.com/team/marvin.html</loc>
+        <loc>https://github.github.com/team/marvin.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://mlops-github.com/team/rimas.html</loc>
+        <loc>https://github.github.com/team/rimas.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
   
       <url>
-        <loc>https://mlops-github.com/team/zander.html</loc>
+        <loc>https://github.github.com/team/zander.html</loc>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
        </url>
