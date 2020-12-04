@@ -1,6 +1,6 @@
 ![](https://github.com/machine-learning-apps/website/workflows/Deploy/badge.svg)
 
-# https://mlops-github.com/
+# https://github.github.com/mlops/
 
 
 ### Use GitHub to facilitate automation, collaboration and reproducibility in your machine learning workflows.
